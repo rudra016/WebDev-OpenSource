@@ -6,12 +6,12 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 [Web-HacktoberFest-2023](https://github.com/rudra016/Web-HacktoberFest-2023).
 
 ## Want to contribute?
-- Take a look at [`contributing guidelines`](CONTRIBUTING.md).
+- Take a look at [`contributing guidelines`](Contributing.md).
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow).
 
 ### Hacktoberfest
 For the Hacktoberfest you can raise an issue on what you want to contribute and I will assign it for you. 
-Contact me on:- `Baba Yaga#6991` at Discord
+Contact me on:- `alphamale6` at Discord
 
 ## Code of Conduct:
 - [Code of Conduct](CODE_OF_CONDUCT.md)
