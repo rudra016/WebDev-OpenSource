@@ -24,7 +24,7 @@ Contact me on:- `alphamale6` at Discord
 <br/>
 <div align="center">
 <a href="https://github.com/rudra016/Web-HacktoberFest-2023/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rudra016/Web-HacktoberFest-2023&max=100&columns=11" width=97%/>
+  <img src="https://contrib.rocks/image?repo=rudra016/Web-HacktoberFest-2023" />
 </a>
 </div>
 
