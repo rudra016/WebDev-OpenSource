@@ -6,7 +6,7 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 [Web-HacktoberFest-2023](https://github.com/rudra016/Web-HacktoberFest-2023).
 
 ## Want to contribute?
-- Take a look at [`contributing guidelines`](Contributing.md).
+- Take a look at [`contributing guidelines`](CONTRIBUTING.md).
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow).
 
 ### Hacktoberfest
