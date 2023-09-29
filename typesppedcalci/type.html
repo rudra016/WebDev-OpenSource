@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="type.css">
+</head>
+<body>
+    <main class="main">
+        <div class="headline">
+            <h1 class="headingmain">Welcome to Typing Speed Test</h1>
+            <h2 id="words"></h2>
+        </div>
+        <div class="mainbox">
+            <div class="pic">
+                <img src="picture.gif" class="firstpic">
+            </div>
+            <div class="texti">
+                <textarea id="text" cols="90" rows="16" placeholder="Type Here" disabled></textarea>
+            </div>
+            
+
+        </div>
+        <span class="button1">
+            <button id="btn" class="mainbutton">Start</button>
+        </span>
+        <audio id="myaudio" src="Benson_Boone_-_In_The_Stars_CeeNaija.com_.mp3" autoplay></audio>
+        <label style="color: antiquewhite;">Click to play and pause the song accordingly.</label>
+        <button id="toggleButton">Toggle</button>
+
+    </main>
+
+    <script>
+        const sentences = [
+  "The quick brown fox jumps over the lazy dog.",
+  "She sells seashells by the seashore.",
+  "Peter Piper picked a peck of pickled peppers.",
+  "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+  "I scream, you scream, we all scream for ice cream.",
+  "A picture is worth a thousand words.",
+  "The early bird catches the worm.",
+  "Actions speak louder than words.",
+  "Beauty is in the eye of the beholder.",
+  "Don't count your chickens before they hatch.",
+  "Every cloud has a silver lining.",
+  "Fortune favors the bold.",
+  "Haste makes waste.",
+  "Ignorance is bliss.",
+  "No pain, no gain.",
+  "Patience is a virtue.",
+  "Rome wasn't built in a day.",
+  "The grass is always greener on the other side.",
+  "When in Rome, do as the Romans do.",
+  "Where there's a will, there's a way.",
+  "You can't judge a book by its cover."
+];
+const words=document.getElementById('words');
+const textarea=document.getElementById('text');
+const button=document.getElementById('btn');
+let starttime,endtime;
+function playit(){
+    let randomNumber=Math.floor(Math.random()*sentences.length);
+    
+    words.innerText=sentences[randomNumber];
+    let date=new Date();
+    starttime=date.getTime();
+    button.innerText="Done";
+}
+
+function endplay(){
+    let date=new Date();
+    endtime=date.getTime();
+    let totaltime=(endtime-starttime)/1000;
+    console.log(totaltime);
+    let textstr=textarea.value;
+    let wordCount=wordCounter(textstr);
+    let speed=Math.round((wordCount/totaltime)*60);
+    let final="Your Typing speed is "+speed+ " words per minute.";
+    final+=compare(words.innerText,textstr);
+    words.innerText=final;
+}
+function compare(str1,str2){
+    const words1 = str1.split(" ");
+  const words2 = str2.split(" ");
+
+  let count = 0;
+    words1.forEach(function(item,index){
+        if(item==words2[index]){
+            count++;
+        }
+    })
+    let errors=(words1.length-count);
+    return (count+" words correct out of "+words1.length+" and the total errors are "+errors+ ".");
+  }
+
+ 
+
+function wordCounter(str){
+    let response=str.split(" ").length;
+    return response;
+}
+button.addEventListener('click',function(){
+    if(this.innerText=='Start'){
+        textarea.disabled=false;
+        playit();
+    }else if(this.innerText=='Done'){
+        textarea.disabled=true;
+        button.innerText='Start';
+        endplay();
+    }
+})
+
+
+const audio = document.getElementById('myaudio');
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    toggleButton.textContent = 'Pause';
+  } else {
+    audio.pause();
+    toggleButton.textContent = 'Play';
+  }
+});
+
+
+// document.addEventListener('click', function (event) {
+//   var bubble = document.createElement('div');
+//   bubble.className = 'bubble';
+//   bubble.style.left = event.clientX + 'px';
+//   bubble.style.top = event.clientY + 'px';
+//   document.body.appendChild(bubble);
+  
+//   setTimeout(function () {
+//     bubble.remove();
+//   }, 10000);
+// });
+
+
+    </script>
+</body>
+</html>
