@@ -3,7 +3,7 @@
 **Hey  Everyone**,<br> 
 Welcome to the Hacktoberfest Web Development Projects Repository, your gateway to a world of collaborative coding and open-source web development!
 Dive into the exciting realm of Hacktoberfest with our curated collection of web development projects designed to foster creativity, collaboration, and community engagement.
-[Web-HacktoberFest-2023](https://github.com/rudra016/WebDev-OpenSource).
+[WebDev-OpenSource](https://github.com/rudra016/WebDev-OpenSource).
 
 ## Want to contribute?
 - Take a look at [`contributing guidelines`](CONTRIBUTING.md).
@@ -24,7 +24,7 @@ Contact me on:- `alphamale6` at Discord
 <br/>
 <div align="center">
 <a href="https://github.com/rudra016/WebDev-OpenSource/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rudra016/Web-HacktoberFest-2023" />
+  <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource" />
 </a>
 </div>
 
