@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans+Narrow&display=swap');
+.structure{
+    text-align: center;
+    margin-top: 23px;
+}
+
+table{
+    margin: auto;
+}
+
+input{
+    width: 282px;
+    border: 3px solid#181b28;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 31px;
+    cursor: pointer;
+    background-color: #dcdbe1;
+    margin-bottom:11px;
+}
+button{
+    font-size: 19px;
+    background:#65268f;
+    width: 82px;
+    height: 44px;
+    border-radius: 6px;
+    font-family: 'Michroma', sans-serif;
+    margin-bottom: 7px;
+}
+.calculator{
+    display: inline-block;
+    background: black;
+    padding: 9px;
+    border-radius: 9px;
+}
+
+button:hover{
+    background-color: #A44CD3;
+    cursor: pointer;
+}
