@@ -13,9 +13,9 @@ Below you will find the process and workflow used to review and merge your chang
 ## Step 2 : Fork the Project
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.
 ```
-$ git clone https://github.com/<your-username>/Web-HacktoberFest-2023
+$ git clone https://github.com/rudra016/WebDev-OpenSource
 $ cd Web-hacktoberFest-2023
-$ git remote add upstream https://github.com/rudra016/Web-hacktoberFest-2023
+$ git remote add upstream https://github.com/rudra016/WebDev-OpenSource
 ```
 
 - If you have already forked the project, update your copy before working.
