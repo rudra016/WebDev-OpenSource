@@ -1,0 +1,46 @@
+#fromCurrency {
+  width: 82px;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0 2px;
+  background-color: #495057;
+  color: white;
+  border-radius: 5px;
+}
+
+#toCurrency {
+  width: 82px;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 2px;
+  background-color: #495057;
+  color: white;
+  border-radius: 5px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fromCurrency:hover {
+  background-color: #79797a;
+}
+
+#toCurrency:hover {
+  background-color: #79797a;
+}
+
+#finalResult {
+  display: none;
+}
+
+.leadText {
+  font-size: 1.55rem;
+  font-weight: 400;
+}
