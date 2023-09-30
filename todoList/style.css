@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 1150px;
+}
+.head1{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    
+    padding: 25px;
+
+}
+.head1 header{
+   
+    font-weight: 600;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+    background: black;
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.head1 .inputfield{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+
+
+}
+.inputfield input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 46px;
+    padding-left: 15px;
+
+}
+.inputfield button{
+    height: 100%;
+    border: none;
+    width: 60px;
+    outline: none;
+    background: #f44336;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 67px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+    
+
+}
+.inputfield button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.head1 .TodoList{
+    max-height: 250px;
+    overflow-y: auto ;
+
+
+
+}
+.TodoList li{
+    list-style: none;
+    height: 45px;
+    position: relative;
+    line-height: 45px;
+    background: #f2f2f2;
+    border-radius: 78px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+
+}
+.TodoList li span{
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 22px 22px 0;
+    cursor: pointer;
+    
+    background: #808080;
+}
