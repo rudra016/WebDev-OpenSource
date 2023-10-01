@@ -6,7 +6,7 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 [WebDev-OpenSource](https://github.com/rudra016/WebDev-OpenSource).
 
 ## Want to contribute?
-- Take a look at [`contributing guidelines`](CONTRIBUTING.md).
+- Take a look at [`Contributing Guidelines`](CONTRIBUTING.md).
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow).
 
 ### Hacktoberfest
@@ -26,6 +26,7 @@ Contact me on:- `alphamale6` at Discord
 <a href="https://github.com/rudra016/WebDev-OpenSource/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource" />
 </a>
+
 </div>
 
 <br>
