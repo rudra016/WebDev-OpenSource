@@ -20,10 +20,3 @@
 - The game can be played in VR also, webXR Compatible game
 
 <br>
-
-## **Screenshots 📸**
-
-
-![image](../../assets/images/Lost_In_The_Maze_3D.jpg)
-
-<br>
