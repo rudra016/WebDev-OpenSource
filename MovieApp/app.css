@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap'); 
 *{
     box-sizing: border-box;
 }
@@ -36,20 +36,24 @@ main{
     align-items: center;
     justify-content: space-between;
     letter-spacing: 0.5px;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem 1rem;
 }
 .movie-info{
-    margin-top:0 ;
+    margin:auto;
+    text-align: center;
+}
+.movie-info h3{
+  margin: auto;
+  text-align: center;
 }
 .movie-info span{
     background-color: var(--primary-color);
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
-
+    transform: translateX(10px);
 }
 .movie-info span.green{
-    
     color: lightgreen;
 }
 .movie-info span.yellow{
@@ -206,6 +210,15 @@ margin: 10px auto;
   }
   .arrow{
     position: absolute;
+    
+  }
+  .arrow img{
+    width: 30px;
+    height: 30px;
+    border-radius: 52%;
+  }
+  .left-arrow img{
+    rotate:180deg;
   }
   .arrow.left-arrow{
     top:50%;
@@ -215,22 +228,22 @@ margin: 10px auto;
   .arrow.right-arrow{
     top: 50%;
     transform: translateY(-50%);
-   right: 5%;
+    right: 5%;
   }
   .dots .dot{
     padding: 5px 15px;
     border-radius: 50%;
-    border: 5px solid var(--second-color);
     color: white;
     font-size: 20px;
     font-weight: 600;
-    margin: 10px;
-    
-    
+    margin: 10px;    
   }
   .dots{
     margin-top: 30px;
   }
   .dots .dot.active{
-    border-color: orange;
+    background-color: orange;
+  }
+  .dots:hover{
+    cursor: pointer;
   }
