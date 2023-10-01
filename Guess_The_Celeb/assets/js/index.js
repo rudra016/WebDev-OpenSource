@@ -84,6 +84,34 @@ const celebrities = [
     img1: "souravganguly_1.jpg",
     img2: "souravganguly_2.jpg",
   },
+  {
+    name: "Elon Musk",
+    hint1: "CEO of Tesla Motors",
+    hint2: "Advocates Mars colonization.",
+    img1: "elonmusk_1.jpeg",
+    img2: "elonmusk_2.jpg",
+  },
+  {
+    name: "Beyonce",
+    hint1: "Released hit album Lemonade",
+    hint2: "Known as Queen B of music industry",
+    img1: "beyonce_1.jpg",
+    img2: "beyonce_2.jpeg",
+  },
+  {
+    name: "Dwayne Johnson",
+    hint1: "A former professional wrestler",
+    hint2: "Starred in Jumanji",
+    img1: "dwaynejohnson_1.jpeg",
+    img2: "dwaynejohnson_2.jpeg",
+  },
+  {
+    name: "Roger Federer",
+    hint1: "Renowned Swiss Tennis player",
+    hint2: "Won over 20 Grand Slam titles",
+    img1: "rogerfederer_1.jpeg",
+    img2: "rogerfederer_2.jpeg",
+  },
 ];
 
 let currentCelebrityIndex = 0;
