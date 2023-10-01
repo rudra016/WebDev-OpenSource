@@ -1,23 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #cdedfd;
-  background-image: linear-gradient(
-    319deg,
-    #cdedfd 0%,
-    #ffec82 37%,
-    #ffcfd2 100%
-  );
-  background-size: cover;
+  background: linear-gradient(to bottom, #464646, #8B8B8B, #0D7C79);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
   padding: 20px;
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 3rem;
+  color: #F5F5F5;
+  margin-bottom: 3rem;
 }
 
 #question {
@@ -30,11 +24,17 @@ h1 {
 .img {
   width: 350px;
   height: 350px;
-  border-radius: 13px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: solid 2px #3b3b3d;
 }
 
-#options {
+#optionsR1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#optionsR2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,10 +43,9 @@ h1 {
 .option {
   width: 350px;
   height: auto;
-  margin: 5px;
+  margin: 20px;
   font-size: 16px;
-  background-color: #6b0f1a;
-  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  background-color: #1C1F65;
   padding: 1rem;
   color: #fff;
   border: none;
@@ -57,14 +56,13 @@ h1 {
 }
 
 .option:hover {
-  background-color: #b91372;
-  background-image: linear-gradient(315deg, #b91372 0%, #6b0f1a 74%);
+  background-color: #03acaf;
 }
 
 #score {
   text-align: center;
   font-size: 1.6rem;
-  color: maroon;
+  color: rgb(4, 23, 146);
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.842);
   font-weight: bold;
   margin-top: 20px;
@@ -75,7 +73,7 @@ footer {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
-  text-shadow: 3px 1px gainsboro;
+  /* text-shadow: 3px 1px gainsboro; */
 }
 
 span {
