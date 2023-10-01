@@ -31,7 +31,7 @@ Contact me on:- `alphamale6` at Discord
 <br>
 <br>
 <hr>
-<h6 align="center">© Web-HacktoberFest-2023
+<h6 align="center">© WebDev-OpenSource
 <br>
 All Rights Reserved</h6>
 
