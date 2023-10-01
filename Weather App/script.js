@@ -36,3 +36,57 @@ submit.addEventListener("click",(e)=>{
     getWeather(city.value)
 })
 getWeather("New York")
+
+
+// GSAP Animations
+// nav-anim
+// header-anim
+// card-1 card-2 card-3
+// name-anim
+
+
+TweenMax.from(".nav-anim" , 0.8 , {
+    delay : 0,
+    opacity : 0,
+    y : -20,
+    ease: Expo.easeInOut
+})
+
+
+TweenMax.from(".header-anim" , 0.9 , {
+    delay : 0,
+    opacity : 0,
+    y : -20,
+    ease: Expo.easeInOut
+})
+
+
+TweenMax.from(".card-1" , 0.9 , {
+    delay : 0.3,
+    opacity : 0,
+    y : 20,
+    ease: Expo.easeInOut
+})
+
+
+TweenMax.from(".card-2" , 0.9 , {
+    delay : 0.5,
+    opacity : 0,
+    y : 40,
+    ease: Expo.easeInOut
+})
+
+
+TweenMax.from(".card-3" , 0.9 , {
+    delay : 0.7,
+    opacity : 0,
+    y : 60,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from(".name-anim" , 0.9 , {
+    delay : 0.7,
+    opacity : 0,
+    y : 60,
+    ease: Expo.easeInOut
+})
