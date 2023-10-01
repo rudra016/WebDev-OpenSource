@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="RPS.css">
+
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <header class="header-box">
+        <p class="header">Welcome to Rock - Paper - Scissors Game!!!</p>
+    </header>
+    <main class="main clearfix">
+        <button class="btn-new"><i class="fa fa-redo"></i> New game</button>
+        <div class="header">Score Board</div>
+        <div class="player-name">
+            <p class="name">You</p>
+            <p class="name">Computer</p>
+        </div>
+        <div class="scores">
+            <div class="score-0">2</div>
+            <div class="score-1">3</div>
+        </div>
+        <div class="result">
+            <p id="result_text">Result</p>
+        </div>
+        <div class="moves">
+            <div class="move-0">
+                <div class="header">Your Move</div>
+                <div class="choice">
+                    <img src="https://github.com/carlynda/rpsGame/blob/master/img/rock.png?raw=true" alt="Rock"
+                        class="image" id="rock">
+                    <img src="https://github.com/carlynda/rpsGame/blob/master/img/paper.png?raw=true" alt="Paper"
+                        class="image" id="paper">
+                    <img src="https://github.com/carlynda/rpsGame/blob/master/img/scissors.png?raw=true" alt="Scissors"
+                        class="image" id="scissors">
+                </div>
+            </div>
+            <div class="move-1">
+                <div class="header">Computer</div>
+                <img src="https://github.com/carlynda/rpsGame/blob/master/img/scissors.png?raw=true" alt=""
+                    id="imageComp">
+            </div>
+        </div>
+        <div class="rules">
+            <h1>How To Play</h1>
+            <p>The rules are very simple and probably you remember them from your childhood :</p>
+            <li>If you choose Rock, you will win against Scissors but lose against Paper.</li>
+            <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
+            <li>If you choose Paper, you will win against Rock but lose against Scissors.</li><br>
+        </div><br>
+
+    </main>
+
+
+    <script src="RPS.js"></script>
+</body>
+
+</html>
