@@ -16,7 +16,19 @@ var nextPage =2;
 var prevPage = 3;
 var lastURL = '';
 var totalPage = 100;
- 
+
+//overview variables
+var embed =[];
+var dots = [];
+var displayDots=[];
+var startIndex=0;
+var limit=5;
+var endIndex=startIndex+limit;
+var activeSlide =0;
+var totalvideos = 0;
+var movieName="";
+
+
 var selectedgenre = []
 setGenre();
 function setGenre(){
@@ -40,7 +52,6 @@ genres.forEach(genre =>{
                     selectedgenre.push(genre.id);
                 }
             }
-            console.log(selectedgenre);
          getMovies(API_URL+'&with_genres='+encodeURI(selectedgenre.join(',')));
          highlightsel();
         })
@@ -76,9 +87,6 @@ function clearbtn(){
         })
         tagsel.append(clear);
     }
-
-
-    
 }
 
 getMovies(API_URL);
@@ -102,7 +110,6 @@ function getMovies(url){
             }else{
                 prev.classList.remove('disabled');
                 next.classList.remove('disabled');
-
             }
             tagsel.scrollIntoView({behavior:'smooth'})
         }else{
@@ -126,7 +133,7 @@ function showMovies(data){
                 <span class="${getColor(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-                <h3>Overview</h3>
+                <h3>${title}</h3>
                 ${overview}
                 <br/>
                 <button class="know-more" id="${id}">Know more</button>
@@ -135,27 +142,30 @@ function showMovies(data){
         `
         main.appendChild(moviel);
         document.getElementById(id).addEventListener('click',()=>{
-            console.log(id);
+            startIndex=0;
+            endIndex=startIndex+limit;
+            displayDots=[];
+            embed=[];
+            dots=[];
             openNav(movie);
         })
     });
 }
+
+
 const overlaycontent = document.getElementById('overlay-content');
 function openNav(movie) {
     let id = movie.id;
     fetch(BASE_URL+'/movie/'+id+'/videos?'+API_KEY).then(res=>res.json()).then(videoData=>{
-        console.log(videoData);
         if(videoData){
             document.getElementById("myNav").style.width = "100%";
             if(videoData.results.length>0){
-                var embed =[];
-                var dots = [];
-                
+                endIndex=Math.min(endIndex,videoData.results.length);
                 videoData.results.forEach((video,idx)=>{
                     let {name,key,site}=video
                     if(site=='YouTube'){
                     embed.push(`
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="890" height="500" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     
                     `)
                     dots.push(`
@@ -163,18 +173,11 @@ function openNav(movie) {
                     `)
                 }
                 })
-                var content = `
-                
-                <h1 class="noresul">${movie.original_title}</h1>
-                <br/>
-                ${embed.join('')}
-                <br/>
-                <div class="dots">${dots.join('')}</div>
-                `
-                
-                overlaycontent.innerHTML = content;
                 activeSlide=0;
-                showVideos();
+                startIndex=0;
+                totalvideos=embed.length;
+                movieName=movie.original_title;
+                updateContent();
             }else{
                 overlaycontent.innerHTML = `<h1 class="noresul">No Results Found</h1>`;
             }
@@ -183,16 +186,14 @@ function openNav(movie) {
     document.getElementById("myNav").style.width = "100%";
   }
   
-  /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
-  var activeSlide =0;
-  var totalvideos = 0;
+
   function showVideos(){
     let embedclasses = document.querySelectorAll('.embed');
     let dots = document.querySelectorAll('.dot');
-    totalvideos=embedclasses.length;
+    
     embedclasses.forEach((embedTag,idx)=>{
         if(activeSlide==idx){
             embedTag.classList.add('show')
@@ -204,7 +205,15 @@ function openNav(movie) {
         }
     })
     dots.forEach((dot,indx)=>{
-        if(activeSlide==indx){
+        dot.addEventListener('click',()=>{
+            activeSlide=startIndex+indx;
+            startIndex=Math.min(totalvideos-limit,activeSlide);
+            updateContent();
+            console.log(indx);
+            console.log(startIndex,endIndex);
+            console.log(activeSlide);
+        })
+        if(activeSlide==indx+startIndex){
             dot.classList.add('active');
         }else{
             dot.classList.remove('active');
@@ -215,21 +224,48 @@ function openNav(movie) {
   const rightArrow = document.getElementById('right-arrow')
   leftArrow.addEventListener('click',()=>{
     if(activeSlide>0){
-        activeSlide --;
+        activeSlide--;
+        startIndex=Math.max(activeSlide-limit+1,0);
+        updateContent();
     }else{
-    activeSlide = totalvideos-1;
+        activeSlide = totalvideos-1;
+        startIndex=Math.max(activeSlide-limit+1,0);
+        updateContent();
     }
     showVideos();
   })
 
   rightArrow.addEventListener('click',()=>{
     if(activeSlide<(totalvideos-1)){
-        activeSlide ++;
+        activeSlide++;
+        startIndex=Math.min(totalvideos-limit,activeSlide);
+        if(startIndex<0) startIndex=0;
+        updateContent();
     }else{
-activeSlide = 0;
+        activeSlide = 0;
+        startIndex=0;
+        updateContent();
     }
     showVideos();
   })
+
+function updateContent(){
+    endIndex=Math.min(startIndex+limit,totalvideos);    
+    displayDots=dots.slice(startIndex,endIndex);
+    var content = 
+    `<h1 class="noresul">${movieName}</h1>
+    <br/>
+    ${embed.join('')}
+    <br/>
+    <div class="dots">${displayDots.join('')}</div>
+    `
+    overlaycontent.innerHTML = content;
+    showVideos();
+}
+
+
+
+
 function getColor(vote){
     if(vote>=8){
         return 'green';
@@ -278,5 +314,4 @@ function pageCall(page){
         let url = urlSplit[0]+'?'+b;
         getMovies(url);
     }
-
 }
