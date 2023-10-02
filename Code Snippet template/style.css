@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    
+}
+
+.content{
+    font-family: 'Vast Shadow', cursive;
+    font-size: 2rem;
+}
+
+.container{
+    width: 50vw;
+    padding: 29px 0;
+    margin: auto;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+ol{
+    font-weight: 800;
+    font-family: 'Handlee', cursive;
+}
