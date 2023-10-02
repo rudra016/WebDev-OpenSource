@@ -1,0 +1,36 @@
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap'); 
+body{
+	background-image: url('https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(214, 169, 245,0.6);
+  opacity: 0.6;
+  height: 20%;
+  text-align: center;
+
+}
+
+.btn:hover {
+	background-color: purple;
+	color:white;
+	border: 2px solid rgba(214, 169, 245,0.8);
+}
+
+.btn{
+	color: #853eb5; 
+	background-color: white;
+	font-size:25px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media screen and (max-width:992px){
+    .jitsi-container{
+        width: 400px;
+        height: 400px;
+    }
+}
