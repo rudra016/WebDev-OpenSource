@@ -26,7 +26,6 @@ Contact me on:- `alphamale6` at Discord
 <a href="https://github.com/rudra016/WebDev-OpenSource/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource" />
 </a>
-
 </div>
 
 <br>
