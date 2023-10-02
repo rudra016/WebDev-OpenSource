@@ -1,0 +1,47 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Center the content */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the QR code reader container */
+  #reader {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the result container */
+  #result {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+    
+    /* Adjust QR code reader height for smaller screens */
+    #reader {
+      height: 200px;
+    }
+}  
