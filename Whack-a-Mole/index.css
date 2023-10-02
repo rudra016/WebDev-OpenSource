@@ -1,0 +1,58 @@
+/* css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+.hole {
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mole {
+    background-color: #ff6347;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+#timer, #score {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    color: #ff6347;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    #game-board {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+.mole.visible {
+    opacity: 1;
+}
