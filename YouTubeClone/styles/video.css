@@ -1,0 +1,114 @@
+.thumbnail{
+  width: 100%;     /* height will automatically change with width */
+}
+
+
+/* .video_preview{
+   width: 300px;
+   display: inline-block;    /* we dont want <div> to take up the entire line as its a block element and hence we convert it to an inline block element */
+/*   vertical-align: top;      Since they need to align at top ... some title's consume 2 lines and some just 1 */
+/*    margin-right: 15px;  */
+/*  }  */
+
+
+
+
+.video_title{
+  margin-top: 0px;
+  font-weight: 500;
+  line-height: 20px;
+  font-size:14px;
+  color: rgb(33, 37, 41);
+  margin-bottom: 10px;
+}
+
+
+
+
+.video_stats,.channel_name{
+  color: rgb(96, 96, 96);
+  font-size:12px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+
+.channel_name{
+  margin-bottom: 3px;
+}
+
+
+
+
+.channel_logo{
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+
+.video_info{
+  display: inline-block;    /* this feature is also technically not required */
+  /* width: 200px;           (if we keep this constant 200 then video title won't change as we vary the width of out browser)    */
+}
+
+.profile_photo{
+  width: 36px;
+  border-radius: 50px;
+}
+
+
+.thumbnail_row{
+  margin-bottom: 8px;
+  position: relative;      /* but one problem is that now thumbnails will go above the header as they are written below it
+    and since anything that is not position:static will have to obey the rule of which is written first and hence which will go first*/
+  /* default z-index of this is 0 and if we set z-index of header more than 0 ... thumbnail will not go above it  */
+
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;   /* by default I want 4 columns on my browser */
+  column-gap: 16px;
+  row-gap: 40px;
+  /* text-decoration: underline;      (this will make everything underline due to the property of inheritance)              */ 
+}
+
+
+/* now in order to make the website responsive we'll make use of media query */
+/* once the browser size hits 1200px I want only 3 columns */
+@media (max-width: 1200px) {
+  .video_grid{
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+}
+
+/* once the browser size hits 900px I want only 2 columns */
+@media (max-width: 900px) {
+  .video_grid{
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+
+
+
+
+.video-time{
+  position: absolute;
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  right: 5px;
+  bottom: 11px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;           /* this makes padding left,right,top and bottom 4px */
+}
+
+

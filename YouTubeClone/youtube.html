@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>youtube.com Clone</title>
+
+  <!-- fonts that Google use (roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- linking all our stylesheets -->
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+
+
+  <style></style> <!-- not required as we're using different files to organise our css files -->
+
+
+
+
+
+</head>
+
+<body> <!-- this 'style="padding-bottom: 100px"' will make the length of the website longer -->
+
+  <header class="header">
+    <!-- in the header of our project we have 3 sections :-
+   (i) with YouTube logo and 3 horizontal lines
+   (ii) with search bar and microphone logo
+   (iii) 4 different buttons
+
+         so now we create 3 different divs for 3 different divs                -->
+
+    <div class="header_left_section">
+
+      <img class="hamburger-menu" src="header_ico_ns/hamburger-menu.svg">
+      <img class="youtube-logo" src="header_ico_ns/youtube-logo.svg">
+
+    </div>
+
+
+
+
+    <div class="header_middle_section">
+
+      <input type="text" class="search_bar" placeholder="Search">
+
+      <button class="search-button">
+        <img src="header_ico_ns/search.svg" class="search_icon">
+        <div class="tooltip"><!-- creating a tooltip which has to be made inside the button and in order to position it just remember the mantra
+                                  : 'position absolute inside the position relative'-->
+          Search
+        </div>
+      </button>
+
+      <button class="voice-button">
+        <img src="header_ico_ns/voice-search-icon.svg" class="voice_icon">
+        <div class="tooltip">
+          Search with your voice
+        </div>
+      </button>
+
+    </div>
+
+
+
+
+
+    <div class="header_right_section">
+
+      <div class="upload_icon_container">
+        <img src="header_ico_ns/upload.svg" class="upload_icon">
+        <div class="tooltip">
+          Create
+        </div>
+      </div>
+      <div class="YouTube-apps-container">
+        <img src="header_ico_ns/youtube-apps.svg" class="apps_icon">
+        <div class="tooltip">
+          YouTube apps
+        </div>
+      </div>
+      <div class="notification_container">
+        <!-- this has been so that we can declare bell icon as relative and the number 3 as absolute -->
+        <img src="header_ico_ns/notifications.svg" class="notification_icon">
+        <div class="notification_count">
+          3
+        </div>
+        <div class="tooltip">
+          Notifications
+        </div>
+      </div>
+      <img src="header_ico_ns/account.jpg" class="account_icon">
+
+    </div>
+
+
+  </header>
+
+
+
+
+
+
+
+
+  <nav class="sidebar">
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/home.svg">
+      <div>Home</div>
+    </div>
+
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/explore.svg">
+      <div>Explore</div>
+    </div>
+
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/originals.svg">
+      <div>Originals</div>
+    </div>
+
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+
+
+    <div class="sidebar-link">
+      <img src="sidebar_icons/library.svg">
+      <div>Library</div>
+    </div>
+
+
+  </nav>
+
+
+
+
+
+
+  <main>
+
+    <section class="video_grid">
+
+      <!-- first thumbnail  -->
+      <div class="video_preview">
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/mkbhd.webp">
+          <div class="video-time">
+            14:20
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-1.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="channel_name">
+              Marques Brownlee
+            </p>
+            <p class="video_stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- second thumbnail  -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/dont%20laugh.webp">
+          <div class="video-time">
+            8:22
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-2.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="channel_name">
+              Markiplier
+            </p>
+            <p class="video_stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- third thumbnail  -->
+      <div class="video_preview">
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/girl.webp">
+          <div class="video-time">
+            9:13
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-3.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+            <p class="channel_name">
+              SSSniperWolf
+            </p>
+            <p class="video_stats">
+              12M views &#183; 1 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+      <!-- fourth thumbnail  -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/veritasium.webp">
+          <div class="video-time">
+            22:09
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-4.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class="channel_name">
+              Veritasium
+            </p>
+            <p class="video_stats">
+              18M views &#183; 4 months ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- fifth thumbnail  -->
+      <div class="video_preview">
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/kadane.webp">
+          <div class="video-time">
+            11:17
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-5.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+            <p class="channel_name">
+              CS Dojo
+            </p>
+            <p class="video_stats">
+              519K views &#183; 5 years ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- sixth thumbnail  -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/mrbeast.webp">
+          <div class="video-time">
+            19:59
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-6.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Anything You Can Fit In The Circle I’ll Pay For
+            </p>
+            <p class="channel_name">
+              MrBeast
+            </p>
+            <p class="video_stats">
+              141M views &#183; 1 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- seventh thumbnail  -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/reallifelore.webp">
+          <div class="video-time">
+            10:13
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-7.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Why Planes Don't Fly Over Tibet
+            </p>
+            <p class="channel_name">
+              RealLifeLore
+            </p>
+            <p class="video_stats">
+              6.6M views &#183; 1 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <!-- eighth thumbnail  -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/firstclass.webp">
+          <div class="video-time">
+            7:12
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-8.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Inside The World's Biggest Passenger Plane
+            </p>
+            <p class="channel_name">
+              Tech Vision
+            </p>
+            <p class="video_stats">
+              3.7M views &#183; 10 months ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <!-- ninth thumbnail dontlaugh -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/motivation.webp">
+          <div class="video-time">
+            13:17
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-9.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              The SECRET to Super Human STRENGTH
+            </p>
+            <p class="channel_name">
+              ThenX
+            </p>
+            <p class="video_stats">
+              20M views &#183; 3 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <!-- tenth thumbnail dontlaugh -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/gourmet.webp">
+          <div class="video-time">
+            7:53
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-10.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+            </p>
+            <p class="channel_name">
+              Business Insider
+            </p>
+            <p class="video_stats">
+              14M views &#183; 1 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- eleventh thumbnail dontlaugh -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/underwater.webp">
+          <div class="video-time">
+            4:10
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-11.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+            </p>
+            <p class="channel_name">
+              Destination Tips
+            </p>
+            <p class="video_stats">
+              3M views &#183; 1 year ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- twelfth thumbnail dontlaugh -->
+      <div class="video_preview">
+
+
+        <!-- first vertical layout row -->
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnails/thumbnail_vid/tedx.webp">
+          <div class="video-time">
+            4:51
+            <!-- in order to make 14:20 inside the thumbnail ... make thumbnail div relative and video-time absolute -->
+          </div>
+        </div>
+
+
+        <!-- second vertical layout row -->
+        <div class="video-info-grid">
+
+
+          <!-- 1st horizontal layout for channel logo -->
+          <div class="channel_logo">
+            <img class="profile_photo" src="thumbnails/channel_logo/channel-12.jpg">
+          </div>
+
+
+          <!-- 2nd horizontal layout for text stuff -->
+          <div class="video_info">
+            <p class="video_title">
+              What would happen if you didn’t drink water? - Mia Nacamulli
+            </p>
+            <p class="channel_name">
+              TED-Ed
+            </p>
+            <p class="video_stats">
+              12M views &#183; 5 years ago
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- there are 3 types of elements
+  1) block element    eg: <p>,<div>  (they take up the entire line)
+  2) inline block element   eg: <img>,<input>    (they take as much space as needed only)
+  3) inline element   eg: <strong> ... </strong> will make it bold     (appear withing a line of text)             -->
+
+  <!-- you can convert from block to inline block and vice versa using display element
+            like         display : inline bock given in any class
+
+Our image is an inline block element and coz of that search bar is on the same row ... in order to change that we can
+make image a block element
+
+
+<div> ==> stands for division, but it's just a box , works just like a container
+
+NESTED LAYOUT TECHNIQUE :
+WE CREATE TWO <div>
+==> for vertical layout we allow the two <div> to stay as they are as by default they are block element and that's what we want
+==> for horizontal layout we'll change both the <div> to inline block element as we want them to take as much space as needed only
+
+
+  SEMANTIC ELEMENTS
+  At the end we must replace some of our <div> elements with semantic elements like header,nav,section
+  They are same as <div> but with some meaning for screen readers
+
+
+
+            -->
+
+
+
+
+</body>
+
+</html>
