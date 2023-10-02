@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    box-sizing: border-box;  
+}
+.nav{
+    position:static;
+    background-color: rgb(113, 113, 113);
+    padding: 20px;
+    text-align: center;
+}
+.nav h3{
+    font-size: 2rem;
+}
+.nav h3:hover{
+    color: rgb(166, 166, 166);
+    cursor: pointer;
+}
+/* MAIN */
+
+.container{
+    /* height: 90vh; */
+    padding: 80px;
+    display:flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.gameContainer{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.gameInfo{
+    display:flex;
+    flex-direction: column;
+}
+.gameInfo h1{
+    font-size: 5vh;
+}
+
+.info{
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.gameInfo div{
+    margin: 1vw 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.box{
+    border: 2px black solid;
+    font-size: 8vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.box:hover{
+    background-color: #fce0ff;
+    cursor: pointer;
+}
+
+.win{
+    width: 14vw;
+    display: none;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    padding: 5px;
+    width: 50%;
+    background-color: #ad53b7;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+#reset:hover{
+    background-color: #7b2e84;
+    cursor: pointer;
+}
