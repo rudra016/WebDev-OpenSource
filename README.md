@@ -1,8 +1,7 @@
 <img align="right" src="https://img.shields.io/github/repo-size/rudra016/WebDev-OpenSource?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
 
-# Open Source web development
-
-<img src="https://socialify.git.ci/rudra016/WebDev-OpenSource/image?description=1&descriptionEditable=A%20Open%20Source%20Repo%20for%20all%20Web%20development%20fans%20%3A)&font=KoHo&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Light" alt="WebDev-OpenSource" width="1080" height="720" />
+# Open Source Web Development
+<img src="https://socialify.git.ci/rudra016/WebDev-OpenSource/image?description=1&descriptionEditable=A%20Open%20Source%20Repo%20for%20all%20Web%20development%20fans%20%3A)&font=KoHo&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Light" alt="WebDev-OpenSource" width="1280" height="720" />
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
 </p>
