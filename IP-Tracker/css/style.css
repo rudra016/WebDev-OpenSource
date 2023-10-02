@@ -1,0 +1,264 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #000000;
+    /* background-image: url("https://www.pandasecurity.com/en/mediacenter/src/uploads/2019/07/pandasecurity-How-do-hackers-pick-their-targets.jpg"); */
+}
+img{
+    margin-top: 3.1%;
+    margin-left: 23%;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin-left: 45%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: none;
+    margin-left: 5%;
+    padding: 0.4rem 0.6rem;
+    background-color: rgb(42, 220, 233);
+    color:rgb(0, 0, 0);
+}
+.home:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.container .intro{
+    font-family: 'Pattaya', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+    position: absolute; 
+    top: 0;
+    color: azure;
+}
+.container .intro1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: oblique;
+    position: absolute; 
+    padding-left: 100px;
+    margin-top:5%;
+    margin-bottom: 0.5%;
+    color: darkblue;
+}
+.lookup_ip{
+    border:none;
+    font-weight: 900;
+    font-size: small;
+    background: #0a1931;
+    color:azure;
+    position: absolute; 
+    padding-left: 150px;
+    margin-top:11%;
+    padding: 0.8rem 1.6rem;
+    border-radius: 25px;
+    background: rgb(33, 85, 153);
+}
+.lookup_ip:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.details{
+    color:rgb(23, 175, 155);
+    display: "flex";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    font-family: 'Montserrat',sans-serif;
+    font-size: smaller;
+}
+@media only screen and (max-device-width:768px){
+    .intro{
+        margin-left: 0%;
+    }
+    img{
+        margin-left: 0%;
+        width:100%;
+        height:75%;
+        padding-bottom: 4%;
+    }
+    .container .intro1{
+        font-family: 'Montserrat',sans-serif;
+        font-size: medium;
+        padding-left:2%;
+    }
+    .lookup_ip{
+        margin-top: 15%;
+        padding: 0.4rem 0.8rem;
+    }
+    .details{
+        margin-left: 20%;
+        padding-bottom: 7%;
+    }
+    .home{
+        margin-left: 5%;
+        padding: 0.4rem 0.6rem;
+        background-color: rgb(22, 125, 133);
+        color:rgb(170, 167, 167);
+    }
+    .home:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .intro{
+        margin-left: 0%;
+    }
+    img{
+        margin-left: 0%;
+        width:100%;
+        height:75%;
+        padding-bottom: 0%;
+    }
+    .container .intro1{
+        font-family: 'Montserrat',sans-serif;
+        font-size: medium;
+        padding-left:2%;
+    }
+    .lookup_ip{
+        margin-top: 13%;
+        padding: 0.4rem 0.8rem;
+    }
+    .details{
+        margin-left: 30%;
+        padding-bottom: 7%;
+    }
+    .home{
+        margin-left: 5%;
+        padding: 0.4rem 0.6rem;
+        background-color: rgb(22, 125, 133);
+        color:rgb(170, 167, 167);
+    }
+    .home:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .intro{
+        margin-right: 0%;
+    }
+    img{
+        margin-left: 15%;
+        height:100%;
+        width:75%;
+        padding-top: 0%;
+    }
+    .container .intro1{
+        font-family: 'Montserrat',sans-serif;
+        font-size: medium;
+        padding-right:2%;
+    }
+    .lookup_ip{
+        margin-top: 13%;
+        padding: 0.4rem 0.8rem;
+    }
+    .details{
+        margin-right: 30%;
+        padding-bottom: 7%;
+    }
+    .home{
+        margin-left: 5%;
+        padding: 0.4rem 0.6rem;
+        background-color: rgb(22, 125, 133);
+        color:rgb(170, 167, 167);
+    }
+    .home:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .intro{
+        margin-right: 0%;
+    }
+    img{
+        margin-left: 25%;
+        height:50%;
+        width:50%;
+        padding-bottom: 1%;
+    }
+    .container .intro1{
+        font-family: 'Montserrat',sans-serif;
+        font-size: medium;
+        padding-right:2%;
+        margin-top: 0%;
+    }
+    .lookup_ip{
+        margin-top: 7%;
+        padding: 0.3rem 0.6rem;
+    }
+    .details{
+        margin-left: 30%;
+        padding-bottom: 7%;
+    }
+    .home{
+        margin-left: 5%;
+        padding: 0.4rem 0.6rem;
+        background-color: rgb(22, 125, 133);
+        color:rgb(170, 167, 167);
+    }
+    .home:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .intro{
+        margin-right: 0%;
+    }
+    img{
+        margin-left: 15%;
+        margin-top: 11%;
+        height:100%;
+        width:75%;
+        padding-bottom: 1%;
+    }
+    .container .intro1{
+        font-family: 'Montserrat',sans-serif;
+        font-size: medium;
+        padding-right:2%;
+        margin-top: 5%;
+    }
+    .lookup_ip{
+        margin-top: 25%;
+        padding: 0.3rem 0.6rem;
+    }
+    .details{
+        margin-left: 15%;
+        padding-bottom: 7%;
+    }
+    .home{
+        margin-left: 5%;
+        padding: 0.4rem 0.6rem;
+        background-color: rgb(22, 125, 133);
+        color:rgb(170, 167, 167);
+    }
+    .home:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
