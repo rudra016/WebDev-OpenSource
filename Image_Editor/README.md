@@ -17,10 +17,10 @@ You can also reset the image, and after you have done with editing the image, yo
 
 
 ## Screenshot
-![Image editor](image.png)
+![Image editor](Image_Editor/image.png)
 
 
-![Image Editor, with a photo](image-1.png)
+![Image Editor, with a photo](Image_Editor/image-1.png)
 
 
 ### Multiple features can be added, like:
