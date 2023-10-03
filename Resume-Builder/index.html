@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="rawform">
+        <h1>Please Fill out This Form</h1>
+    <div class="elements personalinfo">
+        <fieldset>
+        <legend>Presonal Info</legend>
+        <label for="name">Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="email" id="email"><br>
+        <label for="contactno">Contact No.: </label>
+        <input type="text" name="contactno" id="contactno">
+        </fieldset>
+    </div>
+    <div class="elements education">
+        <fieldset>
+        <legend>Educational Qualification</legend>
+        <label for="school">School : &nbsp;</label>
+        <input type="text" name="school" id="school"><br>
+        <label for="college">College : </label>
+        <input type="text" name="college" id="college"><br>
+        <label for="course">Course : &nbsp;</label>
+        <input type="text" name="course" id="course"><br>
+    </fieldset>
+    </div>
+    <div class="elements experience">
+    <fieldset>
+        <legend>Work Experience</legend>
+        <label for="comp1">Company1:</label>
+        <input type="text" name="comp1" id="comp1"><br>
+        <label for="comp1dur">Duration:</label>
+        <input type="text" name="comp1dur" id="comp1dur"><br>
+        <label for="comp1info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Info : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea name="comp1info" id="comp1info" cols="40" rows="5"></textarea><br>
+        <label for="comp1">Company2:</label>
+        <input type="text" name="comp2" id="comp2"><br>
+        <label for="comp1dur">Duration :</label>
+        <input type="text" name="comp2dur" id="comp2dur"><br>
+        <label for="comp1info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Info :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea name="comp2info" id="comp2info" cols="40" rows="5"></textarea>
+        </fieldset>
+    </div>
+    <div class="elements ack">
+    <fieldset>
+        <legend>Acknowledgements & Achievements</legend>
+        <label for="achieve">Achievements   : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea name="achieve" id="achieve" cols="40" rows="5"></textarea><br>
+        <label for="acknow">Acknowledgements : </label>
+        <textarea name="acknow" id="acknow" cols="40" rows="5"></textarea>
+    </fieldset>
+    </div>
+
+    <button id="submit" type="button" onclick="myfunc()">Submit</button>
+</div>
+
+<div id="container">
+    <div class="upper">
+        <div class="leftbox"></div>
+        <div class="namebox">
+            <h2 id="outname">Name</h2>
+            <h4>Email : <span id="outemail">abc@fhf</span></h4><br><br>
+            <h4>Contact no. <span id="outcontactno">9858555555</span></h4>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="left">
+            <h2>Educational Qualifications : </h2><br>
+            <div><h3>School :</h3> <span id="outschool">ednejkds</span></div>
+            <div><h3>College :</h3> <span id="outcollege">ednejkds</span></div>
+            <div><h3>Course :</h3> <span id="outcourse">ednejkds</span></div><br><br><br>
+            <h2>Work Experience : </h2><br>
+            <div><h3>Company -1</h3> : <span id="outcomp1">ednejkds</span></div>
+            <div><h4>Duration :</h4> <span id="outcomp1dur">ednejkds</span></div>
+            <div id="outcomp1info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat molestiae sint illo consectetur iusto tempore perferendis repellat quia hic.</div><br><br>
+            <div><h3>Company -2</h3> : <span id="outcomp2">ednejkds</span></div>
+            <div><h4>Duration :</h4> <span id="outcomp2dur">ednejkds</span></div>
+            <div id="outcomp2info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat molestiae sint illo consectetur iusto tempore perferendis repellat quia hic.</div>
+        </div>
+        <div class="right">
+            <h2>Achievements</h2><br>
+            <div id="outachieve">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil perspiciatis officiis, consequuntur quisquam architecto, suscipit deserunt animi dolorem inventore eos nam labore accusantium eveniet aliquam? Accusamus sit voluptatem dolorum tempora?</div><br><br>
+            <h2>Acknowledgements</h2><br>
+            <div id="outacknow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est quam quaerat voluptate culpa totam, non quidem quo deserunt optio a, qui voluptatem architecto sint. Eaque praesentium aliquid pariatur quibusdam.</div>
+        </div>
+    </div>
+
+    <button onclick="print()" id="download">Download</button>
+</div>
+
+
+</body>
+</html>
