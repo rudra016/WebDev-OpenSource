@@ -1,52 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap'); 
 body{
-    box-sizing: border-box;
-    background:#262626 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-.wrapper{
-    width: 500px;
+	background-image: url('https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Baloo Bhai 2', cursive;
 }
 
-.wrapper .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.wrapper h1{
-    color: white;
-}
-.wrapper .header .btn{
-    padding: 10px;
-    cursor: pointer;
-    
-    background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    
-}
-.showcase{
-    background: white;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 5px;
-    border:0;
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(214, 169, 245,0.6);
+  opacity: 0.6;
+  height: 20%;
+  text-align: center;
 
 }
-.wrapper .header .btn:hover{
-    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    transition: 0.2s ease-in-out;
+
+.btn:hover {
+	background-color: purple;
+	color:white;
+	border: 2px solid rgba(214, 169, 245,0.8);
+}
+
+.btn{
+	color: #853eb5; 
+	background-color: white;
+	font-size:25px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media screen and (max-width:992px){
+    .jitsi-container{
+        width: 400px;
+        height: 400px;
+    }
 }

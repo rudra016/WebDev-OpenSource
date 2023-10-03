@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>OR Code Generator</title>
+
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #9f844089">
+        <a class="navbar-brand" href="#">
+            <h3><b>Free QR Code</b></h3>
+        </a>
+        </ul>
+        <div class="Theme">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-3xl font-bold mb-5 md:text-4xl" style="color:rgb(35, 33, 33)">QR Code Generator</h1>
+        <p class="mb-4">
+            QR Codes allow smartphone users to access your website simply and
+            quickly.
+        </p>
+        <!-- <p>
+                    Enter your URL below to generate a QR Code 
+                </p>
+            </div> -->
+        <!-- <div class="container"> -->
+        <p>Enter your Text or URL</p>
+        <input type="text" placeholder="URL" id="qrText" />
+        <div id="imgBox">
+            <img src="" id="qrImage" />
+        </div>
+        <button onclick="generateQR()">Generate QR Code</button>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+    <img class="image1" src="10.png" alt="Image"></img>
+</body>
+
+</html>

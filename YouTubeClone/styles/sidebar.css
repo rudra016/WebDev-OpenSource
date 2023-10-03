@@ -1,0 +1,34 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;   /* this will display all names in vertical way */
+  cursor: pointer;
+}
+
+.sidebar-link:hover{       /* this :hover is used to indicate what happens when we hover our cursor on it */
+  background-color: rgb(235,235,235);
+}
+
+.sidebar-link img {     /* this means that we are targeting all the images in the sidebar-link class */
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+
+.sidebar-link div {      /* this means that we are targeting all the div in the sidebar-link class */
+  font-size: 10px;
+}
