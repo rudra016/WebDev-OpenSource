@@ -25,7 +25,9 @@ You can also reset the image, and after you have done with editing the image, yo
 
 ### Multiple features can be added, like:
 -adding stickers to the image.
+
 -adding text to the image.
+
 -resizing the image.
 
 
