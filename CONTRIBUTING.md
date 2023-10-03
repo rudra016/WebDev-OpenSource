@@ -11,7 +11,7 @@ Sign up via the hacktoberfest account as a contributor at https://hacktoberfest.
 You can contribute to the repository in following ways:
 
 - Creating Issue
-- As a designer:
+- As a designer
 - Creating Pull Request for Issues.
 - All of the above
 
@@ -19,14 +19,14 @@ You can contribute to the repository in following ways:
 
 Lets use know about the issue you have found in WebDev-Source by submitting [issue.](https://github.com/rudra016/WebDev-OpenSource/issues/new)
 
-_We would like to add the relevant `title`, `description` and any other `media file` that would be easier to understand the issue that you have submitted._
+_We would like to request you to add the relevant `title`, `description` and any other `media file` that would be easier to understand the issue that you have submitted._
 
 ### As a Designer
 
 - Create a PR under the folder "designs" that will be available at the root of this repository
 - Wait for your PR to get accepted
 
-    _Note: Setting up project, making changes and creating pull request is describe below._
+    _Note: Setting up project, making changes and creating pull request is describe [below](#fork-clone-change-and-pull-request)._
 
 ### Creating Pull Request for Issues
 
@@ -34,7 +34,7 @@ _We would like to add the relevant `title`, `description` and any other `media f
 
 - Feel free to checkout all the issue, and request the author to assign you the issue(_if not assigned_).
 
-- After author have assigned you issues, make the necessary changes and open pull request as shown in below.
+- After author have assigned you issues, make the necessary changes and open pull request as shown in [below](#fork-clone-change-and-pull-request).
 
 ## Fork, Clone, Change and Pull Request
 ### Setting up Repository
