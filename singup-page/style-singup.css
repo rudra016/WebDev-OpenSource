@@ -1,0 +1,238 @@
+* {
+ padding: 0;
+ margin: 0;
+}
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #ECECEC;
+}
+.container {
+ margin: 20px;
+ margin-top: 40px;
+ width: 350px;
+ height: 600px;
+ border-radius: 50px;
+ background: url(singup-background.jpg);
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ position: relative;
+}
+.title-h1 {
+ font-size: 2rem;
+ font-weight: 500;
+ font-family: 'Fredoka One', fantasy;
+ position: absolute;
+ top: 40px;
+ left: 30px;
+}
+.input-box {
+ display: flex;
+ flex-flow: column;
+}
+.input-box input {
+ padding: 10px;
+ margin: 10px;
+ width: 250px;
+ color: #fff;
+ border: none;
+ outline: none;
+ font-size: 1rem;
+ font-weight: 500;
+ font-family: 'Fredoka One', fantasy;
+ border-bottom: 1px solid #ececec;
+ background: none;
+}
+.name {
+ transition: 0.5s;
+ position: absolute;
+ top: 200px;
+ left: 20px;
+}
+.name:hover {
+ position: absolute;
+ top: 195px;
+}
+.fa-user {
+ color: #fff;
+ font-size: 1rem;
+ position: absolute;
+ top: 220px;
+ left: 15px;
+}
+.email {
+ transition: 0.5s;
+ position: absolute;
+ top: 280px;
+ left: 20px;
+}
+.email:hover {
+ position: absolute;
+ top: 275px;
+}
+.fa-envelope {
+ color: #fff;
+ font-size: 1rem;
+ position: absolute;
+ top: 300px;
+ left: 15px;
+}
+.password {
+ transition: 0.5s;
+ position: absolute;
+ top: 360px;
+ left: 20px;
+}
+.password:hover {
+ position: absolute;
+ top: 355px;
+}
+.fa-lock {
+ color: #fff;
+ font-size: 1rem;
+ position: absolute;
+ top: 380px;
+ left: 15px;
+}
+.input-box input::placeholder {
+ font-size: 1rem;
+}
+.title-h3 {
+ font-size: 2.25rem;
+ letter-spacing: 2px;
+ font-weight: 500;
+ font-family: 'Fredoka One', fantasy;
+ position: absolute;
+ bottom: 120px;
+ left: 40px;
+}
+.btn {
+ padding: 15px;
+ border: none;
+ background: #232323;
+ border-radius: 100%;
+ position: absolute;
+ bottom: 110px;
+ left: 220px;
+}
+.fa-arrow-right {
+ color: #fff;
+ font-size: 1.5rem;
+}
+.title-h5 {
+ font-size: 1rem;
+ font-weight: 500;
+ font-family: 'Fredoka One', fantasy;
+ font-family: 'Fredoka One', fantasy;
+ position: absolute;
+ bottom: 20px;
+}
+.title-h5 a {
+ color: #FF5E0B;
+ font-size: 1.25rem;
+ text-decoration: none;
+}
+
+.btn {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes btn {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+.title-h1 {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes title-h1 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
