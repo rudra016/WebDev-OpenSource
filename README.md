@@ -16,7 +16,7 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow).
 
 ### Hacktoberfest
-For the Hacktoberfest you can raise an issue on what you want to contribute and I will assign it for you. 
+For Hacktoberfest, you can raise an issue regarding what you would like to contribute, and I will assign it to you.
 Contact me on:- `alphamale6` at Discord
 
 ## Code of Conduct:
