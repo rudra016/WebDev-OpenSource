@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-nav p {
+    color: #031b4e;
+    margin-right: 5px;
+}
+
+.right-nav a {
+    font-family: monospace;
+    font-size: 1rem;
+    color: #0061EB;
+}
+
+.right-nav a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.login-form {
+    width: 50%;
+}
+
+.login-box {
+    width: 480px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: rgba(11, 43, 158, 0.15) 0px 6px 20px;
+    height: 564px;
+    margin-top: 2.9rem;
+}
+
+.login-box h1 {
+    text-align: center;
+    padding-top: 1.9rem;
+}
+
+.login-box label {
+    display: block;
+}
+
+label {
+    color: rgb(0, 105, 255);
+    font-size: 1rem;
+    padding: 4px 0;
+}
+
+label span {
+    color: #ff3a3e;
+    font-size: 1.2rem;
+}
+
+.email-box,
+.pass-box {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+#email,
+#password {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(135, 148, 176);
+    color: rgb(3, 27, 78);
+    ;
+    font-size: 16px;
+}
+
+.btn-box {
+    width: 80%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+#login-btn {
+    width: 100%;
+    background-color: rgb(0, 97, 235);
+    color: white;
+    padding: 12px 8px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+#login-btn:hover {
+    background: rgb(51, 135, 255);
+}
+
+hr {
+    color: rgb(214, 220, 234);
+    width: 80%;
+    margin: 30px auto;
+}
+
+.google-box,
+.github-box {
+
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
+.google-box button,
+.github-box button {
+    width: 100%;
+    color: black;
+    padding: 6px 8px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid rgb(135, 148, 176);
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.google-box button img,
+.github-box button img {
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+    margin-right: 6px;
+}
+
+.github-box button:hover,
+.google-box button:hover {
+
+    background-color: rgb(0, 97, 235);
+    color: white;
+}
+
+.forget-pass {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.forget-pass a {
+    font-family: monospace;
+    font-size: 1rem;
+    color: #0061EB;
+}
+
+.forget-pass a:hover {
+    text-decoration: none;
+}
+
+.content {
+    width: 50%;
+    background: url('/imgs/bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-title h1,
+.content-para {
+    color: white;
+    font-weight: bold;
+}
+
+.content-title h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.content-para {
+    font-size: 1.1rem;
+    line-height: 32px;
+}
+
+.content-box {
+    max-width: 70%;
+    margin: auto;
+}
+
+.content-box button {
+    padding: 14px 10px;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #0061EB;
+    ;
+    border: 1px solid #0061EB;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.content-box button:hover {
+    background-color: #0061EB;
+    color: white;
+}
