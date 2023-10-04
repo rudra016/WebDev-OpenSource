@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <title>YouTube Video Downloader</title>
+    <head>
+		<link rel="icon" type="image/x-icon" href="../favicon/youtube-logo-2431.png">
+    <style>
+        body {
+	margin:0;
+	font-family:arial,tahoma,sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	direction:ltr;
+    background:rgb(5, 11, 31);
+	
+}
+h1,h2,h3{
+    color: white;
+
+}
+h1,p{
+	text-align: center;
+}
+p{
+	font-size: 16;
+}
+ul,li,div,p{
+	color: #DDC3A5
+}
+
+form {
+	margin:10% auto 0 auto;
+	padding:30px;
+	width:400px;
+	height:auto;
+	overflow:hidden;
+	background:rgb(17, 17, 51);
+	border-radius:50px;
+	
+}
+form :hover{
+	opacity:0.4;
+	color:#201c1c;
+}
+form label {
+	font-size:14px;
+	color:darkgray;
+	cursor:pointer;
+}
+form label,
+form input {
+	float:left;
+	clear:both;
+}
+
+form input {
+	margin:15px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:50px;
+	display:inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+
+input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:#1c1441;
+	border:none;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	
+	clear:right;
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+	color:#DDC3A5 ;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Download YouTube Video</h1>
+    <form action="/" method="POST">
+        <label for="video_url">Enter YouTube URL:</label>
+        <input type="text" id="video_url" name="video_url" required>
+        <br><br>
+        <input type="submit" value="Download">
+    </form>
+    
+</body>
+</html>
