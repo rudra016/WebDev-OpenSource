@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #d0d0d0;
+}
+
+.message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Beautiful Restart Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
