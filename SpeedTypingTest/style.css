@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.cardss {
+    text-align: center;
+
+}
+
+.container {
+    background-color: #dac0ff;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.mainheading {
+    color: #690cb0;
+    font-weight: bold;
+    padding: 10px;
+
+
+}
+
+.para {
+    color: #3e4c59;
+    padding: 10px;
+}
+
+.alrms {
+    height: 90px;
+}
+
+.paras {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.spans {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.card {
+    background-color: #f3eaff;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.textarea {
+    margin: 20px;
+    border-color: yellow;
+}
+
+.parass {
+    margin: 10px;
+    font-weight: medium;
+
+    color: #3e4c59;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+}
+
+.right {
+    color: #690cb0;
+    font-weight: bold;
+
+}
