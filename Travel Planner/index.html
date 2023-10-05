@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    <div class="container">
+        <form id="tripForm">
+            <h2>Plan Your Trip</h2>
+            <div id="destinations">
+                <div class="destination">
+                    <label for="destination">Destination:</label>
+                    <input type="text" class="destination-input" required>
+                    <label for="date">Date:</label>
+                    <input type="date" class="date-input" required>
+                </div>
+            </div>
+            <button type="button" id="addDestinationBtn">Add Destination</button>
+            <button type="button" id="submitBtn">Plan Trip</button>
+        </form>
+        <div id="tripDetails">
+            <h2>Your Trip Details</h2>
+            <div id="destinationList"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tripForm = document.getElementById("tripForm");
+            const tripDetails = document.getElementById("tripDetails");
+            const destinationList = document.getElementById("destinationList");
+            const addDestinationBtn = document.getElementById("addDestinationBtn");
+
+            // Function to add a new destination input field
+            function addDestinationField() {
+                const newDestination = document.createElement("div");
+                newDestination.classList.add("destination");
+                newDestination.innerHTML = `
+                    <label for="destination">Destination:</label>
+                    <input type="text" class="destination-input" required>
+                    <label for="date">Date:</label>
+                    <input type="date" class="date-input" required>
+                `;
+                document.getElementById("destinations").appendChild(newDestination);
+            }
+
+            // Add destination input fields when the "Add Destination" button is clicked
+            addDestinationBtn.addEventListener("click", addDestinationField);
+
+            // Display trip details when the "Plan Trip" button is clicked
+            document.getElementById("submitBtn").addEventListener("click", function () {
+                const destinationInputs = document.querySelectorAll(".destination-input");
+                const dateInputs = document.querySelectorAll(".date-input");
+
+                destinationList.innerHTML = ""; // Clear previous trip details
+
+                for (let i = 0; i < destinationInputs.length; i++) {
+                    const destination = destinationInputs[i].value;
+                    const date = dateInputs[i].value;
+
+                    const tripItem = document.createElement("div");
+                    tripItem.innerHTML = `<p><strong>Destination:</strong> ${destination}</p><p><strong>Date:</strong> ${date}</p>`;
+                    destinationList.appendChild(tripItem);
+                }
+
+                tripForm.style.display = "none";
+                tripDetails.style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>
