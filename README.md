@@ -30,7 +30,7 @@ Contact me on:- `alphamale6` at Discord
 <br/>
 <div align="center">
 <a href="https://github.com/rudra016/WebDev-OpenSource/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource&max=100&columns=11" width=97%" />
+  <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource&max=100&columns=11&anon=0" width=97%" />
 </a>
 </div>
 
