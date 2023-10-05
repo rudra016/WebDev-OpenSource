@@ -1,0 +1,462 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("https://fontsforyou.com/fonts/b/Billabong.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.side-menu {
+  height: 100%;
+  width: 17.5em;
+  border-right: 2px solid #bababa22;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.side-menu img {
+  width: 10em;
+  margin-left: 2em;
+}
+
+.side-menu .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1em;
+}
+
+.side-menu .middle a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu .middle svg {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
+
+.side-menu .middle p {
+  margin-left: 10px;
+}
+
+.side-menu .middle img {
+  margin-left: 0;
+  margin-right: 23px;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.side-menu .bottom a {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu .bottom a svg {
+  margin-right: 1em;
+}
+
+.side-menu .bottom a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.side-menu .middle img {
+  border-radius: 50%;
+}
+
+.main {
+  height: 100%;
+  width: 50%;
+}
+
+.others {
+  width: calc(50% - 17.5em);
+  display: flex;
+  flex-direction: column;
+}
+
+.others .people {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.others .profile .left img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 1em;
+  outline: 2px solid #f05959;
+  outline-offset: 3px;
+}
+
+.others .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4em;
+}
+
+.others .profile .left {
+  display: flex;
+  align-items: center;
+}
+
+.others .profile .right {
+  color: rgb(15, 109, 241);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main .stories {
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  width: 85%;
+  height: 5rem;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.main .stories::-webkit-scrollbar {
+  display: none;
+}
+
+.main .content::-webkit-scrollbar {
+  display: none;
+}
+
+.main .stories img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  outline: 2px solid #f05959;
+  outline-offset: 3px;
+}
+
+.main .content {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.main .content .card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .content .card .user {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.main .content .card .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.main .content .card .user-info small {
+  color: rgb(120, 122, 123);
+}
+
+.main .content .card .user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 1em;
+  outline: 2px solid #f05959;
+  outline-offset: 3px;
+}
+
+.main .content .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main .content .card .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.main .content .card .info .left {
+  display: flex;
+  align-items: center;
+}
+
+.main .content .card .info svg {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin-right: 1em;
+}
+
+.main .content .likes {
+  margin-top: 1em;
+}
+
+.main .content .caption {
+  margin-top: 1em;
+}
+
+.main .content .caption .blue {
+  cursor: pointer;
+  color: blue;
+}
+
+.main .content .comments {
+  margin-top: 1em;
+}
+
+.main .content .comment {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  justify-content: space-between;
+  border-bottom: 2px solid #bababa22;
+  padding-bottom: 1em;
+}
+
+.main input {
+  width: 80%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.others .profile .left .name h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.others .profile .left .name p {
+  color: rgb(120, 122, 123);
+}
+
+.others .suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.others .suggestion h3 {
+  color: rgb(120, 122, 123);
+}
+
+.others .users {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  justify-content: flex-start;
+  width: 65%;
+}
+
+.others .users .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  cursor: pointer;
+}
+
+.others .users .left h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.others .users .left img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 1em;
+  outline: 2px solid #f05959;
+  outline-offset: 3px;
+}
+
+.others .users .left p {
+  color: rgb(120, 122, 123);
+  font-size: 0.9em;
+}
+
+.others .users .right {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  color: rgb(15, 109, 241);
+  cursor: pointer;
+}
+
+.side-menu .small-screen {
+  width: 1.7em;
+  height: 1.7em;
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    width: 84%;
+  }
+
+  .side-menu p {
+    display: none;
+  }
+
+  .side-menu {
+    width: 15%;
+  }
+
+  .side-menu svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .side-menu .small-screen {
+    display: block;
+  }
+
+  .side-menu .big-screen {
+    display: none;
+  }
+
+  .others {
+    display: none;
+  }
+}
+
+.bottombar {
+  display: none;
+}
+
+.topbar {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .others {
+    display: none;
+  }
+  .side-menu {
+    display: none;
+  }
+  .main {
+    margin-top: 5em;
+    width: 100%;
+    height: calc(100vh - 5em - 3.5em);
+  }
+
+  .bottombar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3.5em;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid #bababa22;
+    align-items: center;
+  }
+  .bottombar svg {
+    width: 2em;
+    height: 2em;
+  }
+
+  .bottombar img {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+  }
+
+  .topbar {
+    display: block;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    height: 5em;
+  }
+
+  .topbar img {
+    height: 2.3em;
+    width: 8em;
+  }
+
+  .topbar .notif {
+    width: 2em;
+    height: 2em;
+  }
+
+  .topbar .search {
+    width: 40%;
+    height: 3em;
+    background-color: #262626;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .topbar .search svg {
+    width: 1.2em;
+    height: 1.5em;
+    color: rgb(131, 133, 133);
+  }
+
+  .topbar .search input {
+    width: 85%;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
