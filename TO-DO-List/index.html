@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <title>TO-DO LIST</title>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    
+    <form class="todo-form" id="todo-form">
+      <input type="text" class="todo-input" id="todo-input" placeholder="Enter a task...">
+      <input type="text" class="todo-description-input" id="todo-description-input" placeholder="Enter a description...">
+      <button type="submit" class="todo-button">Add</button>
+    </form>
+    
+    <h2>Active Tasks</h2>
+    <ul class="todo-list" id="todo-list">
+      <!-- Existing active to-do items will be added here -->
+    </ul>
+
+    <h2>Completed Tasks</h2>
+    <ul class="completed-list" id="completed-list">
+      <!-- Completed to-do items will be added here -->
+    </ul>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.13.0"></script>
+  <script>
+    // Function to add a new to-do item
+    function addTodoItem(event) {
+      event.preventDefault();
+      
+      // Get the input values
+      var input = document.getElementById("todo-input");
+      var todoText = input.value;  
+      var descriptionInput = document.getElementById("todo-description-input");
+      var todoDescription = descriptionInput.value;
+      
+      if (todoText === "") {
+        return; // Do nothing if the task input is empty
+      }
+      
+      // Create a new list item
+      var listItem = document.createElement("li");
+      listItem.className = "todo-item";
+      
+      // Create a checkbox
+      var checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.className = "todo-checkbox";
+      checkbox.addEventListener("change", toggleCompleted);
+      
+      // Create the task text
+      var taskText = document.createElement("span");
+      taskText.textContent = todoText;
+      
+      // Create the description
+      var description = document.createElement("p");
+      description.className = "todo-description";
+      description.textContent = todoDescription;
+      
+      // Create the delete button
+      var deleteButton = document.createElement("span");
+      deleteButton.className = "todo-delete";
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener("click", deleteTodoItem);
+      
+      // Append checkbox, task text, description, and delete button to the list item
+      listItem.appendChild(checkbox);
+      listItem.appendChild(taskText);
+      listItem.appendChild(description);
+      listItem.appendChild(deleteButton);
+      
+      // Append the new list item to the todo list
+      var todoList = document.getElementById("todo-list");
+      todoList.appendChild(listItem);
+      
+      // Clear the input fields
+      input.value = "";
+      descriptionInput.value = "";
+    }
+    
+    // Function to toggle the completed status of a task
+    function toggleCompleted(event) {
+      var checkbox = event.target;
+      var listItem = checkbox.parentNode;
+      var completedList = document.getElementById("completed-list");
+      
+      if (checkbox.checked) {
+        listItem.classList.add("completed");
+        completedList.appendChild(listItem);
+      } else {
+        listItem.classList.remove("completed");
+        var todoList = document.getElementById("todo-list");
+        todoList.appendChild(listItem);
+      }
+    }
+    
+    // Function to delete a to-do item
+    function deleteTodoItem(event) {
+      var deleteButton = event.target;
+      var listItem = deleteButton.parentNode;
+      
+      listItem.parentNode.removeChild(listItem);
+    }
+    
+    // Initialize Sortable.js to enable task reordering
+    Sortable.create(document.getElementById("todo-list"), {
+      group: "tasks",
+      animation: 150
+    });
+
+    Sortable.create(document.getElementById("completed-list"), {
+      group: "tasks",
+      animation: 150
+    });
+    
+    // Add event listener to the form submit event
+    var form = document.getElementById("todo-form");
+    form.addEventListener("submit", addTodoItem);
+  </script>
+</body>
+</html>
