@@ -1,0 +1,151 @@
+.searchingflexbox {
+  /* background: linear-gradient(155deg, #55c7ed, #2bb3e0, #3bc1ed); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searching {
+  margin: 20px;
+}
+
+.searching > h3 {
+  font-weight: normal;
+}
+
+.searching > h1,
+.searching > h3 {
+  color: black;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #0091c2;
+}
+
+.searching > div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 1px #0091c2);
+}
+
+.searching > div:after {
+  content: "";
+  background: black;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  right: -6px;
+  transform: rotate(135deg);
+}
+
+.searching > div > input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  border: solid 3px black;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.searching > div > input::placeholder {
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.searching > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.searching > div > input:focus,
+.searching > div > input:not(:placeholder-shown) {
+  width: 250px;
+}
+.searchSuggMen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-left: 560px;
+  margin-top: -5px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+div.menItem{
+  padding: 8px;
+  background-color: white;
+  /* border: 0.5px solid black; */
+  cursor: pointer;
+}
+div.menItem:hover{
+  background-color: aliceblue;
+  /* border: 0.5px solid black; */
+}
+
+.CartContainer {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  width: 100vw;
+}
+
+.TableContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+  padding: 30px 60px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead {
+  th {
+      background-color: #55608f;
+  }
+}
+
+tbody {
+  tr {
+      &:hover {
+          background-color: rgba(255,255,255,0.3);
+      }
+  }
+  td {
+      position: relative;
+      &:hover {
+          &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: -9999px;
+              bottom: -9999px;
+              background-color: rgba(255,255,255,0.2);
+              z-index: -1;
+          }
+      }
+  }
+} 

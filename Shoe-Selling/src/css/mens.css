@@ -1,0 +1,303 @@
+body{background-color: whitesmoke;}
+.top{display: flex; flex-direction: column; justify-self: center; align-items: center; 
+    padding-top: 30px;
+    gap: 30px;}
+  .summerInfo{ display: flex;flex-direction: column;
+    align-items: center;
+
+
+}
+.top p{font-size: 20px; }
+  .top img{ width: 200vh; height: 80vh;}
+  .top button{padding: 10px 40px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    /* border: none; */
+    border: none;
+}
+.top button:hover{background-color: rgb(70, 68, 68);}
+.top h1{font-size: 90px; font-weight: 400px;}
+
+
+
+
+/* show slide function */
+
+
+
+
+
+
+
+
+
+
+
+/* the latest */
+.thelastest{ display: flex; align-items: center; justify-content: center; gap: 40px;}
+.thelastest h2{padding-left:30px ; font-size: 30px; gap: 40px;}
+/* img 1 column 1 */
+.imgColumn1{display: flex;
+flex-direction: column; gap: 40px;  }
+.imgColumn2{display: flex;
+flex-direction: column; gap: 40px; padding-top: 100px;}
+.imgColumn3{display: flex;
+flex-direction: column; gap: 40px;
+padding-top: 200px;
+
+}
+.imgsize img{width: 50vh;  
+height: 70vh;
+border-radius: 50px; }
+.bottom{display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.bottomInfo{display: flex; padding-top: 20px;
+flex-direction: column; justify-content: center; align-items: center; gap: 10px;}
+.bottom button{padding: 10px 40px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    /* border: none; */
+    margin-bottom: 30px;
+    border: none;padding-top: 10px; margin-top: 20px;}
+    .bottom button:hover{background-color: rgb(70, 68, 68); cursor: pointer;}
+
+
+    /* footer */
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 20vh;
+        padding-top: 30px;
+        background-color: black;
+        color: white;
+        padding-top:20px;
+
+    }
+    footer ul{padding: 10px;}
+    footer ul li{list-style: none; margin-top: 10px;}
+    footer ul li a{text-decoration: none; color: white;}
+    footer button{display: flex; justify-content: center; align-items: center; border: none; border-radius:50%;  }
+    footer img{width: 5vh; }
+    .forth-line{display: flex; gap: 20px; flex-direction: row; }
+    footer button:hover{background-color: gray;}
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+.content h1 {
+font-size: 70px;
+margin-top: 80px;
+}
+
+.content p {
+margin: 20px auto;
+font-weight: 100;
+line-height: 25px;
+}
+
+
+
+.cover {
+background: #009688;
+height: 100%;
+width: 0%;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+
+button:hover span {
+width: 100%;
+}
+
+button:hover {
+border: none;
+}
+
+/* PRODUCTS */
+.product {
+position: relative;
+overflow: hidden;
+padding: 20px;
+}
+
+.product-category {
+padding: 0 10vw;
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 40px;
+text-transform: capitalize;
+}
+
+.product-container {
+padding: 0 10vw;
+display: flex;
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+display: none;
+}
+
+.product-card {
+flex: 0 0 auto;
+width: 250px;
+height: 450px;
+margin-right: 40px;
+}
+
+.product-image {
+position: relative;
+width: 100%;
+height: 350px;
+overflow: hidden;
+border-radius: 50px;
+}
+
+.product-thumb {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.card-btn {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+padding: 10px;
+width: 90%;
+text-transform: capitalize;
+border: none;
+outline: none;
+background: #fff;
+border-radius: 5px;
+transition: 0.5s;
+cursor: pointer;
+opacity: 0;
+}
+
+.product-card:hover .card-btn {
+opacity: 1;
+}
+
+.card-btn:hover {
+background: #ff7d7d;
+color: #fff;
+}
+
+.product-info {
+width: 100%;
+height: 100px;
+padding-top: 10px;
+}
+
+.product-Nike {
+text-transform: uppercase;
+}
+
+.product-short-description {
+width: 100%;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+opacity: 0.5;
+text-transform: capitalize;
+margin: 5px 0;
+}
+
+.price {
+font-weight: 900;
+font-size: 20px;
+}
+
+
+
+.pre-btn,
+.nxt-btn {
+border: none;
+width: 10vw;
+height: 100%;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+cursor: pointer;
+z-index: 8;
+}
+
+.pre-btn {
+left: 0;
+transform: rotate(180deg);
+}
+
+.nxt-btn {
+right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+opacity: 1;
+}
+
+.collection-container {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+}
+
+.collection {
+position: relative;
+}
+
+.collection img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.collection p {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #fff;
+font-size: 50px;
+text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+grid-column: span 2;
+margin-bottom: 10px;
+}
+.top button a{color: white; text-decoration: none;}
+.bottom button a{color: white; text-decoration: none;}
