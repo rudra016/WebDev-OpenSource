@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image - Editor </title>
+    <link rel="stylesheet" href="style.css">
+    <title>PhotoQ</title>
+   
+</head>
+<body>
+    <main>
+        <h1>
+     Apply Filters To your Image here !!
+        </h1>
+    
+        <form>
+            <label for="image" class="sr-only">Upload an image</label>
+            <input type="file" accept="image/png, image/jpg, image/jpeg" name="image" id="image">
+        </form>
+    
+        <div class="container">
+            <canvas>
+
+            </canvas>
+    
+            <div class="buttons">
+                <div class="filters">
+                    <button class="btn" id="grayscale">Gray Scale</button>
+                    <button class="btn" id="monotone">Blue Monoton</button>
+                    <button class="btn" id="duotone">Orange Blue</button>
+                    <!-- <button class="btn" id="resize">Resize Auto</button> -->
+                </div>
+    
+                <div class="actions">
+                    <button id="reset">Reset</button>
+                    <a id="download" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+    
+                        <span>Download Your Photo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+   
+      
+    
+    </main>
+    <script defer src="script.js"></script>
+</body>
+</html>

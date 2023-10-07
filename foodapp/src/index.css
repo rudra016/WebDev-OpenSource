@@ -1,6 +1,4 @@
-/* html.dark-mode {
-  --cursor-color: #fff
-}
+
 body {
   margin: 0;
   min-width: 100%;
@@ -11,21 +9,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-    flex-direction: column;
-    cursor: url('https://th.bing.com/th/id/OIP.aWjqdJYCTPGAaKPt-vyK0QHaJQ?pid=ImgDet&rs=1'),auto;
+  flex-direction: column;
   --cursor-color: #fff;
-  
+}
 
-    
-}
-body.changebody{
+body.changebody {
   background-color: aqua;
-  
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+
+}
 :root {
   --cursor-color: #fff;
   --body-background-color: #ffffff;
@@ -61,3 +57,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

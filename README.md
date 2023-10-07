@@ -16,7 +16,8 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow).
 
 ### Hacktoberfest
-For the Hacktoberfest you can raise an issue on what you want to contribute, and I will assign it to you. 
+For Hacktoberfest, you can raise an issue regarding what you would like to contribute, and I will assign it to you.
+
 Contact me on:- `alphamale6` at Discord
 
 ## Code of Conduct:
@@ -30,7 +31,7 @@ Contact me on:- `alphamale6` at Discord
 <br/>
 <div align="center">
 <a href="https://github.com/rudra016/WebDev-OpenSource/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource&max=100&columns=11" width=97%" />
+  <img src="https://contrib.rocks/image?repo=rudra016/WebDev-OpenSource&max=100&columns=11&anon=0" width=97%" />
 </a>
 </div>
 

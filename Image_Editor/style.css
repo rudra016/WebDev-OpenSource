@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #374A67;
+    padding: 0 1em; 
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 3rem 0;
+    margin-top: 2rem; 
+}
+
+
+h1 {
+    margin: auto; 
+    width: max-content; 
+    margin-bottom: 1.5em;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+
+form {
+    margin-bottom: 1em; 
+}
+
+canvas {
+    width: 100%; 
+    height: auto; 
+    background-color: #f1f1f1; 
+    margin-bottom: 1em; 
+  
+}
+
+
+.container {
+    margin-bottom: 1em; 
+}
+
+.buttons {
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5em; 
+}
+
+.filters {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.actions {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5em;
+} 
+
+/* button design  */
+ #download, 
+button,  
+input::-webkit-file-upload-button {
+    font-weight: 600;
+    font-size: 1rem; 
+    font-family: inherit;  
+    border: none; 
+    text-decoration: none;
+    line-height: 1; 
+    text-align: center;
+    cursor: pointer; 
+    transition: all 0.2s linear; 
+    color: #FFF;
+    box-shadow: #FFF
+}
+
+#reset,
+#download, 
+input::-webkit-file-upload-button {
+    padding: 1em 1.5em;
+    border: 1px solid #374A67;
+    background-color: #494a63;
+}
+
+#download {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+ 
+#reset:hover,  
+#download:hover, 
+input::-webkit-file-upload-button:hover {
+    border: 1px solid #494a63;
+    background-color: #494a63;
+}
+
+#grayscale, #monotone, #duotone {
+    padding: 1.1em 1.5em;
+}
+
+/* grayscale button */
+#grayscale {
+    background-color: #616283;
+}
+
+#grayscale:hover {
+    background-color: #494a63; 
+}
+
+/* blue monoton button */
+#monotone {
+    background-color: #4949c5;
+}
+#monotone:hover {
+    background-color: #4949c5; 
+}
+#resize{
+    background-color: #494a63;
+}
+duotone gradient button
+#duotone { 
+    background-color: #374A67;
+    position: relative; 
+}
+
+#duotone::before, 
+#duotone::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    width: 100%; 
+    height: 100%; 
+    transition: opacity 0.2s linear;
+    z-index: -1;
+}
+
+#duotone:hover::after {
+    opacity: 0.8; 
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        padding: 0 2.5em; 
+    }
+
+    .filters, 
+    .buttons,
+    .actions {
+        flex-direction: row;
+    }
+
+    .buttons {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2rem; 
+    } 
+
+    canvas {
+        width: 600px; 
+        margin-bottom: 0; 
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: max-content auto;
+        gap: 1em; 
+    }
+
+    .buttons, 
+    .filters {
+        flex-direction: column;
+    }
+
+    .buttons { 
+        justify-content: space-between;  
+    }
+    
+    .actions {
+        flex-direction: row;
+        justify-content: end;
+    } 
+
+    .actions a, 
+    .actions button {
+        width: 100%; 
+    }
+}
+
+
