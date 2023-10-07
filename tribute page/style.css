@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url(https://wallpaperaccess.com/full/1643209.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+
+  }
+h1{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(236, 196, 162);
+    text-align: center;
+    text-shadow: 0 0 10px #5b3f29,
+                0 0 20px #5b3f29,
+                0 0 40px #5b3f29,
+                0 0 80px #5b3f29,
+                0 0 120px #5b3f29,
+                0 0 160px #5b3f29;
+
+}
+.img{
+    width: 20%;
+    height: 25%;
+    margin-left: 40%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #1e1d1d,
+                0 0 20px #5b3f29,
+                0 0 40px #5b3f29,
+                0 0 80px #5b3f29,
+                0 0 120px #5b3f29,
+                0 0 160px #161616;
+    transition: transform 0.5s ease-in-out;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.about
+{
+color: rgb(0, 0, 0);
+text-align: justify;
+padding: 60px;
+padding-top: 50px;
+}
+.foote{
+    text-align: center;
+    color: #b1815c;
+    background-color: #5b3f29;
+}
+.foote p a{
+    color: #b1815c;
+}
+.quote{
+        width: 15%;
+        height: 15%;
+        margin-left: 40%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #1e1d1d,
+                    0 0 20px #5b3f29,
+                    0 0 40px #5b3f29,
+                    0 0 80px #5b3f29;
+                    
+        transition: transform 0.5s ease-in-out;
+    }
+.quote:hover{
+        transform: scale(1.1);
+    } 
+
+    @media(max-width:768px)
+    {   .img{
+        width: 50%;
+        height: 50%;
+        margin-left: 30%;
+    }
+        .quote{
+            width: 50%;
+            height: 50%;
+             }
+    
+    }   
+    
