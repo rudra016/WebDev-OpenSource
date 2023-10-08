@@ -133,3 +133,19 @@ function updateScore () {
     scoreDisplay.innerHTML = 'Score: ' + score
   }
 }
+
+function gameOver () {
+  if (gameover) return
+  gameover = true
+  clearInterval(blocks)
+  var scoreDisplay = document.getElementById('score')
+  scoreDisplay.innerHTML = 'Score: ' + score
+  var gameOverMessage = document.getElementById('gameOver')
+  gameOverMessage.style.display = 'block' // Display the "Game over" message
+  var replayButton = document.getElementById('replay')
+  replayButton.style.display = 'block'
+  replayButton.addEventListener('click', function () {
+    location.reload()
+  })
+}
+
