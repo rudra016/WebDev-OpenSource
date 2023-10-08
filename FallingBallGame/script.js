@@ -113,3 +113,16 @@ var blocks = setInterval(function () {
     character.style.top = characterTop - 0.5 + 'px'
   }
 }, 1)
+
+function gameOver () {
+  if (gameover) return
+  gameover = true
+  clearInterval(blocks)
+  var scoreDisplay = document.getElementById('score')
+  scoreDisplay.innerHTML = 'Game over' + ' Score: ' + score
+  var replayButton = document.getElementById('replay')
+  replayButton.style.display = 'block'
+  replayButton.addEventListener('click', function () {
+    location.reload()
+  })
+}
