@@ -1,0 +1,35 @@
+{
+  "name": "bloodhub",
+  "version": "1.0.0",
+  "description": "A BloodHub App.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haris-Mohanty/BloodHub.git"
+  },
+  "author": "Haris Mohanty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haris-Mohanty/BloodHub/issues"
+  },
+  "homepage": "https://github.com/Haris-Mohanty/BloodHub#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
