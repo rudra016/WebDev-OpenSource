@@ -126,3 +126,10 @@ function gameOver () {
     location.reload()
   })
 }
+
+function updateScore () {
+  if (!gameover) {
+    var scoreDisplay = document.getElementById('score')
+    scoreDisplay.innerHTML = 'Score: ' + score
+  }
+}
