@@ -1,0 +1,3 @@
+[submodule "zero-hunt-game"]
+	path = zero-hunt-game
+	url = https://github.com/roxoho/zero-hunt-game.git
