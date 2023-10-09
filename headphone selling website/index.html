@@ -1,0 +1,773 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+*{
+    margin: 0;
+    padding: 0; 
+   box-sizing:border-box;
+   
+}
+body{
+    background-color: rgb(11, 9, 9);
+    color: rgba(255, 255, 255, 0.801);
+    margin-top: 0;
+    padding: 0;
+  
+    
+    font-family: "Poppins", sans-serif;
+
+
+
+}
+nav button { font-size: 15px;
+font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul{
+  display: flex;
+
+}
+/* nav bar */
+nav{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 19px;
+}
+nav ul {
+    display: flex;
+
+    justify-content: center;
+ margin-top: 10px;
+   gap: 60px;
+}
+.mainImage{
+    height: 500px;
+  margin-top: 0px;
+  width:260px;
+}
+.mainImage-div{
+   
+ padding-top: 0px;
+}
+nav button{
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgb(45, 42, 42);
+    color: rgb(141, 136, 136); 
+   
+}
+nav{
+ gap: 50px;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+
+}
+.nav-right ul{
+margin-top: 19px;
+
+}
+.nav-right button{
+    margin-top: 14px;
+padding: 15px 50px;
+}
+.nav-left{
+    display: flex;
+    gap: 90px;
+    padding-left: 100px;
+}
+.nav-logo{
+ padding-top: 35px;
+}
+
+/* main */
+
+.overview{
+    display: flex;
+    flex-direction: column;
+justify-content:right;
+}
+
+.onear-nav-center{
+
+    display: flex;
+    flex-direction:column;
+align-items: center;
+
+
+}
+.oneear-down{
+    margin-top: 120px;
+    margin-left: 120px;
+    
+}
+
+.overview{
+  gap: 40px;
+}
+.overview h1{
+    font-size: 60px;
+  
+}
+.overview p{
+   width: 280px;
+   line-height: 30px;
+     color: gray;
+  
+}
+.on-ear{
+    padding-left: 50px;
+}
+
+.bag-btn{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: hidden;
+  
+}
+.bag-btn:hover{
+ cursor: pointer;
+ 
+}
+
+.bag-btn div{
+   font-weight:300;
+   color: white;
+}
+.btn-font{
+    font-size: 20px;
+}
+/* sites */
+.sites{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* second page*/
+
+.second-page{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 70px;
+}
+.second-page-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specs{
+    padding: 13px;
+}
+.specs p{
+    font-size: 14px;
+
+}
+.batttery-left{
+    margin-left: -30px;
+}
+
+/* third page */
+
+.third-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ gap: 80px;
+    margin-top: 90px;
+}
+.third-page p{
+width: 250px;
+line-height: 26px;
+}
+.info{
+    display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.info button{
+   background-color: rgb(34, 33, 33);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+   gap: 10px;
+   color: white;
+   border-radius: 10px;
+   border: none;
+}
+
+/* third-page-2 */
+.third-page-2{
+    background-color: rgba(65, 65, 65, 0.393);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-top: 90px;
+height: 300px;
+width: 800px;
+border-radius: 30px;
+
+
+}
+
+.third-page-2-color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.buy-now button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 50px;
+    gap: 10px;
+    color: white;
+    border-radius: 7px;
+    background-color:rgb(25, 25, 25) ;
+    border: none;
+}
+
+/* forth */
+
+.img-choose-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.all-headphone-color{
+    display: flex;
+    
+}
+
+.all-headphone-color{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+margin-top: 100px;
+
+ 
+}
+
+.img img{
+height: 150px;
+}
+
+.headphone-background{
+    display: flex;
+    position: relative;
+    background-color: rgb(36, 36, 36);
+    margin: 20px;
+    border-radius: 20px;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+}
+
+.product-content {
+display: flex;
+position: relative;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+gap: 10px;
+margin-top: -100px;
+
+}
+
+.headphone-properties{
+    display: flex;
+    gap: 30px;
+}
+.headphone-properties h3{
+   font-weight: 600;
+}
+
+.shopping-bag button{
+  background-color: rgb(20, 18, 18);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+footer{
+    display: flex;
+   
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.email{display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.email input{
+padding: 10px 20px;
+background-color: rgb(61, 61, 61);
+border: none;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    
+}
+.logo button:hover{
+  cursor: pointer;
+    
+}
+
+.logo button{
+    border: none;
+    border-radius: 5px;
+}
+
+.input{
+    background-color: rgb(61, 61, 61);
+    padding: 7px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input input{
+    background-color: rgb(61, 61, 61);
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+
+}
+
+  
+.input button{
+    background-color: rgba(39, 37, 37, 0.516);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    
+
+   
+
+}
+
+.sub button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(194, 193, 193);
+
+    margin-right: -10px;
+}
+
+
+.foot-head{
+    font-weight: 600;
+}
+.product a{
+    text-decoration: none;
+    color: rgb(139, 134, 134);
+   
+   
+    
+}
+
+.Support a{
+  
+    text-decoration: none;
+    color: rgb(139, 134, 134);
+  
+}
+
+.footer-content p{
+    padding: 5px;
+   
+}
+
+
+ 
+
+    </style>
+</head>
+<body>
+  
+    <header>
+        <nav>
+          
+
+            <div class="nav-left">
+        <div class="nav-logo">
+               <img src="beatsLogo.png" alt="">
+            </div>
+              <div>
+              <img src="mainImage.png" alt="" class="mainImage">
+            </div>
+        </div>
+        
+<div class="onear-nav-center">
+<div class="onear-up">
+            <div class="nav-right">
+            <ul>
+               
+              
+                <li>
+                    
+                    <a href="">Home</a></li>
+                <li><a href="">Case</a></li>
+                <li><a href="case">Specs</a></li>
+                <li><a href="">Product</a></li>
+                <li>  </ul>
+                   <div class="nav-btn">
+                    <button>Shop</button>
+                </div></div>
+            
+
+<div class="oneear-down">
+
+    <div class="overview">
+        <div class="on-ear">
+            <img src="onEar.png" alt="">
+        </div>
+
+            <h1>Beats 3</h1>
+            <h2>Overview</h2>
+            <p>Please do not fall victim to expensive fashion headphones by famous stars. Just try out our superb iListen headphones! They are not so expensive but are definitely of high quality.</p>
+            <div>
+            <button class="bag-btn">
+                
+             <img src="shoppingBag.png" alt=""><div>Add to Bag</div>
+                <div class="btn-font"> N399K</div>
+           </button></div>
+</div>
+</div>
+</div>
+
+           
+        </nav>
+    </header>
+
+
+    <main>
+     <div class="first-page">
+       
+        </div>
+
+        <div class="sites">
+<img src="appleLogo.png" alt="">
+<img src="spotifyLogo.png" alt="">
+<img src="amazonLogo.png" alt=""><img src="youtubeLogo.png" alt="">
+        </div>
+     </div>   
+
+
+
+     <div class="second-page">
+        <img src="specsLogo.png" alt="">
+        <div class="second-page-down">
+        <div class="second-page-left">
+            <div class="specs">
+                <img src="bluetooth.png" alt="">
+                <h3>Connection</h3>
+                <p>Bluetooth v5.2</p>
+            </div>
+            <div class="batttery-left">
+            <div class="specs">
+                <img src="battery.png" alt="">
+                <h3>Battery</h3>
+                <p>Duration 48h</p>
+            </div>
+            <div class="specs">
+                <img src="charger.png" alt="">
+                <h3>Load</h3>
+                <p>Fast Charger 4.2-AAC</p>
+            </div>
+        </div>
+            <div class="specs">
+                <img src="mic.png" alt="">
+                <h3>Microphone
+                </h3>
+                <p>Support noice cancelation </p>
+            </div>
+       
+        </div>
+
+        <div class="second-page-right">
+            <img src="specsImage.png" alt="">
+        </div>
+     </div>
+    </div>
+
+
+
+     <div class="third-page">
+        <div class="case">
+            <img src="caseImage.png" alt="">
+        </div>
+        <div class="info">
+            <div><p>with a compatible and adaptable case so that you can store it whenever you want and keep your durability forever</p>
+            </div>
+            <button><img src="group.png" alt=""> <h3>More info</h3></button>
+        </div>
+     </div>
+
+
+
+<div class="third-page-2-color">
+     <div class="third-page-2">
+        <div class="buy-now">
+       <div> <h2>Immense yourself in <br> your music </h2>
+       </div><br>
+       <div><div>
+           <p>Buy Now, up to 40% off</p></div>
+           <div>
+            <br>
+           <button><img src="shoppingBag.png" alt=""> <p>Buy Now</p></button>
+        </div>
+        </div>
+      </div>
+        <div class="buy-now-img">
+            <img src="buyNowSectionImage.png" alt="">
+       
+        </div>
+     </div>
+    </div>
+
+
+<!-- forth page -->
+
+<div class="forth">
+<div class="img-choose-style">
+    <img src="productLogo.png"alt="">
+</div>
+
+<div class="all-headphone-color">
+
+
+<div class="left-3-headphone">
+
+
+<div class="headphone-background">
+    <div class="product-content">
+    <div class="img">
+    <img src="black.png" alt="">
+    </div>
+ 
+ <div class="headphone-properties">
+<div class="color-model">
+    <h3>Black</h3>
+    <p>N299K</p>
+</div>
+<div class="shopping-bag">
+   <button> <img src="shoppingBag.png" alt=""></button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="headphone-background">
+    <div class="product-content">
+    <div class="img">
+    <img src="blue.png" alt="">
+    </div>
+ 
+ <div class="headphone-properties">
+<div class="color-model">
+    <h3>Blue</h3>
+    <p>N299K</p>
+</div>
+<div class="shopping-bag">
+   <button> <img src="shoppingBag.png" alt=""></button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="headphone-background">
+    <div class="product-content">
+    <div class="img">
+    <img src="twilightGray.png" alt="">
+    </div>
+ 
+ <div class="headphone-properties">
+<div class="color-model">
+    <h3>Gray</h3>
+    <p>N299K</p>
+</div>
+<div class="shopping-bag">
+   <button> <img src="shoppingBag.png" alt=""></button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="right-2-headphone">
+
+
+    <div class="headphone-background">
+        <div class="product-content">
+        <div class="img">
+        <img src="nightBlack.png" alt="">
+        </div>
+     
+     <div class="headphone-properties">
+    <div class="color-model">
+        <h3>Night Black</h3>
+        <p>N299K</p>
+    </div>
+    <div class="shopping-bag">
+       <button> <img src="shoppingBag.png" alt=""></button>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="headphone-background">
+    <div class="product-content">
+    <div class="img">
+    <img src="redBlack.png" alt="">
+    </div>
+ 
+ <div class="headphone-properties">
+<div class="color-model">
+    <h3>Red Black</h3>
+    <p>N299K</p>
+</div>
+<div class="shopping-bag">
+   <button> <img src="shoppingBag.png" alt=""></button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="beatsLogo.png" alt="">
+        </div>
+        <div class="product">
+            <div class="foot-head">
+            Products</div>
+            <div class="footer-content">
+            <p><a href="">Headphones</a></p>
+            <p><a href="">Earphones</a></p>
+            <p><a href="">Accessoriess</a></p></div>
+        </div>
+        <div class="Support">
+            <div class="foot-head">
+            Supports</div>
+            <div class="footer-content">
+            <a href="">Product Help</a></p>
+            <p><a href="">Register</a></p>
+            <p><a href="">Register</a></p>
+            <p><a href="">Provide</a></p></div>
+        </div>
+        <!-- div.email -->
+        <div class="email">
+            <div class="input">
+                <input type="text" >
+                <div class="sub"><button>
+                 <img src="rightArrow.png" alt="">
+                 Subscribe</button>
+            </div></div>
+         <div class="logo">
+            <div class="follow">
+<button> <img src="facebook.png" alt="">
+            </button>
+           </div>
+          
+            <div class="twitter">
+<button> <img src="twitter.png" alt="">
+            </button>
+           </div>
+          
+            <div class="linkind">
+<button> <img src="linkedin.png" alt="">
+            </button>
+           </div>
+          
+            <div class="insta">
+<button> <img src="instagram.png" alt="">
+            </button>
+           </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
