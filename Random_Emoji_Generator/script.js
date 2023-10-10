@@ -2,7 +2,7 @@ const Click = document.getElementById('Click')
 const emoji = []
 const newEmoji = document.getElementById('new-Emoji')
 const emojiName = document.getElementById('emoji-name')
-
+const loading = document.getElementById('loading')
 
 async function getEmoji () {
   try {
@@ -18,6 +18,7 @@ async function getEmoji () {
       })
     }
 
+    loading.classList.add('hidden')
   } catch (error) {
     console.error('Error fetching emoji data:', error)
   }
