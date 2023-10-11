@@ -1,0 +1,28 @@
+html.dark-mode {
+  --cursor-color: #fff
+}
+body {
+  margin: 0;
+  min-width: 100%;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+    flex-direction: column;
+    cursor: url('https://th.bing.com/th/id/OIP.aWjqdJYCTPGAaKPt-vyK0QHaJQ?pid=ImgDet&rs=1'),auto;
+  --cursor-color: #fff;
+  
+
+    
+}
+body.changebody{
+  background-color: aqua;
+  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
