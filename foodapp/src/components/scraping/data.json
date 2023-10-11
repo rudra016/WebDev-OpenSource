@@ -1,0 +1,992 @@
+[
+    {
+        "link": "./index_files/BlazingOnionPaprikaCustom.jpg",
+        "price": "329",
+        "title": "Blazing Onion & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/FierySausagePaprikaCustom.jpg",
+        "price": "449",
+        "title": "Fiery Sausage & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/farmhouse.png",
+        "price": "459",
+        "title": "Farmhouse",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_pepper_barbeque_chicken.jpg",
+        "price": "449",
+        "title": "Pepper Barbecue Chicken",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_margherita_2502.jpg",
+        "price": "239",
+        "title": "Margherita",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_peppy_paneer.jpg",
+        "price": "459",
+        "title": "Peppy Paneer",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_veg_extravaganza.jpg",
+        "price": "549",
+        "title": "Veg Extravaganza",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_chicken_sausage.jpg",
+        "price": "369",
+        "title": "Chicken Sausage",
+        "size": "Medium"
+    },
+    {
+        "link": "./index_files/new_cheese_n_corn.jpg",
+        "price": "379",
+        "title": "Cheese n Corn",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "459",
+        "title": "Veggie Paradise",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "429",
+        "title": "Meal for 2:  Margherita & Farmhouse",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Smoked Chicken Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Primavera Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "329",
+        "title": "Fiery Jalapeno & Paprika ",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "329",
+        "title": "Blazing Onion & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Blazing Chicken & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Fiery Sausage & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Primavera Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "The 5 Cheese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Al Fungi Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Pepperoni Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Smoked Chicken Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Caprese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Salami Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "179",
+        "title": "Corn n Cheese Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "249",
+        "title": "Chicken Keema Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Indo Fusion Chicken Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "The 5 Chicken Feast Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Chicken Maximus",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "559",
+        "title": "Spiced Double Chicken",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Paneer Tikka Stuffed Garlic Bread",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Chicken Pepperoni Stuffed Garlic Bread",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "139",
+        "title": "Red Velvet Lava Cake",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "209",
+        "title": "Paneer Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "329",
+        "title": "Fiery Jalapeno & Paprika ",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "329",
+        "title": "Blazing Onion & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "459",
+        "title": "Farmhouse",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "459",
+        "title": "Peppy Paneer",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "239",
+        "title": "Margherita",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Indi Tandoori Paneer",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Primavera Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Veg Extravaganza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "The 5 Cheese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "459",
+        "title": "Veggie Paradise",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Al Fungi Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "179",
+        "title": "Corn n Cheese Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "329",
+        "title": "Moroccan Spice Pasta Pizza - Veg",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Caprese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "379",
+        "title": "Cheese n Corn",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "209",
+        "title": "Paneer Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "459",
+        "title": "Mexican Green Wave",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "379",
+        "title": "Double Cheese Margherita",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "379",
+        "title": "Fresh Veggie",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "639",
+        "title": "The 4 Cheese Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Deluxe Veggie",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "The Unthinkable Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "379",
+        "title": "Cheese n Tomato",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Kadhai Paneer",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Caprese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Primavera Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Al Fungi Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Salami Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Pepperoni Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Smoked Chicken Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "The 5 Cheese Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Blazing Chicken & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Fiery Sausage & Paprika",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Pepper Barbecue Chicken",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "599",
+        "title": "Chicken Dominator",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "599",
+        "title": "Non Veg Supreme",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "599",
+        "title": "Chicken Pepperoni",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Smoked Chicken Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "599",
+        "title": "Indi Chicken Tikka",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Pepperoni Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "559",
+        "title": "Chicken Golden Delight",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "249",
+        "title": "Chicken Keema Paratha Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "559",
+        "title": "Chicken Fiesta",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Indo Fusion Chicken Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "499",
+        "title": "Moroccan Spice Pasta Pizza - Non Veg",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "559",
+        "title": "Spiced Double Chicken",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "Chicken Maximus",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "369",
+        "title": "Chicken Sausage",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "699",
+        "title": "The 5 Chicken Feast Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "849",
+        "title": "Chicken Salami Gourmet Pizza",
+        "size": "Medium"
+    },
+    {
+        "link": "",
+        "price": "60",
+        "title": "Pepsi 475ml",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Pepsi 295 ml",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "60",
+        "title": "Pepsi Black Can 300ml",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "60",
+        "title": "7Up 475ml",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "60",
+        "title": "Mirinda 475ml",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "70",
+        "title": "B Natural Alphonsos from Ratnagiri (300 ml)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "70",
+        "title": "B Natural Mixed Fruit from Himalayas (300 ml)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "70",
+        "title": "Nagpur Orange",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "60",
+        "title": "Lipton Ice Tea ( 350 ml)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "20",
+        "title": "Bailley One (500ml)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Roasted Chicken Wings Peri-Peri",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Roasted Chicken Wings - Classic Hot Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Chicken Meatballs Peri-Peri Seasoning",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "179",
+        "title": "Boneless Chicken Wings Peri-Peri",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Chicken Meatballs Peri-Peri Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Garlic Breadsticks + Pepsi",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Tangy Margherita Pizzetta 15 cm (6”) ",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Onion Jalapeno Pizzetta 15 cm (6\")",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Choco Lava Cake + Pepsi",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "59",
+        "title": "Tomato Mushroom Pizzetta 15 cm (6”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "59",
+        "title": "Paprika Paneer Pizzetta 15 cm (6”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "69",
+        "title": "Chicken Keema Onion Pizzetta 15 cm (6”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "79",
+        "title": "Tangy Margherita Pizzetta 30 cm (12”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "99",
+        "title": "Tomato Mushroom Pizzetta 30 cm (12”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "99",
+        "title": "Paprika Paneer Pizzetta 30 cm (12”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "119",
+        "title": "Chicken Keema Onion Pizzetta 30 cm (12”)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Garlic Breadsticks",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "159",
+        "title": "Classic Stuffed Garlic Bread",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Paneer Tikka Stuffed Garlic Bread",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Chicken Pepperoni Stuffed Garlic Bread",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "30",
+        "title": "Cheesy Dip",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "139",
+        "title": "Taco Mexicana Veg",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Taco Mexicana Non Veg",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "55",
+        "title": "Chicken Parcel",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "45",
+        "title": "Veg Parcel",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "119",
+        "title": "Burger Pizza - Classic Veg",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Burger Pizza - Premium Veg",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "159",
+        "title": "Burger Pizza - Classic Non Veg",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "79",
+        "title": "Taco Mexicana-Veg (Single)",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "79",
+        "title": "Potato Cheese Shots",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Basil Pesto Dip",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Harissa Dip",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "1",
+        "title": "Tomato Ketchup",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "30",
+        "title": "Cheesy Jalapeno Dip",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "139",
+        "title": "Chicken Keema & Onion with Desi Makhani Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "129",
+        "title": "Paneer, Onion & Capsicum with Desi Makhani Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "169",
+        "title": "Non Veg Loaded",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "119",
+        "title": "Pepper Barbecue Chicken",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "159",
+        "title": "Veg Loaded",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Cheesy",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Paneer & Capsicum with Videshi Hot Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "89",
+        "title": "Capsicum & Red Paprika with Videshi Hot Sauce",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Chicken Sausage",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "59",
+        "title": "Tomato",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "49",
+        "title": "Classic",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "89",
+        "title": "Golden Corn",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "69",
+        "title": "Onion",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Garlic Breadsticks + Pepsi",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Choco Lava Cake + Pepsi",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Meal for 2:  Farmhouse & Peppy Paneer",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "429",
+        "title": "Meal for 2:  Margherita & Farmhouse",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "339",
+        "title": "Meal for 2:  Moroccan Pasta Pizza &  Achari Do Pyaza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "919",
+        "title": "Meal for 4: Non Veg Supreme & Chicken Dominator",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "619",
+        "title": "Meal for 2:  Pepper BBQ Chicken & Chicken Dominator",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "499",
+        "title": "Meal for 2:  Pepper BBQ Chicken & Chicken Sausage",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "429",
+        "title": "Meal for 2:  Margherita & Peppy Paneer",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "379",
+        "title": "Meal for 4: Veg Pizza Mania Loaded",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "899",
+        "title": "Meal for 4: Veg Loaded Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "749",
+        "title": "Meal for 4: Veg  Chessy Pizza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "579",
+        "title": "Meal for 2:  Farmhouse & Veg Extravaganza",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "579",
+        "title": "Meal for 2:  Pepper BBQ Chicken & Spiced Double Chicken",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "449",
+        "title": "Meal for 4: Non Veg Pizza Mania Value",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "919",
+        "title": "Meal for 4: Peppy Paneer & Farmhouse",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "609",
+        "title": "Meal for 2:  Veg Extravaganza & Indi Tandoori Paneer",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "549",
+        "title": "Meal for 2:  Veg Paradise & Farmhouse",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "1059",
+        "title": "Meal for 4: Feast Veg Extravanga & Indo Tandoori Paneer",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "739",
+        "title": "Meal for 4: Margherita & Peppy Paneer",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "149",
+        "title": "Choco Lava Cake + Pepsi",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "139",
+        "title": "Red Velvet Lava Cake",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Choco Lava Cake",
+        "size": ""
+    },
+    {
+        "link": "",
+        "price": "109",
+        "title": "Butterscotch Mousse Cake",
+        "size": ""
+    }
+]
