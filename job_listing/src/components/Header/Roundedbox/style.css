@@ -1,0 +1,9 @@
+.roundedbox {
+  border-radius: 110px;
+  height: 500px;
+  width: 220px;
+  background-color: aquamarine;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+}
