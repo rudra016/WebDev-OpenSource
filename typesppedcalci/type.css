@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://i.gifer.com/76YS.gif");
+    
+}
+.headline{
+    
+    text-align: center;
+    text-shadow: 5px;
+    scrollbar-shadow-color: aqua;
+    transform: translate(-50,-50);
+}
+.headingmain{
+    color: rgb(226, 119, 119);
+}
+#words{
+    color: rgb(172, 224, 250);
+}
+.mainbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texti{
+    /* padding-top: 5%; */
+    background-color: #444;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 0 0;
+    border-bottom-right-radius: 10px 10px;
+border-bottom-left-radius: 10px 10px;
+    border: 20px solid #34495e;
+    color: white;
+    font-size: 1.3rem;
+    transform: translate(-50,-50);
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    /* transform: translate(-50,-50); */
+}
+.mainbutton{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 5px solid #2980b9;
+    background: #ecf0f1;
+    margin-top: 10px;
+}
+#toggleButton {
+    margin-top: 20px;
+  }
+  
+
+  
+/* .bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation-name: bubbleEffect;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes bubbleEffect {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  } */
+  
