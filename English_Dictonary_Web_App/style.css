@@ -1,0 +1,75 @@
+body {
+    background: rgb(15, 6, 78);
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier;
+}
+
+.input {
+    height: 200px;
+    flex: 1;
+    /* Allow input to expand to fill remaining space */
+    background-color: rgba(255, 255, 255, .6);
+    border-color: rgba(255, 255, 255, .4);
+    font-size: 2rem;
+    padding: 0 20px;
+    /* Adjust padding for better appearance */
+    border-radius: 5px;
+    max-width: 70%;
+    /* Prevent input from exceeding box width */
+    width: 100%;
+    /* Ensure the input occupies available space */
+}
+
+
+.box {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 28px;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+    width: 90%;
+    margin: 2rem;
+    max-width: 50rem;
+    min-height: 10rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center-align children horizontally */
+}
+
+.head {
+    font-size: 2.7rem;
+    color: white;
+}
+
+.box2 {
+    display: none;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
