@@ -10,15 +10,14 @@ body {
 
 .input {
     height: 200px;
-    flex: 1;
+    flex: 1; /* Allow input to expand to fill remaining space */
     background-color: rgba(255, 255, 255, .6);
     border-color: rgba(255, 255, 255, .4);
     font-size: 2rem;
-    padding: 0 20px; 
+    padding: 0 20px; /* Adjust padding for better appearance */
     border-radius: 5px;
-    max-width: 70%;
- /* Prevent input from exceeding box width */
-    width: 100%; 
+    max-width: 70%; /* Prevent input from exceeding box width */
+    width: 100%; /* Ensure the input occupies available space */
 }
 
 
@@ -37,11 +36,34 @@ body {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
 }
 
 .head {
     font-size: 2.7rem;
     color: white;
+}
+
+.box2 {
+    display: none;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: darkred;
 }
