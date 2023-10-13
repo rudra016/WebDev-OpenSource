@@ -139,5 +139,42 @@ document.addEventListener('DOMContentLoaded', () =>  {
       check()
     }
   
+
+
+    function nav(e) {
+      if(e.keyCode === 37) {keyLeft()} 
+      else if (e.keyCode === 38) {keyUp()}
+      else if (e.keyCode === 39) {keyRight()} 
+      else if (e.keyCode === 40) {keyDown()}
+    }
+    document.addEventListener('keyup', nav)
+  
+    function keyRight() {
+      right()  
+      addrow()
+      right()
+      func_gen()
+    }
+  
+    function keyLeft() {
+      left()
+      addrow()
+      left()
+      func_gen()
+    }
+  
+    function keyUp() {
+      up()
+      combineColumn()
+      up()
+      func_gen()
+    }
+  
+    function keyDown() {
+      down()
+      combineColumn()
+      down()
+      func_gen()
+    }
   
   })
