@@ -1,0 +1,21 @@
+.container{
+    align-items: center; 
+    justify-content: center;
+    padding-top: 10%;
+    padding-left: 45%;
+}
+button{
+    padding: 1rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: violet;
+  color: aliceblue;
+  border: none;
+  transition: 0.3s;
+}
+button:hover{
+    color: black;
+    transform: translatey(-0.5rem);
+}
