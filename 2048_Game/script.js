@@ -176,5 +176,58 @@ document.addEventListener('DOMContentLoaded', () =>  {
       down()
       func_gen()
     }
+    function check() {
+      for (let i=0; i < arr.length; i++) {
+        if (arr[i].innerHTML == 2048) {
+          var_3.innerHTML = ' CONGRATULATIONS!!!!! You HAVE WON.'
+          document.removeEventListener('keyup', nav)
+          setTimeout(() => clear(), 3000)
+        }
+      }
+    }
+    function gameover() {
+      let qq = 0
+      for (let i=0; i < arr.length; i++) {
+        if (arr[i].innerHTML == 0) {
+          qq++
+        }
+      }
+      if (qq === 0) {
+        var_3.innerHTML = 'You HAVE LOST'
+        document.removeEventListener('keyup', nav)
+        setTimeout(() => clear(), 3000)
+      }
+    }
+    function clear() {
+      clearInterval(timer)
+    }
+
+
+    function check() {
+      for (let i=0; i < arr.length; i++) {
+        if (arr[i].innerHTML == 2048) {
+          var_3.innerHTML = ' CONGRATULATIONS!!!!! You HAVE WON.'
+          document.removeEventListener('keyup', nav)
+          setTimeout(() => clear(), 3000)
+        }
+      }
+    }
+    function gameover() {
+      let qq = 0
+      for (let i=0; i < arr.length; i++) {
+        if (arr[i].innerHTML == 0) {
+          qq++
+        }
+      }
+      if (qq === 0) {
+        var_3.innerHTML = 'You HAVE LOST'
+        document.removeEventListener('keyup', nav)
+        setTimeout(() => clear(), 3000)
+      }
+    }
+    function clear() {
+      clearInterval(timer)
+    }
   
+    
   })
