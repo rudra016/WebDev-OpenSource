@@ -25,5 +25,28 @@ document.addEventListener('DOMContentLoaded', () =>  {
       func_gen()
     }
     func_create()
+
+    function left() {
+      for (let i=0; i < 16; i++) {
+        if (i % 4 === 0) {
+          let a = arr[i].innerHTML
+          let b = arr[i+1].innerHTML
+          let c = arr[i+2].innerHTML
+          let d = arr[i+3].innerHTML
+          let e = [parseInt(a), parseInt(b), parseInt(c), parseInt(d)]
+  
+          let change = e.filter(num => num)
+          let lost = 4 - change.length
+          let qq = Array(lost).fill(0)
+          let vara = change.concat(qq)
+  
+          arr[i].innerHTML = vara[0]
+          arr[i +3].innerHTML = vara[3]
+          arr[i +2].innerHTML = vara[2]
+          arr[i +1].innerHTML = vara[1]
+        }
+      }
+    }
+  
   
   })
