@@ -1,0 +1,175 @@
+body,
+input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+label {
+  margin: 4px;
+}
+
+select {
+  margin-right: 15px;
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+
+.form {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 30% auto;
+  /* 30% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  /* Could be more or less, depending on screen size */
+}
+
+.loser {
+  display: none;
+  color: orangered;
+
+}
+
+.winner {
+  display: none;
+  color: green;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heading {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: green;
+}
+
+.grid div {
+  border-style: outset;
+  border-color: floralwhite;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  background-color: lightgrey;
+  background-size: 40px;
+  box-shadow: 0 1px 1px 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.grid img.bomb {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-color: floralwhite;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.grid div.alreadyClicked {
+  background-color: beige;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.grid .digit {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+#modal-data {
+  text-align: center;
+}
+
+/* used minesweeper color codes */
+.color0 {
+  display: none;
+}
+
+.color1 {
+  color: blue;
+}
+
+.color2 {
+  color: green;
+}
+
+.color3 {
+  color: #d30060;
+}
+
+.color4 {
+  color: darkslateblue;
+}
+
+.color5 {
+  color: #d100d3;
+}
+
+.color6 {
+  color: darkmagenta;
+}
+
+.color7 {
+  color: black;
+}
+
+.color8 {
+  color: grey;
+}
