@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ body {
 }
 
 body {
-  font-family: "Concert One", "Coda", san-serif, cursive;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 .container {
@@ -48,12 +50,7 @@ body {
 }
 
 .deck {
-  background: linear-gradient(
-    135deg,
-    rgb(228, 221, 143) 0%,
-    rgb(198, 234, 131) 36%,
-    rgb(84, 223, 84) 100%
-  );
+  background: rgb(173, 170, 170);
   margin: 0;
   width: 612px;
   min-height: 500px;
@@ -74,7 +71,7 @@ body {
   height: 125px;
   background: linear-gradient(
     to bottom,
-    rgb(161, 161, 161) 0%,
+    rgb(122, 121, 121) 0%,
     rgb(25, 25, 25) 50%,
     rgb(0, 0, 0) 100%
   );
@@ -92,7 +89,7 @@ body {
 .show {
   transform: rotateY(180deg);
   transition: 0.5s;
-  background: rgb(217, 255, 0);
+  background: rgb(80, 80, 79);
   font-size: 33px;
   color: white;
   cursor: default;
