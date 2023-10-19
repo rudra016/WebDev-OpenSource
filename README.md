@@ -17,6 +17,7 @@ Dive into the exciting realm of Hacktoberfest with our curated collection of web
 
 ### Hacktoberfest
 For Hacktoberfest, you can raise an issue regarding what you would like to contribute, and I will assign it to you.
+
 Contact me on:- `alphamale6` at Discord
 
 ## Code of Conduct:
