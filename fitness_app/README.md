@@ -13,9 +13,11 @@ git clone 'url of the repo'
 ```
 2) run **npm install**.
 3) download the following dependencies: material-ui/core , mui/material, material-ui/icons, emotion/react. Try running the project on React version-"17.0.2" if facing any issue with the latest version.
-4) run **npm start**.
-
-The project should run successfully. If there's an issue try debugging it. Won't take much time.
+4) go to [Rapid API's](https://rapidapi.com/) website and subscribe to [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb) and [Youtube Search and Downlaod](https://rapidapi.com/h0p3rwe/api/youtube-search-and-download/). Both the API's are free upto a certain limit of requests.
+5) copy the API key from the endpoints tab.
+6) paste it in the .env file.
+7) run **npm start**
+8) The project should run successfully. If there's an issue try debugging it. Won't take much time.
 
 
 
