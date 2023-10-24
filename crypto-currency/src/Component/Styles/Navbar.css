@@ -1,0 +1,56 @@
+
+
+.container-fluid {
+    justify-content: space-between !important;
+}
+
+.logo-img {
+    width: 3vmax;
+    height: 3vmax;
+}
+
+
+ul li {
+    font-family: 'Rowdies', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    list-style: none;
+    margin-left: 2vw!important;
+    margin-right: 2vw!important;
+}
+
+ul li:hover{
+    color: rgb(164, 162, 167);
+}
+
+.btn{
+    border-radius: 40px!important;
+}
+
+.dropdown{
+    position: inherit!important;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 1.6rem!important;
+    background-color: rgb(19, 19, 88)!important;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.dropdown-item{
+    color: rgb(203, 203, 203);
+}
+.dropdown-item:hover{
+    color: white;
+    background-color: #20156c;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.Search-Button {
+    border-radius: 10px!important;
+}
