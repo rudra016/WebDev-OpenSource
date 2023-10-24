@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <title>Image Slider</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+  <style>
+    *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+}
+.container{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.image-container{
+    position: relative;
+    width: 100%;
+}
+img{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.active{
+    display: block;
+}
+.dot-container{
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.dot-container button{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #8052ec;
+    background-color: transparent;
+}
+.dot-container button:nth-child(1){
+    background-color: #8052ec;
+}
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #8052ec;
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#prev{
+    left: 15px;
+}
+#next{
+    right: 15px;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://i.postimg.cc/W33MSM8K/image1.jpg" id="content1" class="active">
+            <img src="https://i.postimg.cc/kgmYspbp/image2.jpg" id="content2">
+            <img src="https://i.postimg.cc/yxRnXmYK/image3.jpg" id="content3">
+            <img src="https://i.postimg.cc/RFkLFW1D/image4.jpg" id="content4">
+        </div>
+        <div class="dot-container">
+            <button onclick = "dot(1)"></button>
+            <button onclick = "dot(2)"></button>
+            <button onclick = "dot(3)"></button>
+            <button onclick = "dot(4)"></button>
+        </div>
+        <button id="prev" onclick="prev()"> &lt; </button>
+        <button id="next" onclick="next()"> &gt; </button>
+    </div>
+    <script>
+      let i = 0; // current slide
+let j = 4; // total slides
+
+const dots = document.querySelectorAll(".dot-container button");
+const images = document.querySelectorAll(".image-container img");
+
+function next(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = ( j + i + 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator( i+ 1 );
+}
+
+function prev(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = (j + i - 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator(i+1);
+}
+
+function indicator(num){
+    dots.forEach(function(dot){
+        dot.style.backgroundColor = "transparent";
+    });
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
+}
+
+function dot(index){
+    images.forEach(function(image){
+        image.classList.remove("active");
+    });
+    document.getElementById("content" + index).classList.add("active");
+    i = index - 1;
+    indicator(index);
+}
+    </script>
+</body>
+</html>
