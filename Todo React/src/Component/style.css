@@ -1,0 +1,106 @@
+/* Import Font Awesome CSS */
+@import "~font-awesome/css/font-awesome.css";
+
+body {background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card {
+    width: 30vmax;
+    height: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+    background-color: #fff;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* Add button hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
+
+/* ADD FORM KI CSS */
+
+.addForm{
+    width: 60vmax;
+}
+
+.btn-danger{
+    margin: 0px 0px 0px 15px;
+}
+
+@media (max-width: 768px) {
+    .addForm{
+        width: 90vw;
+    }
+
+    .btn-danger{
+        margin: 0px 10px;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+  }
+
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
