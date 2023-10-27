@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review - Geeks Help</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-div {
+    margin-top: 2rem;
+    width: 20rem;
+    padding: 2rem 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+.img-container {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin: auto;
+    margin-bottom: .7rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.job {
+    font-weight: bold;
+    color: #e65b00;
+}
+
+.author, .job, .text {
+    margin-bottom: .5rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.btnContainer {
+    color: #e65b00;
+    font-size: 1.5rem;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.randomBtn {
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #e65b00;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.randomBtn:hover {
+    color: rgb(168, 160, 160);
+    background-color:#c4560d;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    color: rgb(28, 67, 104);
+}
+
+footer{
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="our-reviews">Our Reviews</h2>
+        <div class="main-div">
+            <div class="img-container">
+                <img src="https://www.codewithharry.com/img/logo-blue.png" id="img" alt="">
+            </div>
+            <div class="main-content">
+
+                <h2 class="author" id="author">CodeWithHarry</h2>
+                <p class="job" id="job">Programmer</p>
+                <p class="text" id="text">Harry is also known as CodeWithHarry on youtube. He has a hude subscribers
+                    youtube channel. He had done his study in B.Tech Computer Science.</p>
+                <div class="btnContainer">
+                    <i id="prev-btn" class="fa-solid fa-angle-left"></i>
+                    <i id="next-btn" class="fa-solid fa-angle-right"></i>
+                </div>
+                <button class="randomBtn" id="randomBtn">Random Review</button>
+            </div>
+        </div>
+    </div>
+
+    <footer> &copy; Created by raju_webdev</footer>
+    
+</body>
+<script>
+  // Reviews Data for manipulation
+const reviews = [
+    {
+        author: 'CodeWithHarry',
+        job: 'Programmer',
+        text: 'Harry is also known as CodeWithHarry on youtube. He has a hude subscribers youtube channel. He had done his study in B.Tech Computer Science.',
+        img: 'https://www.codewithharry.com/img/logo-blue.png'
+    },
+    {
+        author: 'Jassi Sheoran',
+        job: 'YouTuber',
+        text: 'Jassi is also known as Jassi Sheoran on youtube. He has a huge subscribers youtube channel. He is pursuing B.A. from MDU Rohtak and Part Time Youtuber',
+        img: 'https://yt3.ggpht.com/ytc/AKedOLRHjqTEyYUMkb1ir-TnxrZBo0EotyhtiSmpsY1jAw=s176-c-k-c0x00ffffff-no-rj-mo'
+    },
+    {
+        author: 'Clever Programmer',
+        job: 'JavaScript Developer',
+        text: 'You can find awesome programming lessons here! Also, expect programming tips and tricks that will take your coding skills to the next level.',
+        img: 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'
+    },
+    {
+        author: 'Ishan Sharma',
+        job: 'YouTube Creator',
+        text: 'He is most popular YouTube Creator with 599K subscribers and 22M+ video views. He makes freelancing, career and tech related content for students. And he have also the chance to talk with entrepreneurs like Ankur Warikoo and Noah Kagan on his channel.',
+        img: 'https://yt3.ggpht.com/omDV4RX5BjOw_R3J8L-qwETRq4qqy_uN5DTo58Trg1HW6TM2ejPGuVjtRjh2BrlGpeRLgaPAtA=s176-c-k-c0x00ffffff-no-rj-mo'
+    }
+
+]
+
+// Creating variables to get elements from our DOM.
+const mainImage = document.getElementById('img');
+const myAuthor = document.getElementById('author');
+const myJob = document.getElementById('job');
+const myText = document.getElementById('text');
+const prev = document.getElementById('prev-btn');
+const next = document.getElementById('next-btn');
+const random = document.getElementById('randomBtn')
+
+let indexNum = 0;
+let length = reviews.length;
+
+// Code for listening next button event
+next.addEventListener('click', function () {
+    indexNum++;
+    if (indexNum > length-1) {
+        indexNum = 0;
+        mainImage.src = reviews[indexNum].img;
+        myAuthor.innerHTML = reviews[indexNum].author;
+        myJob.innerHTML = reviews[indexNum].job;
+        myText.innerHTML = reviews[indexNum].text;
+    }
+    else {
+        mainImage.src = reviews[indexNum].img;
+        myAuthor.innerHTML = reviews[indexNum].author;
+        myJob.innerHTML = reviews[indexNum].job;
+        myText.innerHTML = reviews[indexNum].text;
+    }
+})
+
+// Code for listening previous button event
+prev.addEventListener('click', function () {
+    indexNum--;
+    if (indexNum < 0) {
+        indexNum = 3;
+        mainImage.src = reviews[indexNum].img;
+        myAuthor.innerHTML = reviews[indexNum].author;
+        myJob.innerHTML = reviews[indexNum].job;
+        myText.innerHTML = reviews[indexNum].text;
+    }
+    else {
+        mainImage.src = reviews[indexNum].img;
+        myAuthor.innerHTML = reviews[indexNum].author;
+        myJob.innerHTML = reviews[indexNum].job;
+        myText.innerHTML = reviews[indexNum].text;
+    }
+})
+
+// Code for listening random button event
+random.addEventListener('click', function () {
+    let num = Math.floor(3 * (Math.random()));
+
+    mainImage.src = reviews[num].img;
+    myAuthor.innerHTML = reviews[num].author;
+    myJob.innerHTML = reviews[num].job;
+    myText.innerHTML = reviews[num].text;
+})
+</script>
+</html>
