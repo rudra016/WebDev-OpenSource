@@ -1,0 +1,18 @@
+@media (min-width:750px) {
+    .main-content{
+        margin-left: 30vw;
+        background-color: white;
+        margin-right: 10vw;
+    }
+    iframe{
+        height: 620px;  
+    }
+}
+@media (max-width:750px) {
+    .main-content{
+        background-color: white;
+    }
+    iframe{
+        height: 650px;
+    }
+}
