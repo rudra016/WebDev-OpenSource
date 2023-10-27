@@ -1,0 +1,28 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+    /* border-style: solid; */
+}
+
+img{
+    width: 100vw;
+}
+nav {
+    /* background-color: lightblue; */
+    position: fixed;
+    box-sizing: border-box;
+
+}
+
+h3{
+    text-align:center;
+    color: white;
+    margin: 3vw;
+}
+div table{
+    box-sizing: border-box;
+}
+.table-div{
+    width: 100vw;
+}
+
