@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey From</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body class="body">
+
+    <div>
+        <header>
+            <h1>SURVEY FORM</h1>
+            <img src="1.jpg">
+        </header>
+    </div>
+    <form class="form" method = "post" action = "php/2.php" >
+
+    <div class="we">
+
+        <label for="fname" place>First Name</label>
+        <input type="text" name="firstname" placeholder="Write your first name">
+
+        <label for="lname"> Last Name</label>
+        <input type="text" name="lastname" placeholder="Write your last name">
+
+        <label for="email" place>E-mail</label>
+        <input type="text" name="email" placeholder="Write your E-mail">
+       
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone"  placeholder="0123-456-789">
+
+        <label for="address">Address </label>
+        <input type="text" id="address"  placeholder="Write your Address">
+
+        <label for="pincode">Pin Code</label>
+        <input type="text" id="pincode"  placeholder="Enter Your Area Code">
+
+        <label for="city">City</label>
+        <input type="text" id="city"  placeholder="Eg. Lucknow" >
+
+        <label for="state">State</label>
+        <input type="text" id="state"  placeholder="Eg. Uttar Pradesh ">
+    </div>
+
+    <div class="select">
+        <div>
+        <label>Class </label>
+        <select class="section">
+            <option>CS21</option>
+            <option>CS22</option>
+            <option>CS23</option>
+            <option>not apllicable</option>
+        </select>
+    </div>
+    <div>
+        <label>Year</label>
+            <select class="section">
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>not apllicable</option>            
+            </select>
+        </div><div>
+        <label>Branch</label>
+        <select class="section">
+            <option>C.S.E.</option>
+            <option>M.E.</option>
+            <option>C.E.</option>
+            <option>M.E.</option>
+            <option>E.C.</option>
+            <option>not apllicable</option>            
+        </select>
+    </div>
+    </div>
+
+    <label class="next">Designation</label>
+    <div class="radio">
+
+        <div>
+        <label for="Teacher">Teacher</label>
+        <input type="radio" id="Teacher" name="select">
+    </div><div>
+        <label for="Employee">Employee  </label>
+        <input type="radio" id="Employee" name="select">        
+    </div><div>
+        <label for="Student">Student </label>
+        <input type="radio" id="Student" name="select">
+    </div><div>
+        <label for="Other">Other </label>
+        <input type="radio" id="Other" name="select">
+    </div>
+    </div>
+    <label class="next">Areas of Interests</label>
+
+    <div class="area">  
+        <div>
+            <label for="Cricket"> Cricket</label>
+            <input type="checkbox" id="Cricket">
+        </div>
+        <div>
+            <label for="Hockey"> Hockey</label>
+            <input type="checkbox" id="Hockey">
+        </div>
+        <div>
+             <label for="Football"> Football</label>
+            <input type="checkbox" id="Football">
+        </div>
+        <div>
+            <label for="UNO">UNO</label>
+            <input type="checkbox" id="UNO">
+        </div>
+        <div>    
+            <label for="Chess"> Chess</label>
+            <input type="checkbox" id="Chess">
+        </div>
+        <div>
+            <label for ="Ludo"> Ludo</label>
+            <input type="checkbox" id="Ludo">
+        </div>
+        <div>
+            <label for ="Table Tennis"> Table Tennis</label>
+            <input type="checkbox" id="Table Tennis">
+        </div>
+        <div>    
+             <label for ="Pool">Pool</label>
+            <input type="checkbox" id="Pool">
+        </div>
+        <div>
+            <label  >Other</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="we">
+        <label for="feedback">Feedback</label>
+        <textarea class="feedback">
+        </textarea>
+    </div>
+
+    <div class="submit">
+        <button type="submit" class="sub">Submit</button>
+    </div>
+    
+    </form>
+</body>
+</html>
