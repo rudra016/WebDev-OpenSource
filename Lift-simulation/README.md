@@ -1,6 +1,6 @@
 # Lift-Simulation
 Create a web app where you can simulate lift mechanics for a client
-
+[demo](https://64e22f6ec3249774dd2bab16--benevolent-syrniki-c3580b.netlify.app)
 # UI Example
 ![Lift Simulation Example](Lift-Simulation-Example.png "Lift Simulation Example")
 
@@ -19,3 +19,4 @@ Create a web app where you can simulate lift mechanics for a client
    - Lift moving at 2s per floor
    - Lift stopping at every floor where it was called
    - Mobile friendly design
+[Tab-1698500706559.webm](https://github.com/aasimtaif/WebDev-OpenSource/assets/83891519/bf8aac31-c0de-4291-a4e8-9eb00943b59b)
