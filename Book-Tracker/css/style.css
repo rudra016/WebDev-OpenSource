@@ -1,0 +1,153 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  transition: all ease-in-out 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen .dialog-box {
+  width: 30%;
+  height: 50%;
+  background-color: #101820;
+  border: 1px black solid;
+  border-radius: 1.25rem;
+}
+.screen .dialog-box .book-submit {
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: #f2aa4c 1px solid;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.screen .dialog-box .book-submit:hover {
+  background-color: #f2aa4c;
+  transition: all ease-in-out 0.2s;
+  color: #101820;
+}
+.screen .dialog-box .title-bar {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.screen .dialog-box .title-bar #close {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  background-color: #ed2b33;
+}
+.screen .dialog-box .book-info {
+  display: flex;
+  justify-content: center;
+}
+.screen .dialog-box .book-info form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.screen .dialog-box .book-info form > * {
+  padding: 0.2rem 0.3rem;
+  margin-bottom: 0.8rem;
+}
+.screen .dialog-box .book-info form .completecheck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invisible {
+  display: none;
+}
+
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  color: rgb(198, 207, 214);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.container .sidebar {
+  flex-direction: column;
+  justify-content: start;
+  background-color: #101820;
+  text-align: center;
+  padding-top: 30%;
+  gap: 5%;
+}
+.container .sidebar #add-book {
+  cursor: pointer;
+  border-radius: 1.2rem;
+}
+.container .sidebar #add-book:hover {
+  background-color: #f2aa4c;
+  transition: all 0.3s ease-in-out;
+  color: #101820;
+}
+.container .book-section {
+  background-color: #f2aa4c;
+}
+.container .book-section .inner-border {
+  width: 90%;
+  height: 90%;
+  border: 1px solid black;
+  display: flex;
+  padding: 3.125rem;
+  flex-direction: row;
+  align-items: start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.container .book-section .inner-border .card {
+  border: 1px black solid;
+  color: black;
+  padding: 1.25rem;
+}
+.container .book-section .inner-border .card .remove-btn {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid rgb(242, 83, 48);
+}
+.container .book-section .inner-border .card .remove-btn:hover {
+  transition: all ease-in-out 0.2s;
+  background-color: rgb(242, 83, 48);
+}
+
+.btn {
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid #f2aa4c;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container .sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
