@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen invisible">
+            <div class="dialog-box">
+                <div class="title-bar">
+                    <div><\></div>
+                    <div>Please put an ENTRY</div>
+                    <div id="close">Close</div>
+                </div>
+                <div class="book-info">
+                    <form action="">
+                        <label for="name">Book Name</label>
+                        <input type="text" name="name"id="bookName">
+
+                        <label for="author">Author</label>
+                        <input type="text" name="author"id="author">
+
+                        <label for="pageRead">Page Read</label>
+                        <input type="number" name="pageRead" min="0" id="pageRead">
+                        <div class="completecheck">
+                            <label for="complete">Complete?</label>
+                            <input type="checkbox" name="complete" id="complete">
+                        </div>
+                    </form>
+                </div>
+                <div class="book-submit">Submit</div>
+            </div>
+        </div>
+        <div class="sidebar flex">
+            <h2>452 bookSHELF</h2>
+            <p>Press the button below to <br> ADD a book</p>
+            <div id="add-book" class="btn flex">
+                Make Entry
+            </div>
+        </div>
+        <div class="book-section flex">
+            <div class="inner-border">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
