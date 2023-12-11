@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/* The @import rule allows you to import a style sheet into another style sheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*     *{} This is a common technique called a CSS reset. Different browsers use different default margins, causing sites to look different by margins. The * means "all elements" (a universal selector), so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
+}
+
+/* we have added the styles to main this it means body so every thing aligend and center and gave color black */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #050801;
+  font-family: "Raleway", sans-serif;
+  /* when we use justify content center it will comes in the center just as it is && we can say It is main axis horizonatlly align center*/
+  /* align items cross axis and will align center */
+  /* we have height as 100vh */
+  /* the background color given as black with #hex value */
+}
+
+a {
+  position: relative;
+
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: aqua;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  letter-spacing: 4px;
+  margin-right: 50px;
+
+  /* when we gave position relative it will be positioned according to the normal flow of the document and the off set  relative to it self based on the valuesThe offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static */
+  /* The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. */
+  /* it is way to control animation speed when css changes its propertires */
+  /* overflow: hidden;   if i dont use over flow hidden it will be spread entire line*/
+}
+
+/* when add hover buttion we can do some action when we hover the button thats why we have used hover */
+a:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+  /* when we are hovering the propery which have given in a:hover will apply like box shadow,text color and reflection of an element*/
+  /* the -webkit-box-reflect will help us get the refelection  on the element */
+}
+a:nth-child(1)::after {
+  filter: hue-rotate(280deg);
+
+  /* filter property will help to give graphical effects  */
+}
+
+a:nth-child(2) {
+  filter: hue-rotate(700deg);
+}
+a span {
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animatel 1s infinite;
+}
+@keyframes animatel {
+  0% {
+    left: 100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+/* for animation we do use key frames */
+a span:nth-child(2) {
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 450px) {
+body{
+  display: grid;
+  grid-template-columns: repeat(1,fr);
+  font-size: 10px;
+}
+a{
+  letter-spacing: none;
+  margin: 20px 2px;
+  overflow: auto;
+  text-transform:lowercase;
+  
+}
+}
