@@ -1,0 +1,105 @@
+@media (max-width: 1300px) {
+    .CarCard:hover .logo {
+        margin-bottom: 16px;
+    }
+
+    .serv__item {
+        height: 15vh !important;
+        font-size: 4vw !important;
+    }
+
+    .overflow-title {
+        font-size: 5vw !important;
+    }
+
+    .para {
+        font-size: 1.5vw !important;
+    }
+
+    .mar-top {
+        margin-top: 7vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-brand img {
+        width: 7vw !important;
+    }
+
+    .serv__item-text {
+        font-size: 3vw;
+        color: #4b4b4b;
+        text-transform: uppercase;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .footer__div {
+        font-size: 4vw;
+        letter-spacing: 5px;
+        color: var(--pr-color);
+        text-transform: uppercase;
+    }
+
+    .serv__item-arrow img {
+        width: 4vw !important;
+        display: block;
+        transform: rotate(180deg);
+    }
+
+    .CarCard {
+        width: 62vw;
+        height: 13vh;
+        border-radius: 65px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid white;
+        transition: all ease 0.7s;
+        margin-bottom: 18px;
+    }
+
+    .m3 {
+        display: none;
+    }
+
+    .x6 {
+        display: none;
+    }
+
+    #center {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .CarCard:hover {
+        width: 62vw;
+        height: 62vh;
+        justify-content: flex-end;
+    }
+
+    .footer__div {
+        font-size: 5vw !important;
+        letter-spacing: 1px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand img {
+        width: 10vw !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .search{
+        display: none !important;
+    }
+
+    .coll-search{
+        display: block;
+    }
+}
