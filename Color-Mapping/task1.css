@@ -1,0 +1,11 @@
+body{
+  
+    justify-content: center;
+    display: flex;
+}
+.box{
+    margin-top: 15rem;
+    width: 400px;
+    height: 10rem;
+    border: 2px solid black ;
+}

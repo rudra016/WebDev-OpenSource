@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            
+        </nav>
+
+        <h1>About Us</h1>
+
+    </section>
+
+    <!-- -----------About Us Content----------- -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia excepturi quo libero quidem adipisci hic officiis, nihil alias dolores quae culpa? Inventore, est! Ipsum inventore sequi distinctio accusamus provident alias ea est iusto sit voluptate debitis quidem itaque possimus in autem totam quisquam exercitationem adipisci, vero eos odio? Veniam quam nobis ex omnis eveniet ad aliquam molestiae debitis placeat sint.</p>
+                <a href="" class="hero-btn red-btn">Explore</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+  
+
+   
+
+    <!-- ------------Footer-------------------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vitae ullam laboriosam perspiciatis quidem, consequuntur, culpa corrupti autem facere quam <br> beatae obcaecati vel consequatur quasi nemo assumenda. Rem voluptatibus qui fugit totam aut repudiandae corporis.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Created By Harsh Kumar Singh </p>
+    
+    </section>
+
+
+
+    <!-- ---------Javascript for togle menu-------- -->
+    <script>
+        var navlinks= document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right="0";
+        }
+        function hidemenu() {
+            navlinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>

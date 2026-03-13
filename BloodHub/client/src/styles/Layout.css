@@ -1,0 +1,90 @@
+.sidebar {
+  height: 100vh !important;
+  border: 5px;
+  background-color: #2e3200;
+  box-shadow: 0 0 3px 2px gray;
+  color: white;
+}
+.menu {
+  padding-top: 100px;
+}
+.menu-item {
+  padding-top: 30px;
+}
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.menu-item i {
+  font-size: 1.2rem;
+  margin: 0 15px;
+  color: white;
+}
+.active {
+  background-color: white;
+  padding: 10px;
+  margin-top: 25px;
+}
+.active a,
+.active i {
+  color: #2e3200;
+}
+.main-page {
+  cursor: pointer;
+}
+
+.form-check,
+.form-check-label {
+  cursor: pointer;
+}
+
+/***** Table *****/
+
+.category-list-show-h {
+  height: 85vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+/* fix table head */
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.25rem;
+}
+tr.red th {
+  background: rgb(250, 12, 119);
+  color: white;
+}
+tr.green th {
+  background: rgb(0, 147, 105);
+  color: white;
+}
+tr.yellow th {
+  background: rgb(238, 195, 24);
+  color: white;
+}
+tr.blue th {
+  background: rgb(2, 35, 197);
+  color: white;
+}
+th {
+  background: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(105, 5, 5, 0.4);
+}

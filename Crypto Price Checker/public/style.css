@@ -1,0 +1,15 @@
+*{
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    background-color: rgb(35, 35, 72)!important;
+}
+
+@media (max-width: 576px)
+{
+    .xsmall{
+        display: flex;
+        flex-direction: column;
+    }
+}

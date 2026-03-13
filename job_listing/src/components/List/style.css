@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(181, 207, 207);
+  align-items: center;
+}
+
+.cardcontainer {
+  background-color: aliceblue;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  transition: transform 0.3s ease;
+}
+
+.cardcontainer:hover {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 8px 2px #dad2d2;
+}
+
+.firstcontent,
+.second_content,
+.thirdcontent {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.post {
+  flex: 1;
+  margin-right: 12px;
+  font-size: large;
+}
+
+.company_logo {
+  top: 30px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  position: relative;
+  margin-left: 8px;
+}
+
+.company_logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.keyword:hover,
+.clear:hover {
+  background-color: #3fb4a3;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.keyword {
+  border: none;
+  outline: none;
+  background: none;
+  color: #4abbb9cd;
+  margin-left: 8px;
+}
+
+.searchbar {
+  background-color: aliceblue;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.clear {
+  font-size: 12px;
+  color: #3fb4a3;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.new,
+.featured {
+  color: aliceblue;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 4px 4px;
+}
+
+.new {
+  background-color: #3fb4a3;
+}
+
+.featured {
+  background-color: black;
+}
+
+.post {
+  font-weight: bold;
+}
+
+.post:hover {
+  color: #3fb4a3;
+}
+
+.company_name {
+  color: #3fb4a3;
+}
+
+.thirdcontent ul {
+  display: flex;
+  color: #3fb4a3;
+  font-size: small;
+}
+#Xbutton {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: larger;
+  background-color: #3fb4a3;
+  color: #ffffff;
+  margin-left: 4px;
+}
+#Xbutton:hover {
+  background-color: #060606;
+}

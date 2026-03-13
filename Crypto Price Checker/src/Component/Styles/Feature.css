@@ -1,0 +1,75 @@
+.Feature-Tagline{
+    color: #6e7ccc;
+    font-size: larger;
+}
+
+.Feature-Heading{
+    font-size: 3vw!important;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.Feature-Section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3,h2{
+    overflow: hidden;
+}
+
+.Feature-Block{
+    background: #ffffff0a;
+    display: flex;
+    color: white;
+    margin-right: 8px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 25px;
+    transition: all ease .3s;    
+}
+
+.Title{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.Feature-Block:hover{  
+    background-color: #ffffff17;
+    .Feature-Icon{
+        background-color: rgba(245, 245, 245, 0.118);
+    }
+}
+
+.Feature-Icon{
+    padding: 11px;
+    border-radius: 15%;
+    background-color: #ffffff17;
+    margin-bottom: 10px;
+    transition: all ease .3s;
+}
+
+.feature-title {
+    font-size: 1.3vw;   
+}
+
+/* Define font size for different screen widths */
+@media (max-width: 600px) {
+    .feature-title {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+    .Title{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .Title{
+        font-size: 4vw;
+    }
+    .feature-title {
+        font-size: 3vw; /* Further adjust font size for even smaller screens */
+    }
+}

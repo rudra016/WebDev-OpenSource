@@ -1,0 +1,37 @@
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: darkgreen;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot3 {
+  height: 15px;
+  width: 15px;
+  background-color:yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.card .container h4{
+  z-index: 1;
+}
+@media screen and (max-width:991px) and (min-width:767px) {
+  .tabl div{
+    margin-left: 20px;
+    margin-bottom: 5px;
+  } 
+}
+@media screen and (max-width:768px){
+  .tabl div{
+    margin-left: 20px;
+    margin-right: 65px;
+    margin-bottom: 5px;
+  }
+}

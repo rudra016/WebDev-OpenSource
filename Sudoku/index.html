@@ -1,0 +1,262 @@
+<!--
+This Sudoku game is licensed under the MIT license:
+
+Copyright (c) 2015 Jonas Ohlsson Aden (jonassebastianohlsson.com)
+Modified work copyright (c) 2019 Nicolai Jaeger (McZak.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<!-- <head> -->
+    <style>
+        .sudoku-board {
+         min-height: 22.75rem;
+         margin-top: 3px;
+         margin-bottom: 1em;
+        }
+        
+        .sudoku-board-cell {
+         display: inline-block;
+         position: relative;
+         border: 1px solid #ddd;
+         background: white;
+         max-width: 11.11111%;
+        }
+        
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(9n+1) {
+         border-left-width: 2px;
+         border-left-color: #808080;
+        }
+        
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(n):nth-of-type(-n+9) {
+         border-top-width: 2px;
+         border-top-color: #808080;
+        }
+        
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(3n) {
+         border-right-width: 2px;
+         border-right-color: #808080;
+        }
+        
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(n+19):nth-of-type(-n+27),
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(n+46):nth-of-type(-n+54),
+        [data-board-size="9"].sudoku-board .sudoku-board-cell:nth-of-type(n+73):nth-of-type(-n+81) {
+         border-bottom-width: 2px;
+         border-bottom-color: #808080;
+        }
+        
+        .sudoku-board-cell input {
+         background: none;
+         font-size: 19.2px;
+         font-size: 1.2rem;
+         text-align: center;
+         width: 2em;
+         max-width: 100%;
+         height: 2em;
+         border: 0;
+         position: relative;
+         z-index: 1; /*on top of candidates*/
+        }
+        
+        .sudoku-board-cell .highlight-val {
+         color: #00d;
+        }
+        
+        .sudoku-board-cell .board-cell--error {
+         background: #d00;
+         color: #eee;
+        }
+        
+        .sudoku-board-cell .candidates {
+         display: none; /*hidden by default*/
+         position: absolute;
+         top: 0; bottom: 0; left: 0; right: 0;
+         text-align: center;
+         font-size: .75em;
+         letter-spacing: -.5px;
+         font-family: monospace, sans-serif;
+         line-height: 0;
+         text-align: justify;
+        }
+        
+        .sudoku-board .candidates:after {
+         content: "";
+         display: inline-block;
+         width: 100%;
+        }
+        
+        @media(max-width: 23em){
+         .sudoku-board .candidates {
+          letter-spacing: -2px;
+         }
+        }
+         .showCandidates .candidates {
+          display: block;
+         }
+        
+        .sudoku-board .candidates div {
+         display: inline-block;
+         width: 20%;
+         line-height: 1.13;
+         vertical-align: top;
+        }
+        
+        .candidate--highlight {
+         background-color: yellow;
+        }
+        .candidate--to-remove {
+         background-color: red;
+         color: white;
+        }
+        
+        .sudokubutton1,.sudokubutton2,.sudokubutton3,.sudokubutton4,
+        .sudokubutton5,.sudokubutton6,.sudokubutton7 {
+        color: white;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        padding: 1px 6px;
+        }
+        .sudokubutton1 {
+        background-color: #3cbf71;
+        }
+        .sudokubutton2 {
+        background-color: #ff9224;
+        }
+        .sudokubutton3 {
+        background-color: #ff3c3c;
+        }
+        .sudokubutton4 {
+        background-color: #020202;
+        }
+        .sudokubutton5,.sudokubutton6 {
+        background-color: #4040ff;
+        }
+        .sudokubutton7 {
+        background-color: #899db6;
+        }
+        .sudokubutton1:hover,.sudokubutton2:hover,.sudokubutton3:hover,.sudokubutton4:hover,
+        .sudokubutton5:hover,.sudokubutton6:hover,.sudokubutton7:hover {
+        background-color: #EDEDED;
+        color: black;
+        cursor: pointer;
+        }
+        
+        * {
+         margin:0; padding:0;
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+        }
+        
+        .wrap {
+         padding: 2em 1em;
+         width: 400px;
+         max-width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+        }
+        
+        @media(min-width: 30em) {
+         .wrap {
+          width: 490px;
+         }
+         .sudoku-board input {
+          font-size: 24px;
+          font-size: 1.5rem;
+         }
+         .sudoku-board .candidates {
+          font-size: .8em;
+         }
+        }
+        </style>
+        
+        <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="https://mczak.com/code/sudoku/js/sudoku2.js"></script>
+        <!-- </head> -->
+        
+        <!-- <body> -->
+        <div class="wrap">
+                
+        <!--show candidates toggle-->
+        <label for="toggleCandidates">Show candidates </label>
+        <input id="toggleCandidates" class="js-candidate-toggle" type="checkbox"/>
+        <!--generate board buttons-->
+        New:
+        <button type="button" class="sudokubutton1 js-generate-board-btn--easy">Easy</button>
+        <button type="button" class="sudokubutton2 js-generate-board-btn--medium">Medium</button>
+        <button type="button" class="sudokubutton3 js-generate-board-btn--hard">Hard</button>
+        <button type="button" class="sudokubutton4 js-generate-board-btn--very-hard">Very Hard</button>
+        
+        <!--the only required html-->
+        <div id="sudoku" class="sudoku-board">
+        </div>
+        
+        <!--solve buttons-->
+        Solve: <button type="button" class="sudokubutton5 js-solve-step-btn">One Step</button>
+        <button type="button" class="sudokubutton6 js-solve-all-btn">All</button>
+        <br>
+        <!--clear board btn-->
+        Clear: <button type="button" class="sudokubutton7 js-clear-board-btn">Board</button>
+        </div>
+        
+        <script>
+         var $candidateToggle = $(".js-candidate-toggle"),
+         $generateBoardBtnEasy = $(".js-generate-board-btn--easy"),
+         $generateBoardBtnMedium = $(".js-generate-board-btn--medium"),
+         $generateBoardBtnHard = $(".js-generate-board-btn--hard"),
+         $generateBoardBtnVeryHard = $(".js-generate-board-btn--very-hard"),
+         
+         $solveStepBtn = $(".js-solve-step-btn"),
+         $solveAllBtn = $(".js-solve-all-btn"),
+         $clearBoardBtn = $(".js-clear-board-btn"),
+         
+         mySudokuJS = $("#sudoku").sudokuJS({
+          difficulty: "very hard"
+          //change state of our candidate showing checkbox on change in sudokuJS
+          ,candidateShowToggleFn : function(showing){
+           $candidateToggle.prop("checked", showing);
+          }
+         });
+        
+         $solveStepBtn.on("click", mySudokuJS.solveStep);
+         $solveAllBtn.on("click", mySudokuJS.solveAll);
+         $clearBoardBtn.on("click", mySudokuJS.clearBoard);
+        
+         $generateBoardBtnEasy.on("click", function(){
+          mySudokuJS.generateBoard("easy");
+         });
+         $generateBoardBtnMedium.on("click", function(){
+          mySudokuJS.generateBoard("medium");
+         });
+         $generateBoardBtnHard.on("click", function(){
+          mySudokuJS.generateBoard("hard");
+         });
+         $generateBoardBtnVeryHard.on("click", function(){
+          mySudokuJS.generateBoard("very hard");
+         });
+        
+         $candidateToggle.on("change", function(){
+          if($candidateToggle.is(":checked"))
+           mySudokuJS.showCandidates();
+          else
+           mySudokuJS.hideCandidates();
+         });
+         $candidateToggle.trigger("change");
+        </script>
+        </body>

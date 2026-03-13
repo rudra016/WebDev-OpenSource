@@ -8,6 +8,11 @@ const styles = {
   heroSubText:
     "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 
+  dropdownMenu:
+    "absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10",
+  dropdownItem:
+    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100",
+  
   sectionHeadText:
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:

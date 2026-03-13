@@ -1,0 +1,59 @@
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 720px;
+    height: 720px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#inputname{
+    width: 30vw;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+.d{
+    background-color: rgb(0, 0, 0);
+    border: 0.1px solid red;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.d1{
+    background-color: rgb(0, 0, 0);
+    border: 0.1px solid red;
+    height: 144px;
+    width: 144px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: rgb(9, 39, 194);
+}
+.yellow{
+    background-color: rgb(201, 215, 13);
+}
+.green{
+    background-color: rgb(20, 196, 23);
+}
+.red{
+    background-color: rgb(255, 2, 2);
+}
+.purple{
+    background-color: rgb(93, 7, 90);
+}
+.skyblue{
+    background-color: rgb(0, 234, 255);
+}
+.lightgreen{
+    background-color: rgb(81, 255, 0);
+}
+.pink{
+    background-color: pink;
+}

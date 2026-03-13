@@ -1,0 +1,39 @@
+
+.Landing{
+    height: 60vh!important;
+}
+
+.tagLine {
+    font-size: 4vw!important;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    overflow-y: hidden !important;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 45px !important;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn {
+    width: fit-content !important;
+}
+
+.gif {
+    width: inherit;
+    height: auto;
+    border-radius: 100px !important;
+}

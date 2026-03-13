@@ -1,0 +1,112 @@
+<html>
+<head>
+	<link rel="stylesheet" href="experi.css">
+</head>
+<body>
+<div class="login" >
+	<h1 align="center">Student Feedback</h1> 
+	<h5 align="center">Please provide your feedback below:</h5>
+<form method="post" action="action.php">
+<p align="center">Semester-3 sem</p>
+<hr><br><br>
+<b>Name</b>
+<input type="text" value="Your Name"/>
+<br><br>
+<b>Roll No.</b>
+<input type="text" value="Your Roll no."/>
+<br><br>
+<b>Section</b>
+<input type="text" value="Your Section"/>
+<br><br><br><br>
+<b>Subject</b>
+<select name="sub" style="width:100px;">
+	<option value="DS" selected="selected">Data Structure</option>
+	<option value="DSTL">DSTL</option>
+	<option value="SI">Sensor and Instrumentation</option>
+	<option value="TC">Technical Communication</option>
+	<option value="COA">Computer Organization And Architecture</option>
+        <option value="CSS">Computer System Security</option>
+</select>
+<b>Teacher Name</b>
+<select name="teachername" style="width:200px;">
+	<option>Ankur Srivastava</option>
+	<option>Shubha Mishra</option>
+	<option>Shivam Dixit</option>
+	<option>Aishwarya Nigam</option>
+	<option>Sunil Singh</option>
+        <option>Anurag Shukla</option>
+</select>	
+<br><br>
+
+<b>Q.1. Personality</b>
+<br>
+	<input type="radio" name="f1" value="1" checked>Bad 
+	<input type="radio" name="f1" value="2">Average 
+	<input type="radio" name="f1" value="3">Good 
+	<input type="radio" name="f1" value="4">Very Good 
+	<input type="radio" name="f1" value="5">Excellent 
+<br><br>
+
+<b>Q.2. Subjective Knowledge</b>
+<br>
+	<input type="radio" name="f2" value="1" checked>Bad 
+	<input type="radio" name="f2" value="2">Average 
+	<input type="radio" name="f2" value="3">Good 
+	<input type="radio" name="f2" value="4">Very Good 
+	<input type="radio" name="f2" value="5">Excellent 
+<br><br> 
+
+<b>Q.3. Attitute towards college property</b>
+<br>
+	<input type="radio" name="f3" value="1" checked>Bad 
+	<input type="radio" name="f3" value="2">Average 
+	<input type="radio" name="f3" value="3">Good 
+	<input type="radio" name="f3" value="4">Very Good 
+	<input type="radio" name="f3" value="5">Excellent 
+<br><br>
+
+<b>Q.4. Amount of knowledge you get</b>
+<br>
+	<input type="radio" name="f4" value="1" checked>Bad 
+	<input type="radio" name="f4" value="2">Average 
+	<input type="radio" name="f4" value="3">Good 
+	<input type="radio" name="f4" value="4">Very Good 
+	<input type="radio" name="f4" value="5">Excellent 
+<br><br>
+
+<b>Q.5. Puntuality in coming class</b>
+<br>
+	<input type="radio" name="f5" value="1" checked>Bad 
+	<input type="radio" name="f5" value="2">Average 
+	<input type="radio" name="f5" value="3">Good 
+	<input type="radio" name="f5" value="4">Very Good 
+	<input type="radio" name="f5" value="5">Excellent 
+<br><br>
+
+<b>Q.6. His/Her capability of controlling Mass</b>
+<br>
+	<input type="radio" name="f6" value="1" checked>Bad 
+	<input type="radio" name="f6" value="2">Average 
+	<input type="radio" name="f6" value="3">Good 
+	<input type="radio" name="f6" value="4">Very Good 
+	<input type="radio" name="f6" value="5">Excellent 
+<br><br>
+
+<b>Q.7. Way of Teaching</b>
+<br>
+	<input type="radio" name="f7" value="1" checked>Bad 
+	<input type="radio" name="f7" value="2">Average 
+	<input type="radio" name="f7" value="3">Good 
+	<input type="radio" name="f7" value="4">Very Good 
+	<input type="radio" name="f7" value="5">Excellent 
+<br><br><br>
+<b>Any Suggestion..</b>
+<br><br>
+ <textarea name="ctl00$phMain$txtComment" rows="2" cols="20" id="ctl00_phMain_txtComment" title="Summary:(300 characters)" class="txtBox" onkeyup="return validateLimit(this, 'lblMsg1', 300)" onblur="return validateLimit(this, 'lblMsg1', 300)" style="height:80px;width:550px;"></textarea>
+<br><br><br>
+ <input type="submit" name="Submit" value="Submit"/>
+ <input type="reset" name="Reset" value="Reset"/>
+ </form>
+ </div>
+</body>
+</html>

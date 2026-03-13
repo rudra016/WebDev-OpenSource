@@ -1,0 +1,35 @@
+*{
+    /* border-style: solid; */
+    margin: 0%;
+    padding: 0%;
+}
+.main-content {
+    margin-left: 300px;
+    margin-right: 30px;
+    /* border-style: solid; */
+}
+h1{
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+.main-content div{
+    margin: 0%;
+}
+.main-content div{
+    padding: 2%;
+}
+th {
+    background-color: yellow;
+  }
+tr{
+background-color: lightblue;
+}
+tr:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+@media screen and (max-width:900px) {
+    .main-content {
+        margin-left: 1vw;
+        /* border-style: solid; */
+    }
+}

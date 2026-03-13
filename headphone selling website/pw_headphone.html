@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beats Landing Page</title>
+
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- adding the poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background: #0f0f10;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+/* removing the default css of a tags */
+a {
+  text-decoration: none;
+}
+
+/* removing the default css of li tags */
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0 15vw;
+}
+
+/* designing the navigation menu */
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+nav img {
+  width: 25px;
+  height: 25px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+nav ul li:first-child a{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-right-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right-section button {
+  background: #1e1e21;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px 40px;
+}
+
+/* designing the main section */
+main {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative;
+}
+
+.mainImg {
+  width: 230px;
+  position: relative;
+  top: -250px;
+  left: 70px;
+}
+
+.main {
+  margin-left: 180px;
+}
+
+.onEarImg {
+  width: 320px;
+  margin-left: 50px;
+}
+
+.main h1 {
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 25px;
+}
+
+.main h4 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.main p {
+  width: 65%;
+  font-size: 12px;
+  font-weight: 300;
+  color: #bdc0c2;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.shopping-bag-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1e1e21;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 10px 25px;
+}
+
+.shopping-bag-section img {
+  width: 15px;
+  background-color: transparent;
+}
+
+.shopping-bag-section p {
+  margin-bottom: 0;
+  color: white;
+  background-color: transparent;
+}
+
+.shopping-bag-section span {
+  background-color: transparent;
+}
+
+/* designing the social media section */
+.social-media-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  position: relative;
+  top: -50px;
+  margin-bottom: 40px;
+}
+
+.social-media-section img {
+  scale: 0.8;
+}
+
+/* designing the specification section */
+.specification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specification-logo,
+.case-logo {
+  scale: 0.8;
+  margin-bottom: 20px;
+}
+
+.specification-list {
+  display: flex;
+}
+
+.specification-list img {
+  scale: 0.8;
+}
+
+.specification-list-items div {
+  margin-bottom: 20px;
+}
+
+.specification-list-items div img {
+  scale: 0.8;
+}
+
+.specification-list-items div p {
+  font-size: 12px;
+}
+
+.specification-list-items div p:last-child {
+  color: #bdc0c2;
+  font-size: 10px;
+  margin-top: 5px;
+  width: 70%;
+}
+
+.specification-list-items div:first-child,
+.specification-list-items div:last-child {
+  margin-left: 30px;
+}
+
+/* designing the case section */
+.case {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.case-item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-item-img {
+  scale: 0.8;
+  /* width: 50%; */
+}
+
+.case-item div {
+  width: 20%;
+}
+
+.case-item div p:first-child {
+  color: #bdc0c2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.case-item div p:last-child img {
+  scale: 0.8;
+  background-color: transparent;
+}
+
+.case-item div p:last-child {
+  width: fit-content;
+  background: #1e1e21;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+/* buy product section */
+.buy-product {
+  background: #181a1b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 70px;
+  padding: 40px 0;
+}
+
+.buy-product div,
+.buy-product p,
+.buy-product h3,
+.buy-product img {
+  background-color: transparent;
+}
+
+.buy-product div {
+  width: 25%;
+}
+
+.buy-product div h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.buy-product div p {
+  color: #bdc0c2;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.buy-product div div {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background: #000000;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.buy-product div div img {
+  scale: 0.8;
+  margin-right: 10px;
+}
+
+.buy-product div div p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: white;
+}
+
+/* designing the product section for displaying the items */
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 150px;
+}
+
+.product-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-logo {
+  scale: 0.3;
+}
+
+.product-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-left: 50px;
+}
+
+.product-card {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background: #181a1b;
+  border-radius: 8px;
+}
+
+.product-img {
+  width: 75px;
+  height: 100px;
+  position: absolute;
+  z-index: 100;
+  top: -40px;
+  left: 28px;
+}
+
+.product-img,
+.product-card p,
+.product-card span,
+.product-card img,
+.product-card div {
+  background-color: transparent;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.product-info p {
+  font-size: 12px;
+}
+
+.product-info p span {
+  color: #bdc0c2;
+}
+
+.product-info div {
+  background: #0a0a0b;
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+.product-info div img {
+  width: 13px;
+  height: 13px;
+}
+
+/* designing the footer section */
+footer{
+  margin: 100px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-logo{
+  scale: 0.8;
+}
+
+ul li a{
+  font-size: 12px;
+  color: #BDC0C2;
+}
+
+ul li:first-child a{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+ul li:first-child{
+  margin-bottom: 10px;
+}
+
+.footer-subscription{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-subscription div:first-child{
+  background: #181A1B;
+border-radius: 8px;
+padding: 5px 10px;
+display: flex;
+}
+
+.footer-subscription div:first-child input{
+  border: none;
+  background-color: transparent;
+}
+
+.subscribe-button{
+  background: #0A0A0B;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-button img{
+  scale: 0.8;
+}
+
+.subscribe-button p{
+  font-size: 12px;
+}
+
+.footer-subscription div:last-child img{
+  margin-right: 10px;
+  scale: 0.8;
+}
+
+.arrow-up{
+  position: absolute;
+  right: -160px;
+  scale: 0.8;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- creating the navigation menu -->
+    <nav>
+      <img src="beatsLogo.png" alt="logo" />
+
+      <div class="nav-right-section">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Specs</a></li>
+          <li><a href="#">Case</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+        <button>Shop</button>
+      </div>
+    </nav>
+
+    <!-- creating the main landing page -->
+    <main>
+      <img class="mainImg" src="mainImage.png" alt="main image" />
+      <div class="main">
+        <img class="onEarImg" src="onEar.png" alt="on ear logo" />
+        <h1>Beats 3</h1>
+        <h4>Overview</h4>
+        <p>
+          Enjoy award-winning Beats sound with wireless listening freedom and a
+          sleek, streamlined design with comfortable padded earphones,
+          delivering first-rate playback.
+        </p>
+        <div class="shopping-bag-section">
+          <img src="shoppingBag.png" alt="shopping bag" />
+          <p>Add to Bag</p>
+          <span>N399K</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- section for adding social media icons -->
+    <section class="social-media-section">
+      <img src="appleLogo.png" alt="apple logo" />
+      <img src="spotifyLogo.png" alt="spotify logo" />
+      <img src="amazonLogo.png" alt="amazon logo" />
+      <img src="youtubeLogo.png" alt="youtube logo" />
+    </section>
+
+    <!-- creating a new specification section -->
+    <section class="specification">
+      <!-- adding the specs logo -->
+      <img
+        class="specification-logo"
+        src="specsLogo.png"
+        alt="specs logo"
+      />
+
+      <div class="specification-list">
+        <!-- creating a division for holding all the specifications -->
+        <div class="specification-list-items">
+          <!-- creating a division for each specifications -->
+          <div>
+            <img src="bluetooth.png" alt="bluetooth" />
+            <p>Connection</p>
+            <p>Bluetooth v5.2</p>
+          </div>
+
+          <div>
+            <img src="battery.png" alt="battery" />
+            <p>Battery</p>
+            <p>Duration 40h</p>
+          </div>
+
+          <div>
+            <img src="charger.png" alt="charger" />
+            <p>Load</p>
+            <p>Fast Charge 4.2-AAC</p>
+          </div>
+
+          <div>
+            <img src="mic.png" alt="mic" />
+            <p>Microphone</p>
+            <p>Supports Apple Siri and Google</p>
+          </div>
+        </div>
+
+        <!-- adding an image with respect to the specification -->
+        <img
+          src="specsImage.png"
+          alt="specification headphone image"
+        />
+      </div>
+    </section>
+
+    <!-- creating a case section -->
+    <section class="case">
+      <!-- adding the case logo here -->
+      <img class="case-logo" src="caseLogo.png" alt="case logo" />
+
+      <!-- creating a new division to wrap all case items -->
+      <div class="case-item">
+        <img
+          class="case-item-img"
+          src="caseImage.png"
+          alt="case image"
+        />
+
+        <div>
+          <p>
+            With a comfortable and adaptable case so that you can store it
+            whenever you want, and keep your durability forever.
+          </p>
+          <p>
+            <img src="group.png" alt="group" />
+            More Info
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section to allow user to buy a product -->
+    <section class="buy-product">
+      <div>
+        <h3>Immense yourself in your music</h3>
+        <p>Buy Now, up to 40% off.</p>
+        <div>
+          <img src="shoppingBag.png" alt="shopping bag" />
+          <p>Buy Now</p>
+        </div>
+      </div>
+
+      <img src="buyNowSectionImage.png" alt="buy now" />
+    </section>
+
+    <!-- creating a product section to display the items -->
+    <section class="product">
+      <!-- adding the choose style logo -->
+      <img class="product-logo" src="productLogo.png" alt="logo" />
+
+      <!-- creating a new division for adding all the products to showcase to user -->
+      <div class="product-items">
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img class="product-img" src="black.png" alt="black" />
+          <div class="product-info">
+            <p>
+              Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="redBlack.png"
+            alt="red black"
+          />
+          <div class="product-info">
+            <p>
+              Red Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="nightBlack.png"
+            alt="Night Black"
+          />
+          <div class="product-info">
+            <p>
+              Night Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img class="product-img" src="blue.png" alt="blue" />
+          <div class="product-info">
+            <p>
+              Blue <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="twilightGray.png"
+            alt="twilight"
+          />
+          <div class="product-info">
+            <p>
+              Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- designing the footer area of the website -->
+    <footer>
+      <img class="footer-logo" src="beatsLogo.png" alt="logo" />
+
+      <!-- creating the product navigation menu -->
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Headphones</a></li>
+        <li><a href="#">Earphones</a></li>
+        <li><a href="#">Earbuds</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+
+      <!-- creating the support navigation menu -->
+      <ul>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Product Help</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Provides</a></li>
+      </ul>
+
+      <!-- adding subscribe and social media icon buttons -->
+      <div class="footer-subscription">
+        <!-- adding the division for subscribe -->
+        <div>
+          <input type="email" placeholder="Email" />
+          <div class="subscribe-button">
+            <img src="rightArrow.png" alt="rightArrow" />
+            <p>Subscribe</p>
+          </div>
+        </div>
+
+        <!-- social media icons -->
+        <div>
+          <img src="facebook.png" alt="facebook" />
+          <img src="twitter.png" alt="twitter" />
+          <img src="instagram.png" alt="instagram" />
+          <img src="linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+
+      <!-- adding top arrow for icon for moving the page to top -->
+      <img class="arrow-up" src="upArrow.png" alt="upArrow" />
+    </footer>
+  </body>
+</html>

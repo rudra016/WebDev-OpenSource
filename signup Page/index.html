@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <div class="column">
+          <h2 class="info">General Information</h2>
+          <input type="text" placeholder="Title" />
+
+          <div class="inline-container">
+            <input
+              type="text"
+              id="Name"
+              name="firstName"
+              required
+              placeholder="First Name"
+              style="margin-right: 10px"
+            />
+
+            <input
+              type="text"
+              id="Name"
+              name="lastName"
+              required
+              placeholder="Last Name"
+            />
+          </div>
+
+          <input
+            type="text"
+            id="Position"
+            name="position"
+            placeholder="Position"
+          />
+          <input
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Company"
+          />
+
+          <div class="inline-container">
+            <input
+              type="text"
+              id="Business Arena"
+              name="business arena"
+              style="margin-right: 10px"
+              placeholder="Business Arena"
+            />
+            <input
+              type="text"
+              id="Employees"
+              name="Employees"
+              placeholder="Employees"
+            />
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="details">Contact Details</h2>
+          <input type="text" id="street" placeholder="Street + Nr" />
+          <input
+            type="text"
+            id="additional-information"
+            placeholder="Additional Information"
+          />
+          <div class="inline-container">
+            <input type="text" id="zip-code" placeholder="Zip Code" />
+            <input type="text" id="place" placeholder="Place" />
+          </div>
+
+          <input type="text" id="Country" placeholder="Country" />
+
+          <div class="inline-container">
+            <input type="text" id="code" placeholder="Code+" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+
+          <input type="email" id="email" placeholder="Your Email" />
+
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <p>
+              I do accept the <a href="">Terms and Conditions </a> of your site
+            </p>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("C:/GITHUB/projects/fitness_app/src/manrope/semibold.woff")
+    format("woff");
+  /* url("path/my-custom-font.woff") format("woff"); */
+}
+
+@font-face {
+  font-family: "punch";
+  src: url("C:/GITHUB/projects/fitness_app/src/punch-font/Punch3D-ywLmm.otf");
+}
+@font-face {
+  font-family: "Manrope2";
+  src: url("C:/GITHUB/projects/fitness_app/src/manrope/bold.woff")
+    format("woff");
+  /* url("path/my-custom-font.woff") format("woff"); */
+}
+
+@font-face {
+  font-family: "anton";
+  src: url("C:/GITHUB/projects/fitness_app/src/Fonts/Anton-Regular.ttf");
+  /* url("path/my-custom-font.woff") format("woff"); */
+}
+@font-face {
+  font-family: "boxing";
+  src: url("C:/GITHUB/projects/fitness_app/src/Fonts/BOXING- striped.ttf");
+  /* url("path/my-custom-font.woff") format("woff"); */
+}
+@font-face {
+  font-family:"aquatico" ;
+  src: url("C:/GITHUB/projects/fitness_app/src/Fonts/Aquatico-Regular.otf");
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: rgb(251, 249, 249);
+  background-image: url(C:/GITHUB/projects/fitness_app/src/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.4s ease, padding 0.4s ease
+}
+
+.scrolling {
+  height: "50px";
+  color: white;
+/* Smaller padding when scrolling */
+  background-color: #000000; /* Change the background color */
+  position: fixed;
+  transition-duration: 0.4s;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* button{
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  overflow: hidden;
+  box-shadow: none;
+
+}
+button:hover{
+  color: wheat;
+}
+button:hover:before{
+  opacity: 0;
+}
+button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid darken(darkblue, 10%);
+    transition: opacity 0.3s, border 0.3s;
+
+}
+button:after{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: lighten(darkblue, 10%);
+    border-color: transparent;
+    border-radius: 50%;
+    transform: translate(-10px, -70px) scale(0.1);
+    opacity: 0;
+    z-index: -1;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+
+}
+button:hover:after{
+  opacity: 1;
+    transform-origin: 100px 100px;
+    transform: scale(1) translate(-10px, -70px);
+/* }  */
+a{
+ 
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  /* font-weight:bolder; */
+  /* font-style: italic; */
+  font-family:"aquatico";
+  padding: 15px;
+  width:fit-content;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 11px;
+  /* box-shadow: 0 5px 15px -8px rgba(0, 0, 0,.7); */
+}
+
+a{
+  cursor: pointer;
+  /* display: inline-block; */
+  position: relative;
+  transition: 0.5s;
+}
+
+a:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  /* border-bottom: 2px solid white; */
+}
+
+a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.background {
+  background-image: url(C:/GITHUB/projects/fitness_app/src/assets/images/background.jpg);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.exercisesSection{
+  background-color: #ffffff;
+
+}
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 170px;
+}
+
+.hero-banner-img {
+  position: absolute;
+  right: 250px;
+  top: 0px;
+  width: 700px;
+  height: 900px;
+  /* -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(2px); */
+  /* box-shadow: 0 0 8px 8px #eea990 inset; */
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+
+  margin-top: -90px;
+  border-radius: 100px;
+}
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #ffffff;
+  border-top: 8px solid #15efff;
+  border-radius: 40px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 5px;
+  transform: scale(1, 1);
+  transition: 0.4s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+  
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.search-btn:hover {
+  color: #000000 !important;
+  border: 1px solid #ff2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+ 
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: static !important;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .exercise-card {
+    width: 280px;
+  }
+  .hero-img{
+    height: 200px;
+    width: 200px;
+
+  }
+}

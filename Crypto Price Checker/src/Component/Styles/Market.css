@@ -1,0 +1,22 @@
+.Market-Tagline{
+    color: #6e7ccc;
+    font-size: larger;
+}
+
+.Market-Section{
+    background-color: rgb(24, 12, 48);
+}
+
+.white{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.Market-Data{
+    border-radius: 10px;
+    height: fit-content;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #3b436c;
+    padding-bottom: 10px;
+}

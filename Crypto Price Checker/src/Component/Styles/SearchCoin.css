@@ -1,0 +1,13 @@
+.Search-Tagline{
+    color: #6e7ccc;
+    font-size: larger;
+}
+
+.SearchBar > input{
+    border-radius: 10px!important;
+}
+
+.Search-Btn{
+    width: inherit!important;
+    border-radius: 10px!important;
+}

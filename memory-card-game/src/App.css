@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+:root{
+  --font-color: rgba(255, 255, 255, 0.443);
+  --bgc: rgb(97, 31, 91);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bgc);
+  font-family: 'Tilt Prism', cursive;
+  letter-spacing: 5px;
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App button{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--bgc);
+  border: 1px black solid;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--font-color);
+  transition: all 0.2s ease;
+}
+.App button:hover{
+  color: rgba(255, 255, 255, 0.529);
+  background-color: rgb(137, 45, 129);
+  transition: all 0.2s ease;
+}

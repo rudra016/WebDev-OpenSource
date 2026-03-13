@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color:#f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active1 {
+  background-color:#04AA6D;
+  color:white;
+}
+body{
+ border:30px Solid Brown;
+   
+}
+#copy {		
+	margin-left:10px;
+	
+	padding:2em 25px 3em;
+	color:#333333;
+	background-color:#FFFFFF;
+}
+
+
+
+#copy .txtBox {
+	margin-left: 1em;
+	border:1px solid #397D47;
+	background-color:#EEEEDB;
+}
+
+#copy .txtBox:focus {background-color:#FFFFFF;}
+
+.button {
+	border:1px solid #397D47;
+	background-color:#94CB01;
+	color:#333333;
+	cursor:hand;
+}
+element.style {
+    border-color: #666666;
+    border-width: 1px;
+    border-style: Solid;
+}
+
+.login{
+  margin-top:50px;
+  margin-left:100px;
+  padding:10px;
+ 
+}
+.login{
+  background-image:url('https://th.bing.com/th/id/R.4ca59e75ae802b3076c8febc9840d625?rik=D%2f%2fKq7zwddTvKQ&riu=http%3a%2f%2fwww.tradeitstores.com%2fwp-content%2fuploads%2f2015%2f10%2fFeedback.jpg&ehk=RHCH2dMEr37EyRqfHmZegpOgfQKEdF6Z9EaIWpPm0GA%3d&risl=&pid=ImgRaw&r=0');
+  background-repeat:no-repeat;
+  background position:auto;
+  background-size: 300px;
+
+}

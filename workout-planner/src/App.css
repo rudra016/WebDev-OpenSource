@@ -1,0 +1,51 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.workout-table th,
+.workout-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.workout-table th {
+  background-color: #f2f2f2;
+}
+
+.exercise-list {
+  padding: 0;
+  margin: 0;
+}
+
+.delete-btn {
+  cursor: pointer;
+  color: red;
+}
+
+.add-exercise-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-exercise-btn:hover {
+  background-color: #45a049;
+}

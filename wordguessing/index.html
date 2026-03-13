@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Word Guessing Game</h1>
+        <p id="wordDisplay" class="h4 mb-3"></p>
+        <div class="input-group mb-3">
+            <input type="text" id="letterInput" class="form-control" maxlength="1" placeholder="Guess a letter" />
+            <div class="input-group-append">
+                <button id="guessButton" class="btn btn-primary">Guess</button>
+            </div>
+        </div>
+        <p id="message" class="text-danger mb-3"></p>
+        <button id="restart" class="btn btn-secondary" style="display:none;">Play Again</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

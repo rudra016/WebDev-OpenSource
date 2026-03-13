@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS Link  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>BMW.Re-imagine</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./small.css">
+	<link rel="stylesheet" href="./landingPage.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<!-- shashank CSS CDN  -->
+	<link rel="icon" href="img/icon.jpg" type="icon/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="shashankCode.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+	<!-- mayank css CDN  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./mayankNormalise.css">
+	<link rel="stylesheet" href="./mayankCode.css">
+
+	<!-- font awesome cdn  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-..." crossorigin="anonymous" />
+
+	<!-- GSAP CDN (if not already included in script.js) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+		integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+		integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<div class="landingPage">
+		<div class="loader">
+			<video id="loading-video" src="assets/video/overlay.mp4" preload="auto" muted autoplay></video>
+		</div>
+		<video class="background-clip" autoplay loop preload muted plays-inline>
+			<source src="./Assets/video/BMW CARDS.mov"  type="video/mp4">
+		</video>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 1px solid white;">
+			<a class="navbar-brand" href="#"><img src="./Assets/Images/bmwLogoWhite.webp" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+	  
+			<div class="collapse navbar-collapse" id="navbarsExample05">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link ml-3" href="#center">Cars <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-3" href="#feature">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-3" href="#aboutUs">About us</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle ml-3" href="http://example.com" id="dropdown01"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu bg-transparent ml-5" aria-labelledby="dropdown01">
+							<a class="dropdown-item nav-link" href="#service">Services</a>
+							<a class="dropdown-item nav-link" href="#portfolio">Portfolio</a>
+						</div>
+					</li>
+				</ul> 
+				<form class="form-inline my-2 my-md-0 coll-search">
+					<input class="form-control bg-transparent" style="color: white; border: 1px solid transparent; border-bottom: 1px solid white;" type="text" placeholder="Search">
+				  </form>
+			</div>
+			<div class="search">
+				<form class="form-inline my-2 my-md-0">
+					<input class="form-control bg-transparent" style="color: white; border: 1px solid transparent; border-bottom: 1px solid white;" type="text" placeholder="Search">
+				  </form>
+			</div>
+		  </nav>
+		<div class="nav-text">
+			<h1 class="nav-heading">BMW M3 2024</h1>
+			<p class="nav-para">Powerful. Precise. Luxurious.</p>
+			<a href="#center"><i class="fas fa-angle-down white-icon my-2"></i></a>
+		</div>
+	</div>
+	<div id="main"  >
+		<div id="top" >
+			<img src="./Assets/Images/BMWLogobTop.png" alt="" srcset="">
+		</div>
+		<div data-aos="zoom-in" id="center" class="d-flex align-items-center justify-content-center">
+			<div class="CarCard mx-2 m3 h7">
+				<h1 class="onlyOnHover">BMW M3</h1>
+				<img src="./Assets/Images/bmwLogoWhite.webp" alt="" class="logo">
+			</div>
+			<div class="CarCard mx-2 m5">
+				<h1 class="onlyOnHover">BMW M5</h1>
+				<img src="./Assets/Images/bmwLogoWhite.webp" alt="" class="logo">
+			</div>
+			<div class="CarCard mx-2 x6 h8">
+				<h1 class="onlyOnHover">BMW M4 CS</h1>
+				<img src="./Assets/Images/bmwLogoWhite.webp" alt="" class="logo">
+			</div>
+			<div class="CarCard mx-2 GTsix">
+				<h1 class="onlyOnHover">BMW 6 SERIES GT</h1>
+				<img src="./Assets/Images/bmwLogoWhite.webp" alt="" class="logo">
+			</div>
+			<div class="CarCard mx-2 m2 h7">
+				<h1 class="onlyOnHover">BMW M2</h1>
+				<img src="./Assets/Images/bmwLogoWhite.webp" alt="" class="logo">
+			</div>
+			<!-- yaha pe code krna sb log  -->
+		</div>
+		<div id="bottom">
+			<img src="./Assets/Images/BMWLogobottom].png" alt="" srcset="">
+		</div>
+	</div>
+
+	<!-- Shashank's Code - infinite scroll  -->
+	<div class="wrapp bg-black" id="feature">
+		<!-- main .main -->
+		<main class="main bg-black">
+
+			<!-- section .section -->
+			<section class="section gsap__anim serv bg-black">
+				<div class="parallax__wrapp">
+					<div class="content">
+						<div class="serv__wrapp ">
+							<h2 class="title bg-black">
+								<span class="title__wrapp">
+									<span class="title__img">
+										<img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg"
+											alt="">
+									</span>
+									<div class="title__txt d-flex flex-column" style="font-size: 6vw !important;">
+										<span class="title__t">the</span>
+										<span class="stroke "><span class="text-[#0171B6]">fe</span><span
+												class="text-[#004585] stroke">atu</span><span
+												class="text-[#E62C19]">re</span></span>
+									</div>
+
+								</span>
+							</h2>
+							<ul class="serv__list" style="margin: 34px 0 0 0;">
+								<li class="serv__item hover:bg-[#0170B8]">Creative direction
+									<span class="serv__item-img">
+										<img src="https://images6.alphacoders.com/540/540944.jpg" alt="">
+									</span>
+								</li>
+								<li class="serv__item hover:bg-[#004585]">Brand and identity
+									<span class="serv__item-img">
+										<img src="https://s1.cdn.autoevolution.com/images/news/how-to-bmw-i8-the-hd-wallpaper-guide-95829_4.jpg"
+											alt="">
+									</span>
+								</li>
+								<li class="serv__item hover:bg-[#E72C19]" style="border-bottom: 1px solid white;">Visual
+									content
+									<span class="serv__item-img">
+										<img src="https://wallpaper.forfun.com/fetch/99/991c982785541fa485d9c74fe5176701.jpeg"
+											alt="">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section .section END -->
+
+			<!-- section .section -->
+			<section class="section gsap__anim portfolio bg-black" >
+				<div class="parallax__wrapp">
+					<div class="content">
+						<div class="portfolio__wrapp">
+							<ul class="portfolio__list">
+								<li class="portfolio__item">
+									<div class="portfolio__item-img" data-aos="zoom-out">
+										<img src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2024/wallpaper/m-wallpaper/3-0-csl/bmw-3-0-csl-mi-05.jpg.asset.1669308612336.jpg"
+											alt="">
+									</div>
+								</li>
+								<li class="portfolio__item">
+									<div class="portfolio__item-img" data-aos="zoom-out">
+										<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202103/03_The_all-new_BMW_M_1000_RR_1200x768.jpeg?size=690:388"
+											alt="">
+									</div>
+								</li>
+								<li class="portfolio__item">
+									<div class="portfolio__item-img" data-aos="zoom-out">
+										<img src="https://c4.wallpaperflare.com/wallpaper/943/325/116/car-bmw-m3-bmw-race-cars-wallpaper-preview.jpg"
+											alt="">
+									</div>
+								</li>
+								<li class="portfolio__item">
+									<div class="portfolio__item-img" data-aos="zoom-out" >
+										<img src="https://wallpapers.com/images/hd/2560x1440-car-blue-and-black-bmw-kzvghooybautxmri.jpg"
+											alt="">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section .section END -->
+		</main>
+		<!-- main .main END -->
+	</div>
+
+	<!-- mayank Code - Servies and Footer  -->
+	<div id="luxy" class="wrapp">
+
+		<!-- div .header -->
+		<header class="header">
+			<h1 class="title overflow-title" data-splitting><span class="title_paralax">BMW</span><span
+					class="stroke">sheer driving <br>pleasure</span></h1>
+			<div class="header__img w-full opacity-70">
+				<img class="object-cover w-full ml-40"
+					src="https://wallpapers.com/images/featured/bmw-desktop-hd-wyawdmrxc44x1ere.jpg" alt="1">
+			</div>
+			<div class="header__marq">
+				<div class="header__marq-wrapp">
+					<span class="header__marq-txt">bayeriche motoren werke
+						<span class="header__marq-star mt-1">
+							<img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg"
+								alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">bayeriche motoren werke
+						<span class="header__marq-star mt-1">
+							<img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg"
+								alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">bayeriche motoren werke
+						<span class="header__marq-star mt-1">
+							<img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg"
+								alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">bayeriche motoren werke
+						<span class="header__marq-star mt-1">
+							<img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg"
+								alt="">
+						</span>
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<!-- div .about -->
+			<section class="about" id="aboutUs">
+				<div class="about__wrapp">
+					<div class="about__img">
+						<img class="object-cover" src="https://etimg.etb2bimg.com/photo/96826732.cms" alt="2">
+					</div>
+					<div class="about__txt">
+						<h2 class="section-title overflow-title" data-aos="flip-up">abo<span class="stroke">ut</span>
+							<span class="section-title__square"></span>
+						</h2>
+						<p class="about__p para">The Otto Flugmaschinenfabrik was founded in 1910 by Gustav Otto in the
+							Kingdom of Bavaria, which was a state of the German Empire. The firm was reorganized on 7
+							March 1916 into Bayerische Flugzeugwerke AG. This company was then renamed to Bayerische
+							Motoren Werke (BMW) in 1922. However, the name BMW dates back to 1913, when a company to use
+							the name was .</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- div .benefits -->
+
+			<!-- div .work -->
+			<section class="work" id="portfolio">
+				<div class="content">
+					<h2 class="section-title overflow-title" data-aos="fade-up">portfo<span class="stroke">lio</span>
+						<span class="section-title__square"></span>
+					</h2>
+				</div>
+
+				<div class="work__wrapp">
+					<div class="work__item" data-speed="-300" data-aos="fade-in">
+						<span class="work__item-num white overflow-title" data-speed="-1000">S1000 RR</span>
+						<div class="work__item-img">
+							<img src="./Assets/Images/3.jpg" alt="3">
+						</div>
+					</div>
+					<div class="work__item" data-speed="-600" data-aos="fade-in">
+						<span class="work__item-num white overflow-title" data-speed="-500">OLD S1000 RR</span>
+						<div class="work__item-img">
+							<img src="./Assets/Images/4.jpg" alt="4">
+						</div>
+					</div>
+					<div class="work__item" data-speed="-700" data-aos="fade-in">
+						<span class="work__item-num white overflow-title" data-speed="-700">F900R</span>
+						<div class="work__item-img">
+							<img src="./Assets/Images/5.jpg" alt="5">
+						</div>
+					</div>
+					<div class="work__item" data-speed="-400" data-aos="fade-in">
+						<span class="work__item-num white overflow-title" data-speed="-200">R1300 GS</span>
+						<div class="work__item-img">
+							<img src="./Assets/Images/6.jpg" alt="6">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- div .serv -->
+			<section class="serv mar-top" id="service">
+				<div class="content">
+					<h2 class="section-title overflow-title"  data-aos="zoom-in">servic<span class="stroke">es</span>
+						<span class="section-title__square"></span>
+					</h2>
+
+					<div class="serv__list">
+						<div class="serv__item__portfolio">
+							<span class="serv__item-arrow" data-speed="500">
+								<img src="./Assets/Images/arrow.svg" alt="" >
+							</span>
+							<div class="serv__item-txt">
+								<span class="serv__item-text">/find your bmw</span>
+							</div>
+						</div>
+						<div class="serv__item__portfolio">
+							<span class="serv__item-arrow" data-speed="400">
+								<img src="./Assets/Images/arrow.svg" alt="" >
+							</span>
+							<div class="serv__item-txt">
+								<span class="serv__item-text">/book a drive</span>
+							</div>
+						</div>
+						<div class="serv__item__portfolio">
+							<span class="serv__item-arrow" data-speed="800">
+								<img src="./Assets/Images/arrow.svg" alt="" >
+							</span>
+							<div class="serv__item-txt">
+								<span class="serv__item-text">/build your own</span>
+							</div>
+						</div>
+						<div class="serv__item__portfolio">
+							<span class="serv__item-arrow" data-speed="600">
+								<img src="./Assets/Images/arrow.svg" alt="" >
+							</span>
+							<div class="serv__item-txt">
+								<span class="serv__item-text">/configure & price</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- div .footer -->
+		<footer class="footer">
+			<div class="footer__div">
+				<span data-speed="-300" class="overflow-title">m</span>
+				<span data-speed="100" class="overflow-title">o</span>
+				<span data-speed="300" class="overflow-title">t</span>
+				<span data-speed="-300" class="overflow-title">o</span>
+				<span data-speed="350" class="overflow-title">r</span>
+				<span data-speed="200" class="overflow-title">s</span>
+				<span data-speed="-310" class="overflow-title">p</span>
+				<span data-speed="200" class="overflow-title">o</span>
+				<span data-speed="-340" class="overflow-title">r</span>
+				<span data-speed="200" class="overflow-title">t</span>
+				<!-- <span data-speed="-100">d</span>
+				<span data-speed="300">e</span> -->
+			</div>
+		</footer>
+	</div>
+
+	<!-- lenis CDN  -->
+	<!-- <script src="https://unpkg.com/@studio-freight/lenis@latest"></script> -->
+
+	<!-- Bootstrap JS  -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+	<!-- shashank JS CDN  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.0/bundled/lenis.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+	<script src="./All JS/Shashank.js"></script>
+
+	<!-- mayank JS CDN  -->
+	<script src="./All JS/MayankJS/split.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="./All JS/MayankJS/Luxi.js"></script>
+	<script src="./All JS/MayankJS/Mayank.js"></script>
+
+	<!-- GSAP CDN  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+		integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+		integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Optional: Your custom JavaScript files -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="./All JS/script.js"></script>
+	<script src="./All JS/shikharAnimation.js"></script>
+	<script>
+		AOS.init();
+	  </script>
+</body>
+
+</html>

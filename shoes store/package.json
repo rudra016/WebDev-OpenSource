@@ -1,0 +1,73 @@
+{
+  "name": "shoes-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-styles": "^3.2.1",
+    "browserslist": "^4.21.5",
+    "caniuse-lite": "^1.0.30001478",
+    "chalk": "^2.4.2",
+    "color-convert": "^1.9.3",
+    "color-name": "^1.1.3",
+    "convert-source-map": "^1.9.0",
+    "csstype": "^3.1.2",
+    "debug": "^4.3.4",
+    "electron-to-chromium": "^1.4.365",
+    "esbuild": "^0.17.16",
+    "escalade": "^3.1.1",
+    "escape-string-regexp": "^1.0.5",
+    "function-bind": "^1.1.1",
+    "gensync": "^1.0.0-beta.2",
+    "globals": "^11.12.0",
+    "has": "^1.0.3",
+    "has-flag": "^3.0.0",
+    "is-core-module": "^2.12.0",
+    "js-tokens": "^4.0.0",
+    "jsesc": "^2.5.2",
+    "json5": "^2.2.3",
+    "loose-envify": "^1.4.0",
+    "lru-cache": "^5.1.1",
+    "magic-string": "^0.27.0",
+    "ms": "^2.1.2",
+    "nanoid": "^3.3.6",
+    "node-releases": "^2.0.10",
+    "path-parse": "^1.0.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.14.0",
+    "react-scripts": "^5.0.1",
+    "resolve": "^1.22.3",
+    "rollup": "^3.20.2",
+    "scheduler": "^0.23.0",
+    "semver": "^6.3.0",
+    "source-map-js": "^1.0.2",
+    "supports-color": "^5.5.0",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "to-fast-properties": "^2.0.0",
+    "update-browserslist-db": "^1.0.11",
+    "yallist": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

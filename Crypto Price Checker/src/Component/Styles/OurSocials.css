@@ -1,0 +1,33 @@
+.Social-Tagline {
+    color: #6e7ccc;
+    font-size: larger;
+}
+
+.Red {
+    color: red;
+}
+
+.purple {
+    color: #6e7ccc;
+}
+
+.subscribe {
+    font-size: 2.5vw;
+}
+
+.Socials-Links>img {
+    width: 3vw;
+    margin-left: 1vw;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* .Socials-Links img:hover {
+    overflow-y: hidden;
+    transform: scale(1.1);
+    opacity: 0.8;
+} */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}

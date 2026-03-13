@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(140, 171, 225, 255);
+}
+
+form {
+  margin: 1rem;
+}
+
+.info {
+  font-weight: 100;
+  color: #c9e5fa;
+}
+
+.details {
+  font-weight: 100;
+  color: white;
+}
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+  padding: 1rem;
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+  padding: 2.6rem 1rem 2rem 3rem;
+}
+
+.column:last-child {
+  width: auto;
+  padding: 2.6rem 3rem 2rem 3rem;
+  margin-right: 0;
+  background-color: #4835d4;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.column:last-child input {
+  color: #d3c7e8;
+  background-color: #4835d4;
+}
+.column:last-child input::placeholder {
+  color: #d3c7e8; /* Set the placeholder text color to white */
+  background-color: #4835d4;
+}
+
+.inline-container {
+  display: flex;
+}
+
+.inline-container input {
+  flex: 1;
+}
+
+.inline-container input#zip-code {
+  flex: 1;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.inline-container input#place {
+  flex: 2;
+  width: 60%;
+}
+
+.inline-container input#code {
+  flex: 1;
+  width: 30%;
+}
+
+.inline-container input#phone {
+  flex: 2;
+}
+
+button {
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+.checkbox {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.checkbox p {
+  display: inline;
+  color: rgb(244, 229, 229);
+}
+a {
+  color: rgb(244, 229, 229);
+}
+
+input#checkbox {
+  color: #4835d4;
+  width: fit-content;
+  align-items: center;
+  margin-right: 0.8rem;
+}

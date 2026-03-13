@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MineSweeper</title>
+  </head>
+
+  <body>
+    <h1 class="heading">Minesweeper</h1>
+    <div id="form" class="form">
+      <label>Rows:</label>
+      <select name="rows" id="rows">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <!-- <input placeholder="enter rows" id="row_input" /> -->
+      <label>Columns:</label>
+      <select name="cols" id="cols">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <button class="btn btn-success" id="gen_btn">Generate Board</button>
+    </div>
+    <div class="grid"></div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p id="modal-data"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

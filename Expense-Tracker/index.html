@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Expense Tracker</h1>
+        <div class="app">
+            <div class="balance-container" id="balance-container">
+                <h1>Current Balance</h1>
+                <h1 id="balance">$0.00</h1>
+            </div>
+            <div class="transactions">
+                <div class="income-container total-transaction">
+                    <h2>Income</h2>
+                    <h2 id="income">$0.00</h2>
+                </div>
+                <div class="expense-container total-transaction">
+                    <h2>Expense</h2>
+                    <h2 id="expense">$0.00</h2>
+                </div>
+            </div>
+            <div class="transaction-history-container">
+                <h2>Transaction History</h2>
+                <ul id="transactions" class="transaction-history">
+                    <!-- <li class="transaction expense">
+                        <span>Burger</span>
+                        <span>$10</span>
+                    </li>
+                    <li class="transaction income">
+                        <span>Salary</span>
+                        <span>$1000</span>
+                    </li> -->
+                </ul>
+            </div>
+
+            <form>
+                <h2>Add Transaction</h2>
+                <input type="text" name="detail" id="detail" placeholder="Enter title of the transaction">
+                <input type="text" name="amount" id="amount" placeholder="Enter Amount of the transaction(use '-' for an expense)">
+                <button>Add Transaction</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

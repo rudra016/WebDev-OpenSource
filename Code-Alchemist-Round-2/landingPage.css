@@ -1,0 +1,157 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.landingPage {
+    overflow: hidden !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+video {
+    width: auto !important;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh !important;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.navbar {
+    background: transparent !important;
+    margin: 1rem 1rem !important;
+}
+
+.navbar-collapse {
+    z-index: 1;
+}
+
+.collapse {
+    visibility: visible !important;
+}
+
+@keyframes infiniteRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-brand img {
+    width: 5vw;
+    animation: infiniteRotate 20s linear infinite;
+}
+
+.navbar-brand img:hover {
+    animation-play-state: paused;
+}
+
+nav{
+    text-transform: uppercase !important;
+}
+
+.nav-link {
+    font-size: 1.6rem !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.dropdown-item {
+    color: grey !important;
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+.loader {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: var(--grey);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 12px;
+    font-family: "Orbitron", sans-serif;
+    overflow: hidden;
+}
+
+#loading-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures video covers the container */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* Places video behind the loading text */
+}
+
+.nav-text {
+    position: absolute;
+    bottom: 6vw;
+    left: 25%;
+    right: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-heading {
+    margin: 0px !important;
+    font-size: 3vw !important;
+    color: #ffffff78 !important;
+    text-align: center;
+    
+}
+
+.nav-para{
+    margin: 0px !important;
+    color: #ffffff78 !important;
+}
+
+.down{
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.white-icon {
+    color: white;
+    cursor: pointer;
+}
+
+.coll-search{
+    display: none !important;
+}

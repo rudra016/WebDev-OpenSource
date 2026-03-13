@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/***** REGISTER FORM DESIGN *******/
+/* @extend display-flex; */
+display-flex,
+.display-flex,
+.display-flex-center {
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* @extend list-type-ulli; */
+list-type-ulli {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Montserrat-300 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../src/fonts/montserrat/Montserrat-Light.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/fonts/montserrat/Montserrat-Regular.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../src/fonts/montserrat/Montserrat-Italic.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../src/fonts/montserrat/Montserrat-Medium.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/fonts/montserrat/Montserrat-SemiBold.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../src/fonts/montserrat/Montserrat-Bold.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../src/fonts/montserrat/Montserrat-BoldItalic.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../src/fonts/montserrat/montserrat-v12-latin-900.ttf"),
+    url("../src/fonts/montserrat/montserrat-v12-latin-900.eot")
+      format("embedded-opentype"),
+    url("../src/fonts/montserrat/montserrat-v12-latin-900.svg") format("woff2"),
+    url("../src/fonts/montserrat/montserrat-v12-latin-900.woff") format("woff"),
+    url("../src/fonts/montserrat/montserrat-v12-latin-900.woff2") format("truetype");
+}
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  appearance: unset !important;
+  -moz-appearance: unset !important;
+  -webkit-appearance: unset !important;
+  -o-appearance: unset !important;
+  -ms-appearance: unset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -o-appearance: none !important;
+  -ms-appearance: none !important;
+  margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #777;
+}
+
+h1 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: #222;
+  font-family: "Montserrat";
+  font-size: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 17px;
+  letter-spacing: 0.9px;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 400;
+  font-family: "Montserrat";
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  padding: 115px 0;
+}
+
+.container {
+  width: 660px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.display-flex {
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+
+.display-flex-center {
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.signup-content {
+  background: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  padding: 50px 85px;
+}
+
+.form-group {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+}
+.form-input::-webkit-input-placeholder {
+  color: #999;
+}
+.form-input::-moz-placeholder {
+  color: #999;
+}
+.form-input:-ms-input-placeholder {
+  color: #999;
+}
+.form-input:-moz-placeholder {
+  color: #999;
+}
+.form-input::-webkit-input-placeholder {
+  font-weight: 500;
+}
+.form-input::-moz-placeholder {
+  font-weight: 500;
+}
+.form-input:-ms-input-placeholder {
+  font-weight: 500;
+}
+.form-input:-moz-placeholder {
+  font-weight: 500;
+}
+.form-input:focus {
+  border: 1px solid transparent;
+  -webkit-border-image-source: -webkit-linear-gradient(
+    to right,
+    #9face6,
+    #74ebd5
+  );
+  -moz-border-image-source: -moz-linear-gradient(to right, #9face6, #74ebd5);
+  -o-border-image-source: -o-linear-gradient(to right, #9face6, #74ebd5);
+  border-image-source: linear-gradient(to right, #9face6, #74ebd5);
+  -webkit-border-image-slice: 1;
+  border-image-slice: 1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.form-input:focus::-webkit-input-placeholder {
+  color: #222;
+}
+.form-input:focus::-moz-placeholder {
+  color: #222;
+}
+.form-input:focus:-ms-input-placeholder {
+  color: #222;
+}
+.form-input:focus:-moz-placeholder {
+  color: #222;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 17px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  display: block;
+}
+
+.form-submit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.label-agree-term {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+}
+
+.term-service {
+  color: #555;
+}
+
+.loginhere {
+  color: #555;
+  font-weight: 500;
+  text-align: center;
+}
+
+.loginhere-link {
+  font-weight: 700;
+  color: #222;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+  h1{
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .signup-content {
+    padding: 50px 25px;
+  }
+  h1{
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+         

@@ -17,7 +17,7 @@ You can contribute to the repository in following ways:
 
 ### Creating Issue
 
-Lets use know about the issue you have found in WebDev-Source by submitting [issue.](https://github.com/rudra016/WebDev-OpenSource/issues/new)
+Lets us know about the issue you have found in WebDev-Source by submitting [issue.](https://github.com/rudra016/WebDev-OpenSource/issues/new)
 
 _We would like to request you to add the relevant `title`, `description` and any other `media file` that would be easier to understand the issue that you have submitted._
 

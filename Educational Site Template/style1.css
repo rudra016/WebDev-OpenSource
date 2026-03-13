@@ -1,0 +1,14 @@
+.fcontainer{
+    border: 2px solid black;
+    height: 45vh;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: center;
+}
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin: 2px;
+    width: 120px;
+    height: 120px;
+}

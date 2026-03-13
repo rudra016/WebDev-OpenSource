@@ -1,0 +1,12 @@
+/* Apply styles for large screens */
+@media only screen and (min-width: 1200px) {
+
+    /* Your styles go here */
+    #top-h1 {
+        bottom: -60.5% !important;
+    }
+
+    #bottom-h1 {
+        top: 2.5% !important;
+    }
+}

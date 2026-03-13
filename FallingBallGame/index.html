@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FALLING BALL</title>
+    <link rel="icon" href="fallingball.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div ID="title">FALLING BALL</div>
+    <div id="game">
+      <div id="character"></div>
+    </div>
+
+    <div
+      id="scoreContainer"
+      style="text-align: center; font-size: 24px; margin-top: 20px"
+    >
+      <div
+        id="gameOver"
+        style="
+          display: none;
+          margin-top: 10px;
+          font-size: 50px;
+          color: white;
+          text-align: center;
+        "
+      >
+        Game Over
+      </div>
+      <br />
+      <div id="score" style="font-size: 50px; color: white; text-align: center">
+        Score: 0
+      </div>
+      <button id="replay" style="display: none">REPLAY</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,112 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 8rem;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-width: 10px 0px 0px 0px;
+    border-radius: 20px;
+    border-color: yellow;
+    background-color: lightblue;
+    margin-right: 5vw;
+
+  }
+
+.card::after{ 
+  border-radius: 0px 10px 20px 0px;
+  /* after and before cannot be used with image tag */
+  /* without content cannot use before or after */
+  /* what you write in content will be on the screen depending upon before or after used */
+  content: ''; 
+  /* parent element is position:relative; */
+  position: absolute;
+  /* top , bottom, left, right have to be defined if using both before and after */
+  /* no need for top and left in this because circle is bound inside the card */
+  /* top:0;
+  left:0; */ 
+  /* 10vw at 25vw 4vw  */
+  width: 100%;
+  height: 100%;
+  background: blue;
+  /* 80% is position from left and 20% is from top */
+  clip-path: circle(150px at 80% 40%); 
+  transition: 1s;
+  /* ease-in-out */
+}
+/* #9bdc28 */
+
+  
+
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+@media screen and (min-width:769px) {
+  .main-content{
+    margin-left:320px;
+    margin-right: 0.5rem;
+  }  
+}
+@media screen and (min-width:1100px) {
+  .card:hover::after{
+    /* not visible until the card is hovered */
+    /* 15vw at 20vw 4vw */
+      clip-path: circle(250px at 80% 40%);
+    }
+}
+@media screen and (max-width:1099px) and (min-width:579px) {
+  .card::after{ 
+    border-radius: 0px 10px 20px 0px;
+    content: ''; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    clip-path: circle(100px at 80% 40%); 
+    transition: 1s
+  }
+
+}
+@media screen and (max-width:580px) {
+  .card:hover::after{
+    /* not visible until the card is hovered */
+    /* 15vw at 20vw 4vw */
+      clip-path: circle(250px at 80% 40%);
+    }
+}
+@media screen and (max-width:768px){
+   .main-content{
+     margin-left: 9vw; /* 1rem=16px*/
+      /* margin-right: 1rem; */
+    margin-top: 5%;}
+    
+    .card{
+    margin-right: 8vw;
+    }
+
+}
+.row div h4 {
+z-index: 1; 
+}
+.main-content h1{
+color: white;
+margin-top: 2%;
+margin-bottom: 5%;
+}
+a:link{
+text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+

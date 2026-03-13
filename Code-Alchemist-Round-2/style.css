@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Founder;
+    src: url(FoundersGroteskCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: CardinalR;
+    src: url(cardinalfruitweb-regular.ttf);
+}
+
+@font-face {
+    font-family: Cardinali;
+    src: url(cardinalfruitweb-italic.ttf);
+}
+
+::-webkit-scrollbar{
+    display: none !important;;
+}
+
+.h7{
+    height: 70vh !important;
+}
+
+.h8{
+    height: 90vh !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main-p{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+#main{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+   
+}
+
+
+#top{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9;
+    overflow: hidden;
+}
+
+#main img{
+    height: 100%;
+    object-fit: contain;
+}
+
+#center{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-origin: center;
+    background-color: black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+   
+}
+
+#top-h1{
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    right: auto;
+}
+
+#bottom-h1{
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    right: auto;
+}
+
+#bottom{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+
+
+/* center card CSS*/
+
+
+
+/* center k ander k card css  */
+
+#center{
+    background: url('./Assets/cards/bmwHeadlight.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.CarCard{
+    width: 8vw;
+    height: 80vh;
+    border-radius: 65px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    transition: all ease 0.7s;
+}
+
+.CarCard:hover{
+    width: 50vw;
+    border-radius: 25px;
+    .onlyOnHover{
+        transition: all ease 0.3s;
+        display: block;
+    }
+}
+
+.onlyOnHover{
+    color: rgb(255, 255, 255);
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    width: 100%;
+    height: 67px !important;
+    margin-bottom: 16px;
+}
+
+/* card k background ki imgaes  */
+
+.m3{
+    background: url('./Assets/cards/m3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.m5{
+    background: url('https://c4.wallpaperflare.com/wallpaper/673/910/452/bmw-white-m5-f90-running-lights-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.x6{
+    background: url('https://wallpapers.com/images/hd/2560x1440-car-blue-and-black-bmw-kzvghooybautxmri.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.GTsix{
+    background: url('./Assets/cards/GTsix');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.m2{
+    background: url('./Assets/cards/m2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mar-top{
+    margin-top: 7vh;
+}

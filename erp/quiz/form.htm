@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey From</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body class="body">
+
+    <div>
+        <header>
+            <h1>FEEDBACK     FORM</h1>
+            <img src="images/1.jpg">
+        </header>
+    </div>
+    <form class="form" method = "post" action = "php/2.php" >
+
+    <div class="we">
+
+        <label for="fname" place>First Name</label>
+        <input type="text" name="firstname" placeholder="Write your first name">
+
+        <label for="lname"> Last Name</label>
+        <input type="text" name="lastname" placeholder="Write your last name">
+
+        <label for="email" place>E-mail</label>
+        <input type="text" name="email" placeholder="Write your E-mail">
+       
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone"  placeholder="0123-456-789">
+
+    </div>
+
+    <div class="select">
+        <div>
+        <label>Class </label>
+        <select class="section">
+            <option>CS21</option>
+            <option>CS22</option>
+            <option>CS23</option>
+            <option>not apllicable</option>
+        </select>
+    </div>
+    <div>
+        <label>Year</label>
+            <select class="section">
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>not apllicable</option>            
+            </select>
+        </div><div>
+        <label>Branch</label>
+        <select class="section">
+            <option>C.S.E.</option>
+            <option>M.E.</option>
+            <option>C.E.</option>
+            <option>M.E.</option>
+            <option>E.C.</option>
+            <option>not apllicable</option>            
+        </select>
+    </div>
+    </div>
+
+    <label class="next">Designation</label>
+    <div class="radio">
+
+        <div>
+        <label for="Teacher">Teacher</label>
+        <input type="radio" name="select">
+    </div><div>
+        <label for="Employee">Employee  </label>
+        <input type="radio"  name="select">        
+    </div><div>
+        <label for="Student">Student </label>
+        <input type="radio" name="select">
+    </div><div>
+        <label for="Other">Other </label>
+        <input type="radio"  name="select">
+    </div>
+    </div>
+    <label class="next">Subjects you like the most</label>
+
+    <div class="area">  
+        <div>
+            <label for="COA"> COA</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="DS"> DS</label>
+            <input type="checkbox">
+        </div>
+        <div>
+             <label for="Sensor"> Sensor</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="Maths">Maths</label>
+            <input type="checkbox" >
+        </div>
+        <div>    
+            <label for="TC"> TC</label>
+            <input type="checkbox" >
+        </div>
+        <div>
+            <label for ="CSS"> CSS</label>
+            <input type="checkbox" >
+        </div>
+        <div>
+            <label for ="Mini Project"> Mini Project</label>
+            <input type="checkbox" >
+        </div>
+        <div>
+            <label for ="CTC"> CTC</label>
+            <input type="checkbox" >
+        </div>
+        <div>
+            <label for ="DS LAB"> DS LAB</label>
+            <input type="checkbox" >
+        </div>
+        <div>
+            <label for ="COA LAB"> COA LAB</label>
+            <input type="checkbox" >
+        </div>
+  
+        <div>
+            <label for ="DSTL LAB"> DSTL LAB</label>
+            <input type="checkbox" >
+        </div>
+
+
+    </div>
+
+    <div class="we">
+        <label for="feedback">Feedback</label>
+        <textarea class="feedback">
+        </textarea>
+    </div>
+
+    <div class="submit">
+        <button type="submit" class="sub">Submit</button>
+    </div>
+    
+    </form>
+</body>
+</html>
